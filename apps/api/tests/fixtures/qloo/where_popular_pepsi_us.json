@@ -1,0 +1,389 @@
+{
+ "tool": "qloo_where_popular",
+ "args": {
+  "entity": "957B527A-CF2C-4283-A2FD-3F49741DF5DE",
+  "entity_type": "brand",
+  "within": "United States",
+  "limit": 20
+ },
+ "envelope": {
+  "schema_version": "1.0-preview.1",
+  "operation": "where_popular",
+  "status": "ok",
+  "interpretation": {
+   "entity": {
+    "input": "957B527A-CF2C-4283-A2FD-3F49741DF5DE",
+    "entityId": "957B527A-CF2C-4283-A2FD-3F49741DF5DE",
+    "name": "Pepsi",
+    "type": "urn:entity:brand",
+    "match": "identifier"
+   },
+   "within": "United States"
+  },
+  "resolution": {
+   "contract_version": "1.0-preview.1",
+   "provider": {
+    "contract_version": "1.0-preview.1",
+    "provider_id": "qloo_api",
+    "name": "Qloo native resolution",
+    "entity_strategy": "exact_name_context_or_choice",
+    "tag_strategy": "target_scoped_semantic_search_exact_name_or_choice",
+    "remote": true,
+    "uses_model": false,
+    "fallback": "none"
+   },
+   "outcomes": [
+    {
+     "input": "957B527A-CF2C-4283-A2FD-3F49741DF5DE",
+     "status": "resolved",
+     "match": "identifier",
+     "selected": {
+      "id": "957B527A-CF2C-4283-A2FD-3F49741DF5DE",
+      "name": "Pepsi",
+      "type": "urn:entity:brand",
+      "popularity": 0.997016494041464,
+      "description": "Pepsi is a global beverage brand known for its popular cola soft drinks and other flavored beverages."
+     },
+     "provenance": {
+      "contract_version": "1.0-preview.1",
+      "provider_id": "qloo_api",
+      "provider_name": "Qloo native resolution",
+      "endpoint": "/entities",
+      "strategy": "identifier_lookup",
+      "remote": true,
+      "uses_model": false
+     }
+    }
+   ]
+  },
+  "results": [
+   {
+    "location": {
+     "latitude": 40.69336,
+     "longitude": -74.00391,
+     "geohash": "dr5r"
+    },
+    "query": {
+     "affinity": 1,
+     "affinity_rank": 0.982282,
+     "popularity": 1,
+     "entity_brand_affinity_rank": 0.982282,
+     "entity_brand_affinity": 1
+    }
+   },
+   {
+    "location": {
+     "latitude": 28.388672,
+     "longitude": -81.38672,
+     "geohash": "djn1"
+    },
+    "query": {
+     "affinity": 0.9998409922086182,
+     "affinity_rank": 0.980099,
+     "popularity": 0.9992049610430911,
+     "entity_brand_affinity_rank": 0.980099,
+     "entity_brand_affinity": 0.9998409922086182
+    }
+   },
+   {
+    "location": {
+     "latitude": 39.990234,
+     "longitude": -100.01953,
+     "geohash": "9z0g"
+    },
+    "query": {
+     "affinity": 0.9996819844172364,
+     "affinity_rank": 0.979677,
+     "popularity": 0.9947527428844013,
+     "entity_brand_affinity_rank": 0.979677,
+     "entity_brand_affinity": 0.9996819844172364
+    }
+   },
+   {
+    "location": {
+     "latitude": 28.564453,
+     "longitude": -81.38672,
+     "geohash": "djn4"
+    },
+    "query": {
+     "affinity": 0.9995229766258547,
+     "affinity_rank": 0.978657,
+     "popularity": 0.9982509142948004,
+     "entity_brand_affinity_rank": 0.978657,
+     "entity_brand_affinity": 0.9995229766258547
+    }
+   },
+   {
+    "location": {
+     "latitude": 25.751953,
+     "longitude": -80.33203,
+     "geohash": "dhwf"
+    },
+    "query": {
+     "affinity": 0.9993639688344729,
+     "affinity_rank": 0.978207,
+     "popularity": 0.9993639688344729,
+     "entity_brand_affinity_rank": 0.978207,
+     "entity_brand_affinity": 0.9993639688344729
+    }
+   },
+   {
+    "location": {
+     "latitude": 36.123047,
+     "longitude": -115.13672,
+     "geohash": "9qqj"
+    },
+    "query": {
+     "affinity": 0.9992049610430911,
+     "affinity_rank": 0.974335,
+     "popularity": 0.9996819844172364,
+     "entity_brand_affinity_rank": 0.974335,
+     "entity_brand_affinity": 0.9992049610430911
+    }
+   },
+   {
+    "location": {
+     "latitude": 40.69336,
+     "longitude": -84.19922,
+     "geohash": "dphp"
+    },
+    "query": {
+     "affinity": 0.9990459532517093,
+     "affinity_rank": 0.974048,
+     "popularity": 0.9332167276196534,
+     "entity_brand_affinity_rank": 0.974048,
+     "entity_brand_affinity": 0.9990459532517093
+    }
+   },
+   {
+    "location": {
+     "latitude": 35.06836,
+     "longitude": -117.94922,
+     "geohash": "9qhp"
+    },
+    "query": {
+     "affinity": 0.9988869454603275,
+     "affinity_rank": 0.973954,
+     "popularity": 0.9386229925266338,
+     "entity_brand_affinity_rank": 0.973954,
+     "entity_brand_affinity": 0.9988869454603275
+    }
+   },
+   {
+    "location": {
+     "latitude": 25.576172,
+     "longitude": -80.33203,
+     "geohash": "dhwc"
+    },
+    "query": {
+     "affinity": 0.9987279376689457,
+     "affinity_rank": 0.973834,
+     "popularity": 0.9860073143584036,
+     "entity_brand_affinity_rank": 0.973834,
+     "entity_brand_affinity": 0.9987279376689457
+    }
+   },
+   {
+    "location": {
+     "latitude": 34.01367,
+     "longitude": -118.30078,
+     "geohash": "9q5c"
+    },
+    "query": {
+     "affinity": 0.998568929877564,
+     "affinity_rank": 0.973677,
+     "popularity": 0.9998409922086182,
+     "entity_brand_affinity_rank": 0.973677,
+     "entity_brand_affinity": 0.998568929877564
+    }
+   },
+   {
+    "location": {
+     "latitude": 41.92383,
+     "longitude": -87.71484,
+     "geohash": "dp3w"
+    },
+    "query": {
+     "affinity": 0.9984099220861822,
+     "affinity_rank": 0.971638,
+     "popularity": 0.9995229766258547,
+     "entity_brand_affinity_rank": 0.971638,
+     "entity_brand_affinity": 0.9984099220861822
+    }
+   },
+   {
+    "location": {
+     "latitude": 28.388672,
+     "longitude": -81.73828,
+     "geohash": "djjc"
+    },
+    "query": {
+     "affinity": 0.9982509142948004,
+     "affinity_rank": 0.971183,
+     "popularity": 0.9966608363809827,
+     "entity_brand_affinity_rank": 0.971183,
+     "entity_brand_affinity": 0.9982509142948004
+    }
+   },
+   {
+    "location": {
+     "latitude": 25.927734,
+     "longitude": -80.33203,
+     "geohash": "dhwg"
+    },
+    "query": {
+     "affinity": 0.9980919065034186,
+     "affinity_rank": 0.970722,
+     "popularity": 0.9945937350930195,
+     "entity_brand_affinity_rank": 0.970722,
+     "entity_brand_affinity": 0.9980919065034186
+    }
+   },
+   {
+    "location": {
+     "latitude": 26.103516,
+     "longitude": -80.33203,
+     "geohash": "dhwu"
+    },
+    "query": {
+     "affinity": 0.9979328987120369,
+     "affinity_rank": 0.969892,
+     "popularity": 0.9931626649705836,
+     "entity_brand_affinity_rank": 0.969892,
+     "entity_brand_affinity": 0.9979328987120369
+    }
+   },
+   {
+    "location": {
+     "latitude": 42.978516,
+     "longitude": -75.05859,
+     "geohash": "drds"
+    },
+    "query": {
+     "affinity": 0.9977738909206552,
+     "affinity_rank": 0.969358,
+     "popularity": 0.9869613611066942,
+     "entity_brand_affinity_rank": 0.969358,
+     "entity_brand_affinity": 0.9977738909206552
+    }
+   },
+   {
+    "location": {
+     "latitude": 29.794922,
+     "longitude": -95.44922,
+     "geohash": "9vk1"
+    },
+    "query": {
+     "affinity": 0.9976148831292734,
+     "affinity_rank": 0.96895,
+     "popularity": 0.997137859755128,
+     "entity_brand_affinity_rank": 0.96895,
+     "entity_brand_affinity": 0.9976148831292734
+    }
+   },
+   {
+    "location": {
+     "latitude": 40.86914,
+     "longitude": -74.00391,
+     "geohash": "dr72"
+    },
+    "query": {
+     "affinity": 0.9974558753378916,
+     "affinity_rank": 0.968538,
+     "popularity": 0.9990459532517093,
+     "entity_brand_affinity_rank": 0.968538,
+     "entity_brand_affinity": 0.9974558753378916
+    }
+   },
+   {
+    "location": {
+     "latitude": 42.27539,
+     "longitude": -83.14453,
+     "geohash": "dpsb"
+    },
+    "query": {
+     "affinity": 0.9972968675465098,
+     "affinity_rank": 0.968112,
+     "popularity": 0.9944347273016377,
+     "entity_brand_affinity_rank": 0.968112,
+     "entity_brand_affinity": 0.9972968675465098
+    }
+   },
+   {
+    "location": {
+     "latitude": 39.990234,
+     "longitude": -75.05859,
+     "geohash": "dr4e"
+    },
+    "query": {
+     "affinity": 0.997137859755128,
+     "affinity_rank": 0.967954,
+     "popularity": 0.9976148831292734,
+     "entity_brand_affinity_rank": 0.967954,
+     "entity_brand_affinity": 0.997137859755128
+    }
+   },
+   {
+    "location": {
+     "latitude": 28.21289,
+     "longitude": -81.73828,
+     "geohash": "djjb"
+    },
+    "query": {
+     "affinity": 0.9969788519637462,
+     "affinity_rank": 0.967727,
+     "popularity": 0.9915725870567658,
+     "entity_brand_affinity_rank": 0.967727,
+     "entity_brand_affinity": 0.9969788519637462
+    }
+   }
+  ],
+  "result_count": 20,
+  "provenance": {
+   "source": "Qloo API",
+   "endpoint": "/v2/insights",
+   "documentation": "https://docs.qloo.com/reference/heatmaps-use-case",
+   "requests": [
+    {
+     "method": "GET",
+     "path": "/v2/insights",
+     "query": {
+      "filter.type": "urn:heatmap",
+      "signal.interests.entities": "957B527A-CF2C-4283-A2FD-3F49741DF5DE",
+      "filter.location.query": "United States",
+      "take": 20
+     }
+    }
+   ],
+   "transport": "mcp"
+  },
+  "query_intent": {
+   "schema_version": "1.0-preview.1",
+   "source_contract_version": "1.0.0",
+   "operation": "where_popular",
+   "job": "where_popular",
+   "signals": {},
+   "filters": {
+    "location": "United States"
+   },
+   "operators": {},
+   "output": {
+    "limit": 20
+   },
+   "assumptions": [],
+   "unresolved": [],
+   "target": {
+    "type": "brand",
+    "entities": [
+     "957B527A-CF2C-4283-A2FD-3F49741DF5DE"
+    ]
+   }
+  },
+  "execution": {
+   "transport": "mcp",
+   "transport_name": "Qloo canonical MCP",
+   "correlation_id": "mcp-4",
+   "duration_ms": 4463
+  }
+ }
+}

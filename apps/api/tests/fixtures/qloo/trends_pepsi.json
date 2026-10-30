@@ -1,0 +1,202 @@
+{
+ "tool": "qloo_trends",
+ "args": {
+  "entities": [
+   "957B527A-CF2C-4283-A2FD-3F49741DF5DE"
+  ],
+  "entity_type": "brand",
+  "start_date": "2025-10-01",
+  "end_date": "2026-10-01"
+ },
+ "envelope": {
+  "schema_version": "1.0-preview.1",
+  "operation": "trends",
+  "status": "ok",
+  "interpretation": {
+   "entity_type": "urn:entity:brand",
+   "start_date": "2025-10-01",
+   "end_date": "2026-10-01"
+  },
+  "resolution": {
+   "contract_version": "1.0-preview.1",
+   "provider": {
+    "contract_version": "1.0-preview.1",
+    "provider_id": "qloo_api",
+    "name": "Qloo native resolution",
+    "entity_strategy": "exact_name_context_or_choice",
+    "tag_strategy": "target_scoped_semantic_search_exact_name_or_choice",
+    "remote": true,
+    "uses_model": false,
+    "fallback": "none"
+   },
+   "outcomes": [
+    {
+     "input": "957B527A-CF2C-4283-A2FD-3F49741DF5DE",
+     "status": "resolved",
+     "match": "identifier",
+     "selected": {
+      "id": "957B527A-CF2C-4283-A2FD-3F49741DF5DE",
+      "name": "Pepsi",
+      "type": "urn:entity:brand",
+      "popularity": 0.997016494041464,
+      "description": "Pepsi is a global beverage brand known for its popular cola soft drinks and other flavored beverages."
+     },
+     "provenance": {
+      "contract_version": "1.0-preview.1",
+      "provider_id": "qloo_api",
+      "provider_name": "Qloo native resolution",
+      "endpoint": "/entities",
+      "strategy": "identifier_lookup",
+      "remote": true,
+      "uses_model": false,
+      "cache_status": "memory_hit"
+     }
+    }
+   ]
+  },
+  "series": [
+   {
+    "entity": {
+     "input": "957B527A-CF2C-4283-A2FD-3F49741DF5DE",
+     "entityId": "957B527A-CF2C-4283-A2FD-3F49741DF5DE",
+     "name": "Pepsi",
+     "type": "urn:entity:brand",
+     "match": "identifier"
+    },
+    "points": [
+     {
+      "date": "2026-09-30",
+      "population_percentile": 0.36095181601544846,
+      "population_rank": "2138",
+      "population_rank_velocity": 0,
+      "velocity_fold_change": 0,
+      "population_percent_delta": 0
+     },
+     {
+      "date": "2026-09-23",
+      "population_percentile": 0.36095181601544846,
+      "population_rank": "2138",
+      "population_rank_velocity": 0,
+      "velocity_fold_change": 0,
+      "population_percent_delta": 0
+     },
+     {
+      "date": "2026-09-16",
+      "population_percentile": 0.36095181601544846,
+      "population_rank": "2138",
+      "population_rank_velocity": 0,
+      "velocity_fold_change": 0,
+      "population_percent_delta": 0
+     },
+     {
+      "date": "2026-09-09",
+      "population_percentile": 0.36095181601544846,
+      "population_rank": "2138",
+      "population_rank_velocity": 0,
+      "velocity_fold_change": 0,
+      "population_percent_delta": 0
+     },
+     {
+      "date": "2026-09-02",
+      "population_percentile": 0.36095181601544846,
+      "population_rank": "2138",
+      "population_rank_velocity": 0,
+      "velocity_fold_change": 0,
+      "population_percent_delta": 0
+     },
+     {
+      "date": "2026-08-26",
+      "population_percentile": 0.36095181601544846,
+      "population_rank": "2138",
+      "population_rank_velocity": 0,
+      "velocity_fold_change": 0,
+      "population_percent_delta": 0
+     },
+     {
+      "date": "2026-08-19",
+      "population_percentile": 0.36095181601544846,
+      "population_rank": "2138",
+      "population_rank_velocity": 0,
+      "velocity_fold_change": 0,
+      "population_percent_delta": 0
+     },
+     {
+      "date": "2026-08-12",
+      "population_percentile": 0.36095181601544846,
+      "population_rank": "2138",
+      "population_rank_velocity": 0,
+      "velocity_fold_change": 0,
+      "population_percent_delta": 0
+     },
+     {
+      "date": "2026-08-05",
+      "population_percentile": 0.36095181601544846,
+      "population_rank": "2138",
+      "population_rank_velocity": 0,
+      "velocity_fold_change": 0,
+      "population_percent_delta": 0
+     },
+     {
+      "date": "2026-07-29",
+      "population_percentile": 0.36095181601544846,
+      "population_rank": "2138",
+      "population_rank_velocity": 0,
+      "velocity_fold_change": 0,
+      "population_percent_delta": 0
+     }
+    ]
+   }
+  ],
+  "result_count": 1,
+  "provenance": {
+   "source": "Qloo API",
+   "endpoint": "/v2/trending",
+   "documentation": "https://docs.qloo.com/reference/get-trending",
+   "requests": [
+    {
+     "method": "GET",
+     "path": "/v2/trending",
+     "query": {
+      "filter.type": "urn:entity:brand",
+      "filter.start_date": "2025-10-01",
+      "filter.end_date": "2026-10-01",
+      "signal.interests.entities": "957B527A-CF2C-4283-A2FD-3F49741DF5DE",
+      "take": 10
+     }
+    }
+   ],
+   "transport": "mcp"
+  },
+  "query_intent": {
+   "schema_version": "1.0-preview.1",
+   "source_contract_version": "1.0.0",
+   "operation": "trends",
+   "job": "trends",
+   "signals": {},
+   "filters": {
+    "startDate": "2025-10-01",
+    "endDate": "2026-10-01"
+   },
+   "operators": {},
+   "output": {
+    "limit": 10
+   },
+   "assumptions": [
+    "limit=10"
+   ],
+   "unresolved": [],
+   "target": {
+    "type": "brand",
+    "entities": [
+     "957B527A-CF2C-4283-A2FD-3F49741DF5DE"
+    ]
+   }
+  },
+  "execution": {
+   "transport": "mcp",
+   "transport_name": "Qloo canonical MCP",
+   "correlation_id": "mcp-5",
+   "duration_ms": 614
+  }
+ }
+}

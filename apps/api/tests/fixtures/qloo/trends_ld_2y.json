@@ -1,0 +1,326 @@
+{
+ "tool": "qloo_trends",
+ "args": {
+  "entities": [
+   "4DF7C265-52D9-4A99-8803-F62C2302D561",
+   "957B527A-CF2C-4283-A2FD-3F49741DF5DE"
+  ],
+  "entity_type": "brand",
+  "start_date": "2024-06-01",
+  "end_date": "2026-10-01"
+ },
+ "envelope": {
+  "schema_version": "1.0-preview.1",
+  "operation": "trends",
+  "status": "ok",
+  "interpretation": {
+   "entity_type": "urn:entity:brand",
+   "start_date": "2024-06-01",
+   "end_date": "2026-10-01"
+  },
+  "resolution": {
+   "contract_version": "1.0-preview.1",
+   "provider": {
+    "contract_version": "1.0-preview.1",
+    "provider_id": "qloo_api",
+    "name": "Qloo native resolution",
+    "entity_strategy": "exact_name_context_or_choice",
+    "tag_strategy": "target_scoped_semantic_search_exact_name_or_choice",
+    "remote": true,
+    "uses_model": false,
+    "fallback": "none"
+   },
+   "outcomes": [
+    {
+     "input": "4DF7C265-52D9-4A99-8803-F62C2302D561",
+     "status": "resolved",
+     "match": "identifier",
+     "selected": {
+      "id": "4DF7C265-52D9-4A99-8803-F62C2302D561",
+      "name": "Liquid Death",
+      "type": "urn:entity:brand",
+      "popularity": 0.9201996914783611,
+      "description": "Liquid Death is a canned water brand known for its mountain water sold in large recyclable cans with a bold, edgy marketing style."
+     },
+     "provenance": {
+      "contract_version": "1.0-preview.1",
+      "provider_id": "qloo_api",
+      "provider_name": "Qloo native resolution",
+      "endpoint": "/entities",
+      "strategy": "identifier_lookup",
+      "remote": true,
+      "uses_model": false
+     }
+    },
+    {
+     "input": "957B527A-CF2C-4283-A2FD-3F49741DF5DE",
+     "status": "resolved",
+     "match": "identifier",
+     "selected": {
+      "id": "957B527A-CF2C-4283-A2FD-3F49741DF5DE",
+      "name": "Pepsi",
+      "type": "urn:entity:brand",
+      "popularity": 0.997016494041464,
+      "description": "Pepsi is a global beverage brand known for its popular cola soft drinks and other flavored beverages."
+     },
+     "provenance": {
+      "contract_version": "1.0-preview.1",
+      "provider_id": "qloo_api",
+      "provider_name": "Qloo native resolution",
+      "endpoint": "/entities",
+      "strategy": "identifier_lookup",
+      "remote": true,
+      "uses_model": false
+     }
+    }
+   ]
+  },
+  "series": [
+   {
+    "entity": {
+     "input": "4DF7C265-52D9-4A99-8803-F62C2302D561",
+     "entityId": "4DF7C265-52D9-4A99-8803-F62C2302D561",
+     "name": "Liquid Death",
+     "type": "urn:entity:brand",
+     "match": "identifier"
+    },
+    "points": [
+     {
+      "date": "2026-09-26",
+      "population_percentile": 0.8533821746990427,
+      "population_rank": "456",
+      "population_rank_velocity": 0,
+      "velocity_fold_change": 0,
+      "population_percent_delta": 0
+     },
+     {
+      "date": "2026-09-19",
+      "population_percentile": 0.8533821746990427,
+      "population_rank": "456",
+      "population_rank_velocity": 0,
+      "velocity_fold_change": 0,
+      "population_percent_delta": 0
+     },
+     {
+      "date": "2026-09-12",
+      "population_percentile": 0.8533821746990427,
+      "population_rank": "456",
+      "population_rank_velocity": 0,
+      "velocity_fold_change": 0,
+      "population_percent_delta": 0
+     },
+     {
+      "date": "2026-09-05",
+      "population_percentile": 0.8533821746990427,
+      "population_rank": "456",
+      "population_rank_velocity": 0,
+      "velocity_fold_change": 0,
+      "population_percent_delta": 0
+     },
+     {
+      "date": "2026-08-29",
+      "population_percentile": 0.8533821746990427,
+      "population_rank": "456",
+      "population_rank_velocity": 0,
+      "velocity_fold_change": 0,
+      "population_percent_delta": 0
+     },
+     {
+      "date": "2026-08-22",
+      "population_percentile": 0.8533821746990427,
+      "population_rank": "456",
+      "population_rank_velocity": 0,
+      "velocity_fold_change": 0,
+      "population_percent_delta": 0
+     },
+     {
+      "date": "2026-08-15",
+      "population_percentile": 0.8533821746990427,
+      "population_rank": "456",
+      "population_rank_velocity": 0,
+      "velocity_fold_change": 0,
+      "population_percent_delta": 0
+     },
+     {
+      "date": "2026-08-08",
+      "population_percentile": 0.8533821746990427,
+      "population_rank": "456",
+      "population_rank_velocity": 0,
+      "velocity_fold_change": 0,
+      "population_percent_delta": 0
+     },
+     {
+      "date": "2026-08-01",
+      "population_percentile": 0.8533821746990427,
+      "population_rank": "456",
+      "population_rank_velocity": 0,
+      "velocity_fold_change": 0,
+      "population_percent_delta": 0
+     },
+     {
+      "date": "2026-07-25",
+      "population_percentile": 0.8533821746990427,
+      "population_rank": "456",
+      "population_rank_velocity": 0,
+      "velocity_fold_change": 0,
+      "population_percent_delta": 0
+     }
+    ]
+   },
+   {
+    "entity": {
+     "input": "957B527A-CF2C-4283-A2FD-3F49741DF5DE",
+     "entityId": "957B527A-CF2C-4283-A2FD-3F49741DF5DE",
+     "name": "Pepsi",
+     "type": "urn:entity:brand",
+     "match": "identifier"
+    },
+    "points": [
+     {
+      "date": "2026-09-26",
+      "population_percentile": 0.36095181601544846,
+      "population_rank": "2138",
+      "population_rank_velocity": 0,
+      "velocity_fold_change": 0,
+      "population_percent_delta": 0
+     },
+     {
+      "date": "2026-09-19",
+      "population_percentile": 0.36095181601544846,
+      "population_rank": "2138",
+      "population_rank_velocity": 0,
+      "velocity_fold_change": 0,
+      "population_percent_delta": 0
+     },
+     {
+      "date": "2026-09-12",
+      "population_percentile": 0.36095181601544846,
+      "population_rank": "2138",
+      "population_rank_velocity": 0,
+      "velocity_fold_change": 0,
+      "population_percent_delta": 0
+     },
+     {
+      "date": "2026-09-05",
+      "population_percentile": 0.36095181601544846,
+      "population_rank": "2138",
+      "population_rank_velocity": 0,
+      "velocity_fold_change": 0,
+      "population_percent_delta": 0
+     },
+     {
+      "date": "2026-08-29",
+      "population_percentile": 0.36095181601544846,
+      "population_rank": "2138",
+      "population_rank_velocity": 0,
+      "velocity_fold_change": 0,
+      "population_percent_delta": 0
+     },
+     {
+      "date": "2026-08-22",
+      "population_percentile": 0.36095181601544846,
+      "population_rank": "2138",
+      "population_rank_velocity": 0,
+      "velocity_fold_change": 0,
+      "population_percent_delta": 0
+     },
+     {
+      "date": "2026-08-15",
+      "population_percentile": 0.36095181601544846,
+      "population_rank": "2138",
+      "population_rank_velocity": 0,
+      "velocity_fold_change": 0,
+      "population_percent_delta": 0
+     },
+     {
+      "date": "2026-08-08",
+      "population_percentile": 0.36095181601544846,
+      "population_rank": "2138",
+      "population_rank_velocity": 0,
+      "velocity_fold_change": 0,
+      "population_percent_delta": 0
+     },
+     {
+      "date": "2026-08-01",
+      "population_percentile": 0.36095181601544846,
+      "population_rank": "2138",
+      "population_rank_velocity": 0,
+      "velocity_fold_change": 0,
+      "population_percent_delta": 0
+     },
+     {
+      "date": "2026-07-25",
+      "population_percentile": 0.36095181601544846,
+      "population_rank": "2138",
+      "population_rank_velocity": 0,
+      "velocity_fold_change": 0,
+      "population_percent_delta": 0
+     }
+    ]
+   }
+  ],
+  "result_count": 2,
+  "provenance": {
+   "source": "Qloo API",
+   "endpoint": "/v2/trending",
+   "documentation": "https://docs.qloo.com/reference/get-trending",
+   "requests": [
+    {
+     "method": "GET",
+     "path": "/v2/trending",
+     "query": {
+      "filter.type": "urn:entity:brand",
+      "filter.start_date": "2024-06-01",
+      "filter.end_date": "2026-10-01",
+      "signal.interests.entities": "4DF7C265-52D9-4A99-8803-F62C2302D561",
+      "take": 10
+     }
+    },
+    {
+     "method": "GET",
+     "path": "/v2/trending",
+     "query": {
+      "filter.type": "urn:entity:brand",
+      "filter.start_date": "2024-06-01",
+      "filter.end_date": "2026-10-01",
+      "signal.interests.entities": "957B527A-CF2C-4283-A2FD-3F49741DF5DE",
+      "take": 10
+     }
+    }
+   ],
+   "transport": "mcp"
+  },
+  "query_intent": {
+   "schema_version": "1.0-preview.1",
+   "source_contract_version": "1.0.0",
+   "operation": "trends",
+   "job": "trends",
+   "signals": {},
+   "filters": {
+    "startDate": "2024-06-01",
+    "endDate": "2026-10-01"
+   },
+   "operators": {},
+   "output": {
+    "limit": 10
+   },
+   "assumptions": [
+    "limit=10"
+   ],
+   "unresolved": [],
+   "target": {
+    "type": "brand",
+    "entities": [
+     "4DF7C265-52D9-4A99-8803-F62C2302D561",
+     "957B527A-CF2C-4283-A2FD-3F49741DF5DE"
+    ]
+   }
+  },
+  "execution": {
+   "transport": "mcp",
+   "transport_name": "Qloo canonical MCP",
+   "correlation_id": "mcp-2",
+   "duration_ms": 2158
+  }
+ }
+}

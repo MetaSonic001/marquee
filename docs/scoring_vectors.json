@@ -1,0 +1,66 @@
+[
+ {
+  "components": {
+   "taste": 1.0,
+   "overlap": 0.5,
+   "local": 0.8,
+   "momentum": null,
+   "sponsor": 0.0
+  },
+  "fits": {
+   "balanced": 74.4,
+   "loved": 72.6,
+   "city": 74.7,
+   "rising": 71.7,
+   "proven": 45.3
+  }
+ },
+ {
+  "components": {
+   "taste": 0.25,
+   "overlap": 1.0,
+   "local": null,
+   "momentum": null,
+   "sponsor": null
+  },
+  "fits": {
+   "balanced": 57.1,
+   "loved": 60.3,
+   "city": 58.3,
+   "rising": 58.3,
+   "proven": 58.3
+  }
+ },
+ {
+  "components": {
+   "taste": 0.6,
+   "overlap": 0.4,
+   "local": 0.2,
+   "momentum": 0.9,
+   "sponsor": 1.0
+  },
+  "fits": {
+   "balanced": 53.0,
+   "loved": 53.5,
+   "city": 41.5,
+   "rising": 66.0,
+   "proven": 69.5
+  }
+ },
+ {
+  "components": {
+   "taste": null,
+   "overlap": null,
+   "local": null,
+   "momentum": null,
+   "sponsor": null
+  },
+  "fits": {
+   "balanced": 0.0,
+   "loved": 0.0,
+   "city": 0.0,
+   "rising": 0.0,
+   "proven": 0.0
+  }
+ }
+]

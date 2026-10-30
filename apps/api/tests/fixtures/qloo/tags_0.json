@@ -1,0 +1,91 @@
+{
+ "tool": "qloo_find_tags",
+ "args": {
+  "query": "soft drinks brand",
+  "limit": 5
+ },
+ "envelope": {
+  "schema_version": "1.0-preview.1",
+  "operation": "find_tags",
+  "status": "ok",
+  "interpretation": {
+   "query": "soft drinks brand",
+   "semantic": true
+  },
+  "results": [
+   {
+    "id": "urn:tag:industry:qloo:soft_drinks",
+    "name": "Soft Drinks",
+    "type": "urn:tag:industry:qloo",
+    "popularity": 0.9925450399256169
+   },
+   {
+    "id": "urn:tag:product_service:qloo:soft_drinks",
+    "name": "Soft Drinks",
+    "type": "urn:tag:product_service:qloo",
+    "popularity": 0.9942715658259402
+   },
+   {
+    "id": "urn:tag:product_category:qloo:soft_drinks",
+    "name": "Soft Drinks",
+    "type": "urn:tag:product_category:qloo",
+    "popularity": 0.9833143076703399
+   },
+   {
+    "id": "urn:tag:keyword:media:soft_drink",
+    "name": "soft drink",
+    "type": "urn:tag:keyword:media",
+    "popularity": 0.9724385768417583
+   },
+   {
+    "id": "urn:tag:product_service:qloo:carbonated_soft_drinks",
+    "name": "Carbonated Soft Drinks",
+    "type": "urn:tag:product_service:qloo",
+    "popularity": 0.9837400877133593
+   }
+  ],
+  "result_count": 5,
+  "provenance": {
+   "source": "Qloo API",
+   "endpoint": "/v2/tags",
+   "documentation": "https://docs.qloo.com/reference/get-tags",
+   "requests": [
+    {
+     "method": "GET",
+     "path": "/v2/tags",
+     "query": {
+      "filter.query": "soft drinks brand",
+      "feature.semantic_search": true,
+      "take": 5
+     }
+    }
+   ],
+   "transport": "mcp"
+  },
+  "query_intent": {
+   "schema_version": "1.0-preview.1",
+   "source_contract_version": "1.0.0",
+   "operation": "find_tags",
+   "job": "find_tags",
+   "signals": {},
+   "filters": {},
+   "operators": {},
+   "output": {
+    "limit": 5
+   },
+   "assumptions": [
+    "semantic=true"
+   ],
+   "unresolved": [],
+   "target": {
+    "concept": "soft drinks brand"
+   }
+  },
+  "execution": {
+   "transport": "mcp",
+   "transport_name": "Qloo canonical MCP",
+   "correlation_id": "mcp-2",
+   "duration_ms": 2161
+  }
+ }
+}

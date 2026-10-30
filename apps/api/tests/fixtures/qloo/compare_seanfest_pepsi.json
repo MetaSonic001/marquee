@@ -1,0 +1,499 @@
+{
+ "tool": "qloo_compare_audiences",
+ "args": {
+  "group_a": [
+   "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+   "AA21934D-3A6E-4973-983F-28604C44E3AC",
+   "B58E846A-D1F1-4C6A-AFA7-9230F74CAEE0",
+   "A854F678-4242-4C4B-A21C-38EE521C885B"
+  ],
+  "group_b": [
+   "957B527A-CF2C-4283-A2FD-3F49741DF5DE"
+  ]
+ },
+ "envelope": {
+  "schema_version": "1.0-preview.1",
+  "operation": "compare_audiences",
+  "status": "ok",
+  "interpretation": {
+   "group_a": [
+    {
+     "input": "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+     "entityId": "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+     "name": "Khruangbin",
+     "type": "urn:entity:artist",
+     "match": "identifier"
+    },
+    {
+     "input": "AA21934D-3A6E-4973-983F-28604C44E3AC",
+     "entityId": "AA21934D-3A6E-4973-983F-28604C44E3AC",
+     "name": "Japanese Breakfast",
+     "type": "urn:entity:artist",
+     "match": "identifier"
+    },
+    {
+     "input": "B58E846A-D1F1-4C6A-AFA7-9230F74CAEE0",
+     "entityId": "B58E846A-D1F1-4C6A-AFA7-9230F74CAEE0",
+     "name": "Mac DeMarco",
+     "type": "urn:entity:artist",
+     "match": "identifier"
+    },
+    {
+     "input": "A854F678-4242-4C4B-A21C-38EE521C885B",
+     "entityId": "A854F678-4242-4C4B-A21C-38EE521C885B",
+     "name": "Alvvays",
+     "type": "urn:entity:artist",
+     "match": "identifier"
+    }
+   ],
+   "group_b": [
+    {
+     "input": "957B527A-CF2C-4283-A2FD-3F49741DF5DE",
+     "entityId": "957B527A-CF2C-4283-A2FD-3F49741DF5DE",
+     "name": "Pepsi",
+     "type": "urn:entity:brand",
+     "match": "identifier"
+    }
+   ]
+  },
+  "resolution": {
+   "contract_version": "1.0-preview.1",
+   "provider": {
+    "contract_version": "1.0-preview.1",
+    "provider_id": "qloo_api",
+    "name": "Qloo native resolution",
+    "entity_strategy": "exact_name_context_or_choice",
+    "tag_strategy": "target_scoped_semantic_search_exact_name_or_choice",
+    "remote": true,
+    "uses_model": false,
+    "fallback": "none"
+   },
+   "outcomes": [
+    {
+     "input": "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+     "status": "resolved",
+     "match": "identifier",
+     "selected": {
+      "id": "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+      "name": "Khruangbin",
+      "type": "urn:entity:artist",
+      "popularity": 0.9919334977446856,
+      "description": "Khruangbin is an American musical trio known for their eclectic blend of global musical influences and instrumental sound."
+     },
+     "provenance": {
+      "contract_version": "1.0-preview.1",
+      "provider_id": "qloo_api",
+      "provider_name": "Qloo native resolution",
+      "endpoint": "/entities",
+      "strategy": "identifier_lookup",
+      "remote": true,
+      "uses_model": false
+     }
+    },
+    {
+     "input": "AA21934D-3A6E-4973-983F-28604C44E3AC",
+     "status": "resolved",
+     "match": "identifier",
+     "selected": {
+      "id": "AA21934D-3A6E-4973-983F-28604C44E3AC",
+      "name": "Japanese Breakfast",
+      "type": "urn:entity:artist",
+      "popularity": 0.9908100576564297,
+      "description": "Japanese Breakfast is an American indie rock band led by Michelle Zauner, known for its dreamy and experimental sound."
+     },
+     "provenance": {
+      "contract_version": "1.0-preview.1",
+      "provider_id": "qloo_api",
+      "provider_name": "Qloo native resolution",
+      "endpoint": "/entities",
+      "strategy": "identifier_lookup",
+      "remote": true,
+      "uses_model": false
+     }
+    },
+    {
+     "input": "B58E846A-D1F1-4C6A-AFA7-9230F74CAEE0",
+     "status": "resolved",
+     "match": "identifier",
+     "selected": {
+      "id": "B58E846A-D1F1-4C6A-AFA7-9230F74CAEE0",
+      "name": "Mac DeMarco",
+      "type": "urn:entity:artist",
+      "popularity": 0.9980871155254022,
+      "description": "Canadian singer-songwriter and multi-instrumentalist known for his laid-back style and lo-fi sound."
+     },
+     "provenance": {
+      "contract_version": "1.0-preview.1",
+      "provider_id": "qloo_api",
+      "provider_name": "Qloo native resolution",
+      "endpoint": "/entities",
+      "strategy": "identifier_lookup",
+      "remote": true,
+      "uses_model": false
+     }
+    },
+    {
+     "input": "A854F678-4242-4C4B-A21C-38EE521C885B",
+     "status": "resolved",
+     "match": "identifier",
+     "selected": {
+      "id": "A854F678-4242-4C4B-A21C-38EE521C885B",
+      "name": "Alvvays",
+      "type": "urn:entity:artist",
+      "popularity": 0.9938058978917786,
+      "description": "Alvvays is a Canadian indie pop band known for their catchy melodies and dreamy sound."
+     },
+     "provenance": {
+      "contract_version": "1.0-preview.1",
+      "provider_id": "qloo_api",
+      "provider_name": "Qloo native resolution",
+      "endpoint": "/entities",
+      "strategy": "identifier_lookup",
+      "remote": true,
+      "uses_model": false
+     }
+    },
+    {
+     "input": "957B527A-CF2C-4283-A2FD-3F49741DF5DE",
+     "status": "resolved",
+     "match": "identifier",
+     "selected": {
+      "id": "957B527A-CF2C-4283-A2FD-3F49741DF5DE",
+      "name": "Pepsi",
+      "type": "urn:entity:brand",
+      "popularity": 0.997016494041464,
+      "description": "Pepsi is a global beverage brand known for its popular cola soft drinks and other flavored beverages."
+     },
+     "provenance": {
+      "contract_version": "1.0-preview.1",
+      "provider_id": "qloo_api",
+      "provider_name": "Qloo native resolution",
+      "endpoint": "/entities",
+      "strategy": "identifier_lookup",
+      "remote": true,
+      "uses_model": false
+     }
+    }
+   ]
+  },
+  "results": {
+   "tags": [],
+   "a": [
+    {
+     "tag_id": "urn:tag:instrument:qloo:drums",
+     "name": "Drums",
+     "type": "urn:tag",
+     "subtype": "urn:tag:instrument:qloo",
+     "entity_id": "C75E4195-3F50-4BF1-B4FE-0B3DFB211923",
+     "popularity": 0.98776233,
+     "query": {
+      "count": "4"
+     }
+    },
+    {
+     "tag_id": "urn:tag:genre:music:indie",
+     "name": "Indie",
+     "type": "urn:tag",
+     "subtype": "urn:tag:genre:music",
+     "entity_id": "585E738B-3D23-4F9C-A30C-FB31A930D30B",
+     "popularity": 0.9996067,
+     "query": {
+      "count": "3"
+     }
+    },
+    {
+     "tag_id": "urn:tag:audience:qloo:dedicated",
+     "name": "DedicateD",
+     "type": "urn:tag",
+     "subtype": "urn:tag:audience:qloo",
+     "entity_id": "5A0F0ADE-6B19-49BB-9AB7-BD1505D4AF68",
+     "popularity": 0.9908824,
+     "query": {
+      "count": "3"
+     }
+    },
+    {
+     "tag_id": "urn:tag:music:qloo:melodic",
+     "name": "Melodic",
+     "type": "urn:tag",
+     "subtype": "urn:tag:music:qloo",
+     "entity_id": "AEDE7DAB-D607-41AD-AAB7-77048675DCAD",
+     "popularity": 0.9827355,
+     "query": {
+      "count": "3"
+     }
+    },
+    {
+     "tag_id": "urn:tag:style:qloo:engaging",
+     "name": "Engaging",
+     "type": "urn:tag",
+     "subtype": "urn:tag:style:qloo",
+     "entity_id": "3F4ACC42-080A-4FC3-85F1-BE70AA7B774A",
+     "popularity": 0.99495006,
+     "query": {
+      "count": "3"
+     }
+    },
+    {
+     "tag_id": "urn:tag:style:qloo:intimate",
+     "name": "Intimate",
+     "type": "urn:tag",
+     "subtype": "urn:tag:style:qloo",
+     "entity_id": "BF2FC01A-8DBA-40F4-B564-AF1A99817E2B",
+     "popularity": 0.9891952,
+     "query": {
+      "count": "3"
+     }
+    },
+    {
+     "tag_id": "urn:tag:genre:music:lo_fi",
+     "name": "Lo - Fi",
+     "type": "urn:tag",
+     "subtype": "urn:tag:genre:music",
+     "entity_id": "F2F8AABB-140A-41EA-A2CB-7FCF2AD21C68",
+     "popularity": 0.9985869,
+     "query": {
+      "count": "3"
+     }
+    },
+    {
+     "tag_id": "urn:tag:instrument:qloo:bass_guitar",
+     "name": "Bass Guitar",
+     "type": "urn:tag",
+     "subtype": "urn:tag:instrument:qloo",
+     "entity_id": "6E9F94F5-1C9B-4DE2-984E-91E96054D325",
+     "popularity": 0.94070673,
+     "query": {
+      "count": "3"
+     }
+    },
+    {
+     "tag_id": "urn:tag:instrument:qloo:guitar",
+     "name": "Guitar",
+     "type": "urn:tag",
+     "subtype": "urn:tag:instrument:qloo",
+     "entity_id": "48648868-95A5-4F0B-B517-71ECBB9F4EBD",
+     "popularity": 0.9918993,
+     "query": {
+      "count": "3"
+     }
+    },
+    {
+     "tag_id": "urn:tag:theme:qloo:love",
+     "name": "Love",
+     "type": "urn:tag",
+     "subtype": "urn:tag:theme:qloo",
+     "entity_id": "FE9F1B33-D668-4A8C-80FD-60B78D5F13FD",
+     "popularity": 0.9934363,
+     "query": {
+      "count": "3"
+     }
+    },
+    {
+     "tag_id": "urn:tag:artist:qloo:laid_back",
+     "name": "Laid-back",
+     "type": "urn:tag",
+     "subtype": "urn:tag:artist:qloo",
+     "entity_id": "CA1336D2-E057-48A2-95E1-F235BFB8F08C",
+     "popularity": 0.52246463,
+     "query": {
+      "count": "2"
+     }
+    },
+    {
+     "tag_id": "urn:tag:instrument:qloo:keyboard",
+     "name": "Keyboard",
+     "type": "urn:tag",
+     "subtype": "urn:tag:instrument:qloo",
+     "entity_id": "D876E436-2726-4F64-A9B6-D4F163EE994E",
+     "popularity": 0.9646506,
+     "query": {
+      "count": "2"
+     }
+    },
+    {
+     "tag_id": "urn:tag:artist:qloo:melodic",
+     "name": "Melodic",
+     "type": "urn:tag",
+     "subtype": "urn:tag:artist:qloo",
+     "entity_id": "03F6ED3F-AFD6-4491-AC63-ACB2822E6506",
+     "popularity": 0.9168785,
+     "query": {
+      "count": "2"
+     }
+    },
+    {
+     "tag_id": "urn:tag:artist:qloo:dreamy",
+     "name": "Dreamy",
+     "type": "urn:tag",
+     "subtype": "urn:tag:artist:qloo",
+     "entity_id": "090C7B7F-4CA3-4092-BB34-72A41307D040",
+     "popularity": 0.66033787,
+     "query": {
+      "count": "2"
+     }
+    },
+    {
+     "tag_id": "urn:tag:artist:qloo:introspective",
+     "name": "Introspective",
+     "type": "urn:tag",
+     "subtype": "urn:tag:artist:qloo",
+     "entity_id": "37B3BB7B-51D4-43D1-BE6B-03C60CB4A1D1",
+     "popularity": 0.948403,
+     "query": {
+      "count": "2"
+     }
+    },
+    {
+     "tag_id": "urn:tag:audience:qloo:youthful",
+     "name": "Youthful",
+     "type": "urn:tag",
+     "subtype": "urn:tag:audience:qloo",
+     "entity_id": "4BE268AF-EF5D-4D05-A959-FDF7A3DD724A",
+     "popularity": 0.97720027,
+     "query": {
+      "count": "2"
+     }
+    },
+    {
+     "tag_id": "urn:tag:theme:qloo:youth",
+     "name": "Youth",
+     "type": "urn:tag",
+     "subtype": "urn:tag:theme:qloo",
+     "entity_id": "B0F17700-99DA-43BE-AF0F-865180858F47",
+     "popularity": 0.95011324,
+     "query": {
+      "count": "2"
+     }
+    },
+    {
+     "tag_id": "urn:tag:music:qloo:dreamy",
+     "name": "Dreamy",
+     "type": "urn:tag",
+     "subtype": "urn:tag:music:qloo",
+     "entity_id": "5ADC6DC6-2264-4CED-8DA1-682DED7098A1",
+     "popularity": 0.89951,
+     "query": {
+      "count": "2"
+     }
+    },
+    {
+     "tag_id": "urn:tag:theme:qloo:nostalgia",
+     "name": "Nostalgia",
+     "type": "urn:tag",
+     "subtype": "urn:tag:theme:qloo",
+     "entity_id": "AAA219BE-CF50-4A2F-8229-D66149E84688",
+     "popularity": 0.9688569,
+     "query": {
+      "count": "2"
+     }
+    },
+    {
+     "tag_id": "urn:tag:theme:qloo:relationships",
+     "name": "Relationships",
+     "type": "urn:tag",
+     "subtype": "urn:tag:theme:qloo",
+     "entity_id": "09D46DB5-52A0-4537-B313-28E49753491C",
+     "popularity": 0.9684871,
+     "query": {
+      "count": "2"
+     }
+    }
+   ],
+   "b": [
+    {
+     "tag_id": "urn:tag:genre:brand:food_and_beverage:drinks",
+     "name": "Drinks",
+     "type": "urn:tag",
+     "subtype": "urn:tag:genre:brand",
+     "entity_id": "27B34F65-C558-4E29-85F8-4F8112675202",
+     "popularity": 0.99313515,
+     "query": {
+      "count": "1"
+     }
+    },
+    {
+     "tag_id": "urn:tag:genre:brand:food_and_beverage",
+     "name": "Food & Beverage",
+     "type": "urn:tag",
+     "subtype": "urn:tag:genre:brand",
+     "entity_id": "48D8DA15-8B27-4A51-873D-8C8D2AD349B5",
+     "popularity": 0.9971977,
+     "query": {
+      "count": "1"
+     }
+    },
+    {
+     "tag_id": "urn:tag:genre:brand:food_and_beverage:drinks:carbonated",
+     "name": "Carbonated",
+     "type": "urn:tag",
+     "subtype": "urn:tag:genre:brand",
+     "entity_id": "BE57E464-5A39-464B-9123-4C2342FE4F53",
+     "popularity": 0.9729909,
+     "query": {
+      "count": "1"
+     }
+    }
+   ],
+   "matchEntities": []
+  },
+  "provenance": {
+   "source": "Qloo API",
+   "endpoint": "/v2/analysis/compare",
+   "documentation": "https://docs.qloo.com/reference/analysis-compare",
+   "requests": [
+    {
+     "method": "GET",
+     "path": "/v2/analysis/compare",
+     "query": {
+      "a.signal.interests.entities": [
+       "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+       "AA21934D-3A6E-4973-983F-28604C44E3AC",
+       "B58E846A-D1F1-4C6A-AFA7-9230F74CAEE0",
+       "A854F678-4242-4C4B-A21C-38EE521C885B"
+      ],
+      "b.signal.interests.entities": [
+       "957B527A-CF2C-4283-A2FD-3F49741DF5DE"
+      ],
+      "take": 10
+     }
+    }
+   ],
+   "transport": "mcp"
+  },
+  "query_intent": {
+   "schema_version": "1.0-preview.1",
+   "source_contract_version": "1.0.0",
+   "operation": "compare_audiences",
+   "job": "compare_audiences",
+   "signals": {
+    "groups": [
+     [
+      "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+      "AA21934D-3A6E-4973-983F-28604C44E3AC",
+      "B58E846A-D1F1-4C6A-AFA7-9230F74CAEE0",
+      "A854F678-4242-4C4B-A21C-38EE521C885B"
+     ],
+     [
+      "957B527A-CF2C-4283-A2FD-3F49741DF5DE"
+     ]
+    ]
+   },
+   "filters": {},
+   "operators": {},
+   "output": {
+    "limit": 10
+   },
+   "assumptions": [
+    "limit=10"
+   ],
+   "unresolved": []
+  },
+  "execution": {
+   "transport": "mcp",
+   "transport_name": "Qloo canonical MCP",
+   "correlation_id": "mcp-2",
+   "duration_ms": 1243
+  }
+ }
+}

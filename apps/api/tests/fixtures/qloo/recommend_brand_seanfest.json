@@ -1,0 +1,988 @@
+{
+ "tool": "qloo_recommend",
+ "args": {
+  "target_type": "brand",
+  "signals": [
+   "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+   "AA21934D-3A6E-4973-983F-28604C44E3AC",
+   "B58E846A-D1F1-4C6A-AFA7-9230F74CAEE0",
+   "A854F678-4242-4C4B-A21C-38EE521C885B"
+  ],
+  "limit": 20
+ },
+ "envelope": {
+  "schema_version": "1.0-preview.1",
+  "operation": "recommend",
+  "status": "ok",
+  "interpretation": {
+   "target_type": "urn:entity:brand",
+   "signals": [
+    {
+     "input": "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+     "entityId": "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+     "name": "Khruangbin",
+     "type": "urn:entity:artist",
+     "match": "identifier"
+    },
+    {
+     "input": "AA21934D-3A6E-4973-983F-28604C44E3AC",
+     "entityId": "AA21934D-3A6E-4973-983F-28604C44E3AC",
+     "name": "Japanese Breakfast",
+     "type": "urn:entity:artist",
+     "match": "identifier"
+    },
+    {
+     "input": "B58E846A-D1F1-4C6A-AFA7-9230F74CAEE0",
+     "entityId": "B58E846A-D1F1-4C6A-AFA7-9230F74CAEE0",
+     "name": "Mac DeMarco",
+     "type": "urn:entity:artist",
+     "match": "identifier"
+    },
+    {
+     "input": "A854F678-4242-4C4B-A21C-38EE521C885B",
+     "entityId": "A854F678-4242-4C4B-A21C-38EE521C885B",
+     "name": "Alvvays",
+     "type": "urn:entity:artist",
+     "match": "identifier"
+    }
+   ],
+   "signal_tags": [],
+   "include_tags": [],
+   "exclude_tags": []
+  },
+  "resolution": {
+   "contract_version": "1.0-preview.1",
+   "provider": {
+    "contract_version": "1.0-preview.1",
+    "provider_id": "qloo_api",
+    "name": "Qloo native resolution",
+    "entity_strategy": "exact_name_context_or_choice",
+    "tag_strategy": "target_scoped_semantic_search_exact_name_or_choice",
+    "remote": true,
+    "uses_model": false,
+    "fallback": "none"
+   },
+   "outcomes": [
+    {
+     "input": "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+     "status": "resolved",
+     "match": "identifier",
+     "selected": {
+      "id": "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+      "name": "Khruangbin",
+      "type": "urn:entity:artist",
+      "popularity": 0.9919334977446856,
+      "description": "Khruangbin is an American musical trio known for their eclectic blend of global musical influences and instrumental sound."
+     },
+     "provenance": {
+      "contract_version": "1.0-preview.1",
+      "provider_id": "qloo_api",
+      "provider_name": "Qloo native resolution",
+      "endpoint": "/entities",
+      "strategy": "identifier_lookup",
+      "remote": true,
+      "uses_model": false
+     }
+    },
+    {
+     "input": "AA21934D-3A6E-4973-983F-28604C44E3AC",
+     "status": "resolved",
+     "match": "identifier",
+     "selected": {
+      "id": "AA21934D-3A6E-4973-983F-28604C44E3AC",
+      "name": "Japanese Breakfast",
+      "type": "urn:entity:artist",
+      "popularity": 0.9908100576564297,
+      "description": "Japanese Breakfast is an American indie rock band led by Michelle Zauner, known for its dreamy and experimental sound."
+     },
+     "provenance": {
+      "contract_version": "1.0-preview.1",
+      "provider_id": "qloo_api",
+      "provider_name": "Qloo native resolution",
+      "endpoint": "/entities",
+      "strategy": "identifier_lookup",
+      "remote": true,
+      "uses_model": false
+     }
+    },
+    {
+     "input": "B58E846A-D1F1-4C6A-AFA7-9230F74CAEE0",
+     "status": "resolved",
+     "match": "identifier",
+     "selected": {
+      "id": "B58E846A-D1F1-4C6A-AFA7-9230F74CAEE0",
+      "name": "Mac DeMarco",
+      "type": "urn:entity:artist",
+      "popularity": 0.9980871155254022,
+      "description": "Canadian singer-songwriter and multi-instrumentalist known for his laid-back style and lo-fi sound."
+     },
+     "provenance": {
+      "contract_version": "1.0-preview.1",
+      "provider_id": "qloo_api",
+      "provider_name": "Qloo native resolution",
+      "endpoint": "/entities",
+      "strategy": "identifier_lookup",
+      "remote": true,
+      "uses_model": false
+     }
+    },
+    {
+     "input": "A854F678-4242-4C4B-A21C-38EE521C885B",
+     "status": "resolved",
+     "match": "identifier",
+     "selected": {
+      "id": "A854F678-4242-4C4B-A21C-38EE521C885B",
+      "name": "Alvvays",
+      "type": "urn:entity:artist",
+      "popularity": 0.9938058978917786,
+      "description": "Alvvays is a Canadian indie pop band known for their catchy melodies and dreamy sound."
+     },
+     "provenance": {
+      "contract_version": "1.0-preview.1",
+      "provider_id": "qloo_api",
+      "provider_name": "Qloo native resolution",
+      "endpoint": "/entities",
+      "strategy": "identifier_lookup",
+      "remote": true,
+      "uses_model": false
+     }
+    }
+   ]
+  },
+  "results": [
+   {
+    "entity_id": "4F94C666-5FFA-4A42-8453-24C2F779EC36",
+    "name": "Urban Outfitters",
+    "type": "urn:entity",
+    "subtype": "urn:entity:brand",
+    "popularity": 0.9985506263667339,
+    "affinity": 0.955184798816922,
+    "explainability": {
+     "signal.interests.entities": [
+      {
+       "entity_id": "A854F678-4242-4C4B-A21C-38EE521C885B",
+       "score": 0.26918688585051753
+      },
+      {
+       "entity_id": "B58E846A-D1F1-4C6A-AFA7-9230F74CAEE0",
+       "score": 0.2514467126716496
+      },
+      {
+       "entity_id": "AA21934D-3A6E-4973-983F-28604C44E3AC",
+       "score": 0.24130923736796528
+      },
+      {
+       "entity_id": "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+       "score": 0.23805716410986752
+      }
+     ]
+    },
+    "properties": {
+     "description": "Established in 1970, this lifestyle retailer serves a youthful audience with a carefully curated collection of clothing, accessories, and home goods. The brand is known for its eclectic aesthetic that draws from vintage trends, indie music culture, and modern bohemian style. Operating primarily as a brick-and-mortar and e-commerce entity, it functions as a destination for creative young adults looking for self-expression through fashion and living space design. It remains a fixture in urban and university areas, maintaining a balance between accessible, trendy apparel and lifestyle products.",
+     "short_description": "Urban Outfitters is a lifestyle retailer offering clothing, homeware, and accessories inspired by creativity and cultural trends.",
+     "image": {
+      "url": "https://images.qloo.com/i/4F94C666-5FFA-4A42-8453-24C2F779EC36-420x-auto.jpg"
+     }
+    }
+   },
+   {
+    "entity_id": "F59D6DB5-5A85-48C6-A2EC-CAAE334D4348",
+    "name": "Dr. Martens",
+    "type": "urn:entity",
+    "subtype": "urn:entity:brand",
+    "popularity": 0.9924480005424556,
+    "affinity": 0.9410534188773361,
+    "explainability": {
+     "signal.interests.entities": [
+      {
+       "entity_id": "A854F678-4242-4C4B-A21C-38EE521C885B",
+       "score": 0.2668878772858239
+      },
+      {
+       "entity_id": "B58E846A-D1F1-4C6A-AFA7-9230F74CAEE0",
+       "score": 0.2553422015889077
+      },
+      {
+       "entity_id": "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+       "score": 0.24166028040131823
+      },
+      {
+       "entity_id": "AA21934D-3A6E-4973-983F-28604C44E3AC",
+       "score": 0.23610964072395021
+      }
+     ]
+    },
+    "properties": {
+     "description": "Originally founded in Britain, this footwear brand has become a global cultural symbol known for its iconic air-cushioned boots and shoes. Its identity is inextricably linked to music, art, and counter-culture, appealing to individuals who value durability and authentic self-expression. While maintaining a heritage-focused core, the brand continuously evolves through collaborations and a diverse range of styles. It occupies a premium spot in the market, serving as a staple choice for those seeking footwear that bridges utility and fashion.",
+     "short_description": "Dr. Martens is a British footwear and clothing brand known for its iconic durable boots and shoes with distinctive yellow stitching.",
+     "image": {
+      "url": "https://images.qloo.com/i/F59D6DB5-5A85-48C6-A2EC-CAAE334D4348-420x-auto.jpg"
+     }
+    }
+   },
+   {
+    "entity_id": "8A2527C6-2C10-443F-A71C-6EDDA5F95E11",
+    "name": "American Apparel",
+    "type": "urn:entity",
+    "subtype": "urn:entity:brand",
+    "popularity": 0.9887186180942855,
+    "affinity": 0.9275577187717966,
+    "explainability": {
+     "signal.interests.entities": [
+      {
+       "entity_id": "A854F678-4242-4C4B-A21C-38EE521C885B",
+       "score": 0.26912357516032936
+      },
+      {
+       "entity_id": "B58E846A-D1F1-4C6A-AFA7-9230F74CAEE0",
+       "score": 0.25241044700982423
+      },
+      {
+       "entity_id": "AA21934D-3A6E-4973-983F-28604C44E3AC",
+       "score": 0.24189533084685821
+      },
+      {
+       "entity_id": "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+       "score": 0.23657064698298813
+      }
+     ]
+    },
+    "properties": {
+     "description": "Originally established in 1989, this brand is a recognized name in the fashion industry for its focus on ethically manufactured, high-quality staples. It specializes in versatile basics like t-shirts, hoodies, and leggings that cater to a broad audience. By prioritizing transparent production and sweatshop-free conditions, the brand has carved a niche for itself as a responsible choice for everyday apparel. Its market positioning bridges the gap between mass-market affordability and social consciousness, maintaining a minimalist aesthetic that remains relevant across multiple generations.",
+     "short_description": "American Apparel is a clothing manufacturer, distributor, and retailer known for ethically made, sweatshop-free apparel including blank t-shirts and timeless basics.",
+     "image": {
+      "url": "https://images.qloo.com/i/8A2527C6-2C10-443F-A71C-6EDDA5F95E11-420x-auto.jpg"
+     }
+    }
+   },
+   {
+    "entity_id": "977160CE-28F9-4BC9-A0B5-C022BF3A5572",
+    "name": "Free People",
+    "type": "urn:entity",
+    "subtype": "urn:entity:brand",
+    "popularity": 0.995855299961011,
+    "affinity": 0.9265071744638004,
+    "explainability": {
+     "signal.interests.entities": [
+      {
+       "entity_id": "A854F678-4242-4C4B-A21C-38EE521C885B",
+       "score": 0.2628103994345947
+      },
+      {
+       "entity_id": "AA21934D-3A6E-4973-983F-28604C44E3AC",
+       "score": 0.2578916714806379
+      },
+      {
+       "entity_id": "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+       "score": 0.24736679060793237
+      },
+      {
+       "entity_id": "B58E846A-D1F1-4C6A-AFA7-9230F74CAEE0",
+       "score": 0.23193113847683502
+      }
+     ]
+    },
+    "properties": {
+     "description": "Established in 1984, the brand serves as a prominent retail destination for bohemian-inspired fashion and lifestyle products. It caters to a creative, free-spirited audience through an eclectic collection of apparel, footwear, and accessories that prioritize romance and individuality. As part of a larger retail corporation, the company maintains a strong market position by blending a vintage-inspired aesthetic with modern, relaxed silhouettes. The brand continues to cultivate a dedicated community through its distinct visual identity and focus on the creative lifestyle.",
+     "short_description": "Free People is a women's clothing brand specializing in bohemian fashion, offering trendy and vintage-inspired apparel and accessories.",
+     "image": {
+      "url": "https://images.qloo.com/i/977160CE-28F9-4BC9-A0B5-C022BF3A5572-420x-auto.jpg"
+     }
+    }
+   },
+   {
+    "entity_id": "62926E8D-2D7E-4428-819E-BF2477D3233F",
+    "name": "Polaroid",
+    "type": "urn:entity",
+    "subtype": "urn:entity:brand",
+    "popularity": 0.9796155345730705,
+    "affinity": 0.9197216988792558,
+    "explainability": {
+     "signal.interests.entities": [
+      {
+       "entity_id": "A854F678-4242-4C4B-A21C-38EE521C885B",
+       "score": 0.26317946792819413
+      },
+      {
+       "entity_id": "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+       "score": 0.25203630481265143
+      },
+      {
+       "entity_id": "B58E846A-D1F1-4C6A-AFA7-9230F74CAEE0",
+       "score": 0.2506408841372636
+      },
+      {
+       "entity_id": "AA21934D-3A6E-4973-983F-28604C44E3AC",
+       "score": 0.23414334312189078
+      }
+     ]
+    },
+    "properties": {
+     "description": "A historic leader in the field of instant photography, recognized globally for its pioneering development of self-developing film and consumer-facing analog hardware. The brand operates at the intersection of technology and art, prioritizing the creation of tangible, physical memories over digital-first alternatives. With a legacy dating back to the late 1930s, it maintains strong market relevance among creative demographics by blending iconic industrial design with modern, user-friendly features. It serves a diverse community of artists, hobbyists, and memory-seekers who value the spontaneous and imperfect nature of analog images.",
+     "short_description": "Polaroid is a brand known for instant photography products, including instant cameras and film, continuing the legacy of the original Polaroid Corporation.",
+     "image": {
+      "url": "https://images.qloo.com/i/62926E8D-2D7E-4428-819E-BF2477D3233F-420x-auto.jpg"
+     }
+    }
+   },
+   {
+    "entity_id": "7F197629-994D-4A85-9F72-49A54A6FB2AD",
+    "name": "Crap Eyewear",
+    "type": "urn:entity",
+    "subtype": "urn:entity:brand",
+    "popularity": 0.8846688477903409,
+    "affinity": 0.9146707688227312,
+    "explainability": {
+     "signal.interests.entities": [
+      {
+       "entity_id": "A854F678-4242-4C4B-A21C-38EE521C885B",
+       "score": 0.25937894575553816
+      },
+      {
+       "entity_id": "AA21934D-3A6E-4973-983F-28604C44E3AC",
+       "score": 0.25472249743510406
+      },
+      {
+       "entity_id": "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+       "score": 0.24613729981435054
+      },
+      {
+       "entity_id": "B58E846A-D1F1-4C6A-AFA7-9230F74CAEE0",
+       "score": 0.23976125699500736
+      }
+     ]
+    },
+    "properties": {
+     "description": "Established in Los Angeles, this independent eyewear brand creates funky, high-quality sunglasses designed by a close-knit group of surfers, skaters, and artists. By utilizing bioacetate and maintaining a focus on carbon neutrality, the brand prioritizes environmental impact alongside accessible pricing. Their design process is rooted in coastal lifestyle, with every frame tested beachside to ensure durability and style. They serve as a go-to for trend-conscious individuals who value authenticity, creativity, and conscious consumption.",
+     "short_description": "Independent sunglass brand offering funky, bioacetate sunglasses designed and tested beachside in Los Angeles, known for premium quality and affordable prices.",
+     "image": {
+      "url": "https://images.qloo.com/i/7F197629-994D-4A85-9F72-49A54A6FB2AD-420x-auto.jpg"
+     }
+    }
+   },
+   {
+    "entity_id": "29D35818-60FF-4833-B2D7-7EB74E4633CF",
+    "name": "Herschel Supply Co",
+    "type": "urn:entity",
+    "subtype": "urn:entity:brand",
+    "popularity": 0.9864979403637844,
+    "affinity": 0.9145360216136511,
+    "explainability": {
+     "signal.interests.entities": [
+      {
+       "entity_id": "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+       "score": 0.25844168306905163
+      },
+      {
+       "entity_id": "B58E846A-D1F1-4C6A-AFA7-9230F74CAEE0",
+       "score": 0.2575047935136716
+      },
+      {
+       "entity_id": "A854F678-4242-4C4B-A21C-38EE521C885B",
+       "score": 0.25513543149954976
+      },
+      {
+       "entity_id": "AA21934D-3A6E-4973-983F-28604C44E3AC",
+       "score": 0.228918091917727
+      }
+     ]
+    },
+    "properties": {
+     "description": "Founded in 2009 in Vancouver, the brand specializes in manufacturing functional, design-led backpacks, travel goods, and accessories. It is widely recognized for combining nostalgic heritage silhouettes with contemporary, clean aesthetics. Its products are geared towards students, professionals, and travelers who value utility and timeless style. The company operates primarily through direct-to-consumer and retail channels, maintaining a reputation for reliability in the everyday-carry market.",
+     "short_description": "Herschel Supply Co. is a design-driven brand specializing in high-quality backpacks, bags, travel goods, and accessories with smart storage solutions and a focus on seamless travel.",
+     "image": {
+      "url": "https://images.qloo.com/i/29D35818-60FF-4833-B2D7-7EB74E4633CF-420x-auto.jpg"
+     }
+    }
+   },
+   {
+    "entity_id": "AB8D769A-CCEB-4C2D-A3D8-21641E0EC664",
+    "name": "Warby Parker",
+    "type": "urn:entity",
+    "subtype": "urn:entity:brand",
+    "popularity": 0.9628672170331067,
+    "affinity": 0.9138243461755805,
+    "explainability": {
+     "signal.interests.entities": [
+      {
+       "entity_id": "AA21934D-3A6E-4973-983F-28604C44E3AC",
+       "score": 0.2653986772068108
+      },
+      {
+       "entity_id": "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+       "score": 0.2567443220638663
+      },
+      {
+       "entity_id": "A854F678-4242-4C4B-A21C-38EE521C885B",
+       "score": 0.2528397650654422
+      },
+      {
+       "entity_id": "B58E846A-D1F1-4C6A-AFA7-9230F74CAEE0",
+       "score": 0.22501723566388054
+      }
+     ]
+    },
+    "properties": {
+     "description": "An American direct-to-consumer eyewear company that offers affordable, stylish prescription glasses, sunglasses, and contact lenses. Founded with a social mission, the brand operates under a buy-a-pair-give-a-pair model to distribute eyewear to people in need. It has grown from an online-only startup into an omnichannel retailer with numerous physical showrooms, providing a seamless customer experience for vision care and stylish optical products. The company is recognized for its disruptive retail approach and commitment to balancing profit with social responsibility.",
+     "short_description": "Warby Parker is a retailer of eyewear including prescription glasses, sunglasses, and contacts, known for its Buy a Pair, Give a Pair program.",
+     "image": {
+      "url": "https://images.qloo.com/i/AB8D769A-CCEB-4C2D-A3D8-21641E0EC664-420x-auto.jpg"
+     }
+    }
+   },
+   {
+    "entity_id": "55F4DCEE-DB84-42AD-A57E-D62B86AE02E3",
+    "name": "Society6",
+    "type": "urn:entity",
+    "subtype": "urn:entity:brand",
+    "popularity": 0.9719448729467207,
+    "affinity": 0.9116920708966652,
+    "explainability": {
+     "signal.interests.entities": [
+      {
+       "entity_id": "AA21934D-3A6E-4973-983F-28604C44E3AC",
+       "score": 0.2625820620792151
+      },
+      {
+       "entity_id": "A854F678-4242-4C4B-A21C-38EE521C885B",
+       "score": 0.2553934170961382
+      },
+      {
+       "entity_id": "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+       "score": 0.2544613098117612
+      },
+      {
+       "entity_id": "B58E846A-D1F1-4C6A-AFA7-9230F74CAEE0",
+       "score": 0.22756321101288557
+      }
+     ]
+    },
+    "properties": {
+     "description": "An online platform that bridges the gap between independent creators and consumers looking to curate unique spaces. By offering an extensive range of goods printed with original artwork, the brand empowers users to integrate professional-grade design into their daily lives. It functions as a global marketplace that highlights diverse artistic perspectives while maintaining an accessible price point. Through its print-on-demand model, it supports a wide community of artists while providing customers with customizable home decor and lifestyle accessories.",
+     "short_description": "Society6 is an online marketplace offering artist-designed wall art, home decor, tech accessories, and lifestyle products.",
+     "image": {
+      "url": "https://images.qloo.com/i/55F4DCEE-DB84-42AD-A57E-D62B86AE02E3-420x-auto.jpg"
+     }
+    }
+   },
+   {
+    "entity_id": "51844CEA-DECE-4071-ABF4-1A6834639F2B",
+    "name": "UNIF",
+    "type": "urn:entity",
+    "subtype": "urn:entity:brand",
+    "popularity": 0.9894221152379177,
+    "affinity": 0.9116495189640345,
+    "explainability": {
+     "signal.interests.entities": [
+      {
+       "entity_id": "A854F678-4242-4C4B-A21C-38EE521C885B",
+       "score": 0.2690214878773127
+      },
+      {
+       "entity_id": "B58E846A-D1F1-4C6A-AFA7-9230F74CAEE0",
+       "score": 0.24900857365380077
+      },
+      {
+       "entity_id": "AA21934D-3A6E-4973-983F-28604C44E3AC",
+       "score": 0.2487474550756749
+      },
+      {
+       "entity_id": "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+       "score": 0.2332224833932115
+      }
+     ]
+    },
+    "properties": {
+     "description": "UNIF is a Los Angeles-based fashion brand that has cultivated a strong following through its distinct, subculture-inspired aesthetic. Known for its signature platform boots, graphic tees, and curated collections, the brand emphasizes individuality and rejects mass production. It operates primarily as a direct-to-consumer label, targeting fashion-conscious youth who value bold, nostalgic style. The brand's commitment to small-batch production reinforces its appeal as a niche, trend-setting entity in the contemporary fashion landscape.",
+     "short_description": "UNIF is a fashion brand known for platform boots, baby tees, dresses, denim, and shoes, emphasizing small-batch production and quick shipping.",
+     "image": {
+      "url": "https://images.qloo.com/i/51844CEA-DECE-4071-ABF4-1A6834639F2B-420x-auto.jpg"
+     }
+    }
+   },
+   {
+    "entity_id": "E9A70778-6E65-49A4-8C38-A24D20C05BDA",
+    "name": "Fj\u00e4llr\u00e4ven",
+    "type": "urn:entity",
+    "subtype": "urn:entity:brand",
+    "popularity": 0.8794053330169009,
+    "affinity": 0.911006425832551,
+    "explainability": {
+     "signal.interests.entities": [
+      {
+       "entity_id": "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+       "score": 0.2717303373495078
+      },
+      {
+       "entity_id": "A854F678-4242-4C4B-A21C-38EE521C885B",
+       "score": 0.24683000234501054
+      },
+      {
+       "entity_id": "AA21934D-3A6E-4973-983F-28604C44E3AC",
+       "score": 0.24226538772332312
+      },
+      {
+       "entity_id": "B58E846A-D1F1-4C6A-AFA7-9230F74CAEE0",
+       "score": 0.23917427258215862
+      }
+     ]
+    },
+    "properties": {
+     "description": "Established in Sweden, this outdoor brand focuses on creating durable, timeless, and functional gear that respects the environment. Known for its signature backpacks and cold-climate apparel, the brand is guided by the philosophy that anyone can become an explorer with the right equipment. It balances technical performance for extreme Arctic expeditions with simple, rugged style suitable for everyday urban use, all while maintaining a strong commitment to sustainability.",
+     "short_description": "Fj\u00e4llr\u00e4ven is a Swedish outdoor brand known for durable backpacks, outdoor clothing, and the iconic K\u00e5nken bag.",
+     "image": {
+      "url": "https://images.qloo.com/i/E9A70778-6E65-49A4-8C38-A24D20C05BDA-420x-auto.jpg"
+     }
+    }
+   },
+   {
+    "entity_id": "01096D2C-FC7E-463B-BF8D-FDFE3C6B0256",
+    "name": "Buffalo Exchange",
+    "type": "urn:entity",
+    "subtype": "urn:entity:brand",
+    "popularity": 0.8537488769473309,
+    "affinity": 0.9108716016282948,
+    "explainability": {
+     "signal.interests.entities": [
+      {
+       "entity_id": "AA21934D-3A6E-4973-983F-28604C44E3AC",
+       "score": 0.2625122442020768
+      },
+      {
+       "entity_id": "A854F678-4242-4C4B-A21C-38EE521C885B",
+       "score": 0.2551507151326858
+      },
+      {
+       "entity_id": "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+       "score": 0.24521229770822459
+      },
+      {
+       "entity_id": "B58E846A-D1F1-4C6A-AFA7-9230F74CAEE0",
+       "score": 0.23712474295701275
+      }
+     ]
+    },
+    "properties": {
+     "description": "Established in 1974, this pioneer in the resale industry operates over 40 brick-and-mortar stores across the United States. The brand offers a unique buy-sell-trade business model, allowing customers to receive cash or store trade on-the-spot for their gently used clothing and accessories. Focused on sustainability, the company promotes the circular economy by providing an accessible and fun environment for curating a personal wardrobe. The business remains committed to its founding tenets of respect, fairness, and community-building.",
+     "short_description": "Buffalo Exchange is a US-based retail brand specializing in buying, selling, and trading new and recycled fashion through around 40 thrift store locations.",
+     "image": {
+      "url": "https://images.qloo.com/i/01096D2C-FC7E-463B-BF8D-FDFE3C6B0256-420x-auto.jpg"
+     }
+    }
+   },
+   {
+    "entity_id": "DB4CE34E-3A63-4947-946F-9D52502C5762",
+    "name": "Patagonia",
+    "type": "urn:entity",
+    "subtype": "urn:entity:brand",
+    "popularity": 0.995923106914614,
+    "affinity": 0.9091632941503393,
+    "explainability": {
+     "signal.interests.entities": [
+      {
+       "entity_id": "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+       "score": 0.2837051719998906
+      },
+      {
+       "entity_id": "A854F678-4242-4C4B-A21C-38EE521C885B",
+       "score": 0.24532389091467557
+      },
+      {
+       "entity_id": "B58E846A-D1F1-4C6A-AFA7-9230F74CAEE0",
+       "score": 0.24196325909561428
+      },
+      {
+       "entity_id": "AA21934D-3A6E-4973-983F-28604C44E3AC",
+       "score": 0.22900767798981955
+      }
+     ]
+    },
+    "properties": {
+     "description": "Founded in 1973, this company is a pioneer in technical outdoor apparel, recognized for its unwavering commitment to environmental and social responsibility. It produces high-performance gear designed for durability, famously encouraging customers to repair rather than replace products. Operating as a purpose-driven entity, it allocates significant resources and profits toward grassroots environmental activism and planetary conservation. The brand holds a unique position as a leader in the sustainable fashion sector, effectively blending technical expertise with a radical philosophy centered on long-term ecological impact.",
+     "short_description": "Patagonia is an outdoor apparel company known for sustainable clothing and gear for activities like climbing, surfing, skiing, and trail running.",
+     "image": {
+      "url": "https://images.qloo.com/i/DB4CE34E-3A63-4947-946F-9D52502C5762-420x-auto.jpg"
+     }
+    }
+   },
+   {
+    "entity_id": "AC8F9047-F23D-4A54-BBAA-A3CBD2991C02",
+    "name": "Vans",
+    "type": "urn:entity",
+    "subtype": "urn:entity:brand",
+    "popularity": 0.9996779169703853,
+    "affinity": 0.9076612918640174,
+    "explainability": {
+     "signal.interests.entities": [
+      {
+       "entity_id": "B58E846A-D1F1-4C6A-AFA7-9230F74CAEE0",
+       "score": 0.2799893024352429
+      },
+      {
+       "entity_id": "A854F678-4242-4C4B-A21C-38EE521C885B",
+       "score": 0.26178121206591076
+      },
+      {
+       "entity_id": "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+       "score": 0.24445449026690405
+      },
+      {
+       "entity_id": "AA21934D-3A6E-4973-983F-28604C44E3AC",
+       "score": 0.21377499523194227
+      }
+     ]
+    },
+    "properties": {
+     "description": "Originally founded in 1966, this footwear manufacturer evolved from a specialized skate shoe company into a global pillar of youth culture and casual fashion. The brand is renowned for its iconic silhouettes like the Slip-On, Authentic, and Old Skool, which have become staples in streetwear wardrobes worldwide. By supporting the global skateboarding community, music festivals, and artistic initiatives, the company maintains a deep connection to its core identity of creative self-expression. It operates as a vital part of the VF Corporation portfolio, emphasizing durability, accessibility, and a non-conformist 'Off The Wall' spirit.",
+     "short_description": "Vans is a popular brand known for its skateboarding shoes, apparel, and accessories.",
+     "image": {
+      "url": "https://images.qloo.com/i/AC8F9047-F23D-4A54-BBAA-A3CBD2991C02-420x-auto.jpg"
+     }
+    }
+   },
+   {
+    "entity_id": "8EBDD1F4-6EA0-410E-83AC-35727088764D",
+    "name": "Ban.do",
+    "type": "urn:entity",
+    "subtype": "urn:entity:brand",
+    "popularity": 0.9687918496041769,
+    "affinity": 0.9054834869057484,
+    "explainability": {
+     "signal.interests.entities": [
+      {
+       "entity_id": "AA21934D-3A6E-4973-983F-28604C44E3AC",
+       "score": 0.2727929870491832
+      },
+      {
+       "entity_id": "A854F678-4242-4C4B-A21C-38EE521C885B",
+       "score": 0.26199325747222063
+      },
+      {
+       "entity_id": "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+       "score": 0.23976380802518157
+      },
+      {
+       "entity_id": "B58E846A-D1F1-4C6A-AFA7-9230F74CAEE0",
+       "score": 0.22544994745341462
+      }
+     ]
+    },
+    "properties": {
+     "description": "An upbeat lifestyle brand founded in 2008 that focuses on bringing color and joy into everyday life through its product range. The company creates planners, stationery, home decor, and apparel aimed at encouraging self-care and positive mental health. By emphasizing the importance of putting oneself first, the brand has cultivated a loyal audience of individuals who seek to combine productivity with personal happiness. Its offerings are known for their vibrant, eclectic aesthetic and emphasis on creative expression.",
+     "short_description": "ban.do is a lifestyle brand offering cheerful and colorful clothes, accessories, planners, and stationery designed to inspire joy and help you be your best self.",
+     "image": {
+      "url": "https://images.qloo.com/i/8EBDD1F4-6EA0-410E-83AC-35727088764D-420x-auto.jpg"
+     }
+    }
+   },
+   {
+    "entity_id": "1BFF764A-D06D-48CA-9075-1E0F2A3FCE3D",
+    "name": "Fj\u00e4llr\u00e4ven",
+    "type": "urn:entity",
+    "subtype": "urn:entity:brand",
+    "popularity": 0.9548914241155431,
+    "affinity": 0.9045553525203933,
+    "explainability": {
+     "signal.interests.entities": [
+      {
+       "entity_id": "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+       "score": 0.27007390941540266
+      },
+      {
+       "entity_id": "A854F678-4242-4C4B-A21C-38EE521C885B",
+       "score": 0.24933478247050828
+      },
+      {
+       "entity_id": "B58E846A-D1F1-4C6A-AFA7-9230F74CAEE0",
+       "score": 0.24257527816240845
+      },
+      {
+       "entity_id": "AA21934D-3A6E-4973-983F-28604C44E3AC",
+       "score": 0.2380160299516806
+      }
+     ]
+    },
+    "properties": {
+     "description": "Established in Sweden in 1960, this company is a premier manufacturer of high-quality outdoor clothing and equipment designed to promote a life in nature. The brand is globally recognized for its durable, function-first products, most notably the iconic K\u00e5nken backpack. Its market positioning balances rugged technical performance with clean Scandinavian design, catering to both serious backcountry adventurers and daily urban users. Central to the brand\u2019s identity is a deep-rooted commitment to environmental sustainability and responsible production practices.",
+     "short_description": "Fj\u00e4llr\u00e4ven is a Swedish outdoor brand known for durable, sustainable backpacks, clothing, and gear designed for nature and everyday use.",
+     "image": {
+      "url": "https://images.qloo.com/i/1BFF764A-D06D-48CA-9075-1E0F2A3FCE3D-420x-auto.jpg"
+     }
+    }
+   },
+   {
+    "entity_id": "67561DC2-E5B9-473A-BA0D-344B3C49ABA9",
+    "name": "Lazy Oaf",
+    "type": "urn:entity",
+    "subtype": "urn:entity:brand",
+    "popularity": 0.9835144344052482,
+    "affinity": 0.9042967855973606,
+    "explainability": {
+     "signal.interests.entities": [
+      {
+       "entity_id": "A854F678-4242-4C4B-A21C-38EE521C885B",
+       "score": 0.2686777044004821
+      },
+      {
+       "entity_id": "AA21934D-3A6E-4973-983F-28604C44E3AC",
+       "score": 0.24992834363296215
+      },
+      {
+       "entity_id": "B58E846A-D1F1-4C6A-AFA7-9230F74CAEE0",
+       "score": 0.24846783184762292
+      },
+      {
+       "entity_id": "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+       "score": 0.23292612011893293
+      }
+     ]
+    },
+    "properties": {
+     "description": "Established in London in 2001, this independent streetwear brand has carved out a unique space in the fashion world through its signature playful and graphic-heavy aesthetic. Focusing on youth nostalgia and individuality, the brand produces a range of apparel and accessories that prioritize creativity over industry trends. With a design language characterized by bold prints and quirky patterns, it appeals to a global community of consumers who view fashion as a tool for self-expression. By maintaining its independent roots and operational agility, the label continues to foster a cult following centered on fun, authenticity, and artistic collaboration.",
+     "short_description": "Lazy Oaf is an independent streetwear brand known for its unique, playful, and youth nostalgia-inspired men's and women's clothing.",
+     "image": {
+      "url": "https://images.qloo.com/i/67561DC2-E5B9-473A-BA0D-344B3C49ABA9-420x-auto.jpg"
+     }
+    }
+   },
+   {
+    "entity_id": "5EA79857-0E68-48CC-8345-3A786B231326",
+    "name": "Allsaints",
+    "type": "urn:entity",
+    "subtype": "urn:entity:brand",
+    "popularity": 0.9808106321303249,
+    "affinity": 0.903521900994476,
+    "explainability": {
+     "signal.interests.entities": [
+      {
+       "entity_id": "A854F678-4242-4C4B-A21C-38EE521C885B",
+       "score": 0.26188756373324773
+      },
+      {
+       "entity_id": "B58E846A-D1F1-4C6A-AFA7-9230F74CAEE0",
+       "score": 0.2509936632515844
+      },
+      {
+       "entity_id": "AA21934D-3A6E-4973-983F-28604C44E3AC",
+       "score": 0.2471649313185055
+      },
+      {
+       "entity_id": "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+       "score": 0.23995384169666242
+      }
+     ]
+    },
+    "properties": {
+     "description": "Established in 1994, this British fashion house has become globally recognized for its signature leather jackets and dark, urban-inspired tailoring. The brand occupies a premium space in the market, balancing high-quality construction with an edgy, non-conformist personality that resonates with creative individuals. Its offerings span menswear, womenswear, and footwear, all unified by a consistent commitment to authentic design and effortless style. With a strong physical and digital presence, the label serves an audience that values self-expression and modern, timeless wardrobe staples.",
+     "short_description": "AllSaints is a British fashion retailer known for its iconic leather jackets, clothing, footwear, and accessories for men and women.",
+     "image": {
+      "url": "https://images.qloo.com/i/5EA79857-0E68-48CC-8345-3A786B231326-420x-auto.jpg"
+     }
+    }
+   },
+   {
+    "entity_id": "92384FD1-363D-4423-926C-EAF478CE079B",
+    "name": "St\u00fcssy",
+    "type": "urn:entity",
+    "subtype": "urn:entity:brand",
+    "popularity": 0.9963384245054331,
+    "affinity": 0.9030574390799471,
+    "explainability": {
+     "signal.interests.entities": [
+      {
+       "entity_id": "B58E846A-D1F1-4C6A-AFA7-9230F74CAEE0",
+       "score": 0.2789438520166566
+      },
+      {
+       "entity_id": "A854F678-4242-4C4B-A21C-38EE521C885B",
+       "score": 0.25953042712821245
+      },
+      {
+       "entity_id": "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+       "score": 0.24484886325809743
+      },
+      {
+       "entity_id": "AA21934D-3A6E-4973-983F-28604C44E3AC",
+       "score": 0.2166768575970335
+      }
+     ]
+    },
+    "properties": {
+     "description": "Established in the early 1980s by Shawn Stussy, the brand evolved from a local surf subculture project into a global authority in streetwear. Known for its distinct, hand-drawn logo and graphic-heavy apparel, the brand maintains a balance between heritage authenticity and modern cultural relevance. It serves a broad audience of individuals engaged in skate, music, and art, while keeping its core aesthetic accessible. The company operates through a direct-to-consumer and wholesale model, cementing its status as an iconic, independent, and influential force in fashion.",
+     "short_description": "St\u00fcssy is an American fashion brand known for its surfwear and streetwear collections since the 1980s.",
+     "image": {
+      "url": "https://images.qloo.com/i/92384FD1-363D-4423-926C-EAF478CE079B-420x-auto.jpg"
+     }
+    }
+   },
+   {
+    "entity_id": "632FE105-DF1C-4279-85BD-5E86858E5981",
+    "name": "Madewell",
+    "type": "urn:entity",
+    "subtype": "urn:entity:brand",
+    "popularity": 0.9862775677645742,
+    "affinity": 0.9029498230021314,
+    "explainability": {
+     "signal.interests.entities": [
+      {
+       "entity_id": "AA21934D-3A6E-4973-983F-28604C44E3AC",
+       "score": 0.2684065396421481
+      },
+      {
+       "entity_id": "A854F678-4242-4C4B-A21C-38EE521C885B",
+       "score": 0.2539926436617532
+      },
+      {
+       "entity_id": "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+       "score": 0.2522426361529339
+      },
+      {
+       "entity_id": "B58E846A-D1F1-4C6A-AFA7-9230F74CAEE0",
+       "score": 0.2253581805431647
+      }
+     ]
+    },
+    "properties": {
+     "description": "Established in 2006, this brand has become a staple for those seeking high-quality denim and effortless, everyday apparel. It bridges the gap between mass-market affordability and luxury durability, offering a curated selection of clothing, footwear, and leather accessories. The brand is deeply committed to sustainability and ethical production practices, often emphasizing community and social responsibility. With a focus on versatility, the collections are designed to provide a timeless base for a modern, active lifestyle.",
+     "short_description": "Madewell is a clothing brand known for women's and men's jeans, clothing, shoes, and bags, emphasizing quality denim and casual style.",
+     "image": {
+      "url": "https://images.qloo.com/i/632FE105-DF1C-4279-85BD-5E86858E5981-420x-auto.jpg"
+     }
+    }
+   }
+  ],
+  "result_count": 20,
+  "explainability": {
+   "signal.interests.entities": {
+    "effect_on_top3_recs": [
+     {
+      "entity_id": "A854F678-4242-4C4B-A21C-38EE521C885B",
+      "avg_score": 0.26839944609889027
+     },
+     {
+      "entity_id": "B58E846A-D1F1-4C6A-AFA7-9230F74CAEE0",
+      "avg_score": 0.2530664537567939
+     },
+     {
+      "entity_id": "AA21934D-3A6E-4973-983F-28604C44E3AC",
+      "avg_score": 0.23977140297959124
+     },
+     {
+      "entity_id": "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+      "avg_score": 0.23876269716472462
+     }
+    ],
+    "effect_on_top5_recs": [
+     {
+      "entity_id": "A854F678-4242-4C4B-A21C-38EE521C885B",
+      "avg_score": 0.26623764113189197
+     },
+     {
+      "entity_id": "B58E846A-D1F1-4C6A-AFA7-9230F74CAEE0",
+      "avg_score": 0.24835427677689603
+     },
+     {
+      "entity_id": "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+      "avg_score": 0.24313823738295154
+     },
+     {
+      "entity_id": "AA21934D-3A6E-4973-983F-28604C44E3AC",
+      "avg_score": 0.24226984470826052
+     }
+    ],
+    "effect_on_top10_recs": [
+     {
+      "entity_id": "A854F678-4242-4C4B-A21C-38EE521C885B",
+      "avg_score": 0.26229572529534406
+     },
+     {
+      "entity_id": "AA21934D-3A6E-4973-983F-28604C44E3AC",
+      "avg_score": 0.24717180072558342
+     },
+     {
+      "entity_id": "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+      "avg_score": 0.24646982850669988
+     },
+     {
+      "entity_id": "B58E846A-D1F1-4C6A-AFA7-9230F74CAEE0",
+      "avg_score": 0.2440626454723726
+     }
+    ],
+    "effect_on_all_recs": [
+     {
+      "entity_id": "A854F678-4242-4C4B-A21C-38EE521C885B",
+      "avg_score": 0.25937297261390746
+     },
+     {
+      "entity_id": "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+      "avg_score": 0.2494804880529368
+     },
+     {
+      "entity_id": "AA21934D-3A6E-4973-983F-28604C44E3AC",
+      "avg_score": 0.24561320007972548
+     },
+     {
+      "entity_id": "B58E846A-D1F1-4C6A-AFA7-9230F74CAEE0",
+      "avg_score": 0.24553333925343032
+     }
+    ]
+   }
+  },
+  "provenance": {
+   "source": "Qloo API",
+   "endpoint": "/v2/insights",
+   "documentation": "https://docs.qloo.com/reference/insights-api-deep-dive",
+   "requests": [
+    {
+     "method": "GET",
+     "path": "/v2/insights",
+     "query": {
+      "filter.type": "urn:entity:brand",
+      "take": 20,
+      "signal.interests.entities": [
+       "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+       "AA21934D-3A6E-4973-983F-28604C44E3AC",
+       "B58E846A-D1F1-4C6A-AFA7-9230F74CAEE0",
+       "A854F678-4242-4C4B-A21C-38EE521C885B"
+      ],
+      "feature.explainability": true
+     }
+    }
+   ],
+   "transport": "mcp"
+  },
+  "query_intent": {
+   "schema_version": "1.0-preview.1",
+   "source_contract_version": "1.0.0",
+   "operation": "recommend",
+   "job": "recommend",
+   "signals": {
+    "entities": [
+     "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+     "AA21934D-3A6E-4973-983F-28604C44E3AC",
+     "B58E846A-D1F1-4C6A-AFA7-9230F74CAEE0",
+     "A854F678-4242-4C4B-A21C-38EE521C885B"
+    ]
+   },
+   "filters": {},
+   "operators": {},
+   "output": {
+    "limit": 20,
+    "explain": true
+   },
+   "assumptions": [
+    "explain=true"
+   ],
+   "unresolved": [],
+   "target": {
+    "type": "brand"
+   }
+  },
+  "execution": {
+   "transport": "mcp",
+   "transport_name": "Qloo canonical MCP",
+   "correlation_id": "mcp-2",
+   "duration_ms": 1611
+  }
+ }
+}

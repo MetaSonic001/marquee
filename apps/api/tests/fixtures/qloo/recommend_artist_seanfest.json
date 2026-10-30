@@ -1,0 +1,490 @@
+{
+ "tool": "qloo_recommend",
+ "args": {
+  "target_type": "artist",
+  "signals": [
+   "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+   "AA21934D-3A6E-4973-983F-28604C44E3AC",
+   "B58E846A-D1F1-4C6A-AFA7-9230F74CAEE0",
+   "A854F678-4242-4C4B-A21C-38EE521C885B"
+  ],
+  "limit": 20,
+  "explain": false
+ },
+ "envelope": {
+  "schema_version": "1.0-preview.1",
+  "operation": "recommend",
+  "status": "ok",
+  "interpretation": {
+   "target_type": "urn:entity:artist",
+   "signals": [
+    {
+     "input": "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+     "entityId": "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+     "name": "Khruangbin",
+     "type": "urn:entity:artist",
+     "match": "identifier"
+    },
+    {
+     "input": "AA21934D-3A6E-4973-983F-28604C44E3AC",
+     "entityId": "AA21934D-3A6E-4973-983F-28604C44E3AC",
+     "name": "Japanese Breakfast",
+     "type": "urn:entity:artist",
+     "match": "identifier"
+    },
+    {
+     "input": "B58E846A-D1F1-4C6A-AFA7-9230F74CAEE0",
+     "entityId": "B58E846A-D1F1-4C6A-AFA7-9230F74CAEE0",
+     "name": "Mac DeMarco",
+     "type": "urn:entity:artist",
+     "match": "identifier"
+    },
+    {
+     "input": "A854F678-4242-4C4B-A21C-38EE521C885B",
+     "entityId": "A854F678-4242-4C4B-A21C-38EE521C885B",
+     "name": "Alvvays",
+     "type": "urn:entity:artist",
+     "match": "identifier"
+    }
+   ],
+   "signal_tags": [],
+   "include_tags": [],
+   "exclude_tags": []
+  },
+  "resolution": {
+   "contract_version": "1.0-preview.1",
+   "provider": {
+    "contract_version": "1.0-preview.1",
+    "provider_id": "qloo_api",
+    "name": "Qloo native resolution",
+    "entity_strategy": "exact_name_context_or_choice",
+    "tag_strategy": "target_scoped_semantic_search_exact_name_or_choice",
+    "remote": true,
+    "uses_model": false,
+    "fallback": "none"
+   },
+   "outcomes": [
+    {
+     "input": "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+     "status": "resolved",
+     "match": "identifier",
+     "selected": {
+      "id": "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+      "name": "Khruangbin",
+      "type": "urn:entity:artist",
+      "popularity": 0.9919334977446856,
+      "description": "Khruangbin is an American musical trio known for their eclectic blend of global musical influences and instrumental sound."
+     },
+     "provenance": {
+      "contract_version": "1.0-preview.1",
+      "provider_id": "qloo_api",
+      "provider_name": "Qloo native resolution",
+      "endpoint": "/entities",
+      "strategy": "identifier_lookup",
+      "remote": true,
+      "uses_model": false
+     }
+    },
+    {
+     "input": "AA21934D-3A6E-4973-983F-28604C44E3AC",
+     "status": "resolved",
+     "match": "identifier",
+     "selected": {
+      "id": "AA21934D-3A6E-4973-983F-28604C44E3AC",
+      "name": "Japanese Breakfast",
+      "type": "urn:entity:artist",
+      "popularity": 0.9908100576564297,
+      "description": "Japanese Breakfast is an American indie rock band led by Michelle Zauner, known for its dreamy and experimental sound."
+     },
+     "provenance": {
+      "contract_version": "1.0-preview.1",
+      "provider_id": "qloo_api",
+      "provider_name": "Qloo native resolution",
+      "endpoint": "/entities",
+      "strategy": "identifier_lookup",
+      "remote": true,
+      "uses_model": false
+     }
+    },
+    {
+     "input": "B58E846A-D1F1-4C6A-AFA7-9230F74CAEE0",
+     "status": "resolved",
+     "match": "identifier",
+     "selected": {
+      "id": "B58E846A-D1F1-4C6A-AFA7-9230F74CAEE0",
+      "name": "Mac DeMarco",
+      "type": "urn:entity:artist",
+      "popularity": 0.9980871155254022,
+      "description": "Canadian singer-songwriter and multi-instrumentalist known for his laid-back style and lo-fi sound."
+     },
+     "provenance": {
+      "contract_version": "1.0-preview.1",
+      "provider_id": "qloo_api",
+      "provider_name": "Qloo native resolution",
+      "endpoint": "/entities",
+      "strategy": "identifier_lookup",
+      "remote": true,
+      "uses_model": false
+     }
+    },
+    {
+     "input": "A854F678-4242-4C4B-A21C-38EE521C885B",
+     "status": "resolved",
+     "match": "identifier",
+     "selected": {
+      "id": "A854F678-4242-4C4B-A21C-38EE521C885B",
+      "name": "Alvvays",
+      "type": "urn:entity:artist",
+      "popularity": 0.9938058978917786,
+      "description": "Alvvays is a Canadian indie pop band known for their catchy melodies and dreamy sound."
+     },
+     "provenance": {
+      "contract_version": "1.0-preview.1",
+      "provider_id": "qloo_api",
+      "provider_name": "Qloo native resolution",
+      "endpoint": "/entities",
+      "strategy": "identifier_lookup",
+      "remote": true,
+      "uses_model": false
+     }
+    }
+   ]
+  },
+  "results": [
+   {
+    "entity_id": "86E45BD3-3265-4B47-BF9A-367D583F12A6",
+    "name": "Men I Trust",
+    "type": "urn:entity",
+    "subtype": "urn:entity:artist",
+    "popularity": 0.9908709015721973,
+    "affinity": 0.9692962541237504,
+    "properties": {
+     "description": "Men I Trust is a Canadian indie pop band formed in Montreal, Quebec, known for their smooth, dreamy synthpop and electropop sound. The band consists of Emmanuelle Proulx (vocals, guitar), Dragos Chiriac (keyboards), and Jessy Caron (bass, guitar). They have gained a dedicated following for their mellow, groovy tunes and introspective lyrics, blending elements of dream pop, chillwave, and synthpop. Their music is characterized by soft vocals, lush synth textures, and laid-back rhythms, creating a relaxing and intimate atmosphere.",
+     "image": {
+      "url": "https://images.qloo.com/i/86E45BD3-3265-4B47-BF9A-367D583F12A6-420x-auto.jpg"
+     }
+    }
+   },
+   {
+    "entity_id": "C50DC876-30F1-4151-B525-2822C8F2929C",
+    "name": "Whitney",
+    "type": "urn:entity",
+    "subtype": "urn:entity:artist",
+    "popularity": 0.9804867978687848,
+    "affinity": 0.9677926701373335,
+    "properties": {
+     "description": "Whitney is an American indie rock band formed in Chicago in 2015 by Max Kakacek and Julien Ehrlich (both formerly of Smith Westerns) alongside Ziyad Asrar and Malcolm Brown (formerly of Touching Voids), with Will Miller and Josiah Marshall completing the lineup. They released their acclaimed debut album Light Upon the Lake in June 2016, noted for its warm production, husky lead vocals, and a blend of folk, soul and rock influences. The band followed with Forever Turned Around in August 2019 and have toured internationally, earning a dedicated indie audience for their intimate, nostalgia-tinged songs and vintage-leaning arrangements.",
+     "image": {
+      "url": "https://images.qloo.com/i/C50DC876-30F1-4151-B525-2822C8F2929C-420x-auto.jpg"
+     }
+    }
+   },
+   {
+    "entity_id": "925EE771-95D0-42E0-A585-FC8D549DAD88",
+    "name": "Crumb",
+    "type": "urn:entity",
+    "subtype": "urn:entity:artist",
+    "popularity": 0.9859426302027013,
+    "affinity": 0.9673079956557183,
+    "properties": {
+     "description": "Crumb is an American indie rock band formed in Boston, Massachusetts, known for their unique blend of psychedelic rock, dream pop, and jazz fusion influences. The band consists of Lila Ramani (vocals, guitar), Brian Aronow (saxophone, keyboard), Jonathan Gilad (drums), and Jesse Brotter (bass). Their music is characterized by smooth, jazzy instrumentation combined with ethereal vocals and lo-fi production aesthetics, creating a dreamy and immersive listening experience. Crumb has gained a dedicated following for their innovative sound and introspective lyrics.",
+     "image": {
+      "url": "https://images.qloo.com/i/925EE771-95D0-42E0-A585-FC8D549DAD88-420x-auto.jpg"
+     }
+    }
+   },
+   {
+    "entity_id": "AD420A3F-5F09-4C1C-BB1E-A3DEB937F184",
+    "name": "Big Thief",
+    "type": "urn:entity",
+    "subtype": "urn:entity:artist",
+    "popularity": 0.9913460341177935,
+    "affinity": 0.9667437290407984,
+    "properties": {
+     "description": "Big Thief is an American four-piece indie rock/folk band formed in Brooklyn in 2015. Anchored by songwriter and singer Adrianne Lenker and guitarist Buck Meek, with Max Oleartchik on bass and James Krivchenia on drums, the band is celebrated for sparse, intimate arrangements, vulnerable storytelling and dynamic shifts between hushed folk and more urgent rock. Their acclaimed albums include Masterpiece (2016), Capacity (2017), U.F.O.F. (2019), Two Hands (2019) and Dragon New Warm Mountain I Believe in You (2022). They gained strong critical praise, steady festival presence and a devoted international indie audience.",
+     "image": {
+      "url": "https://images.qloo.com/i/AD420A3F-5F09-4C1C-BB1E-A3DEB937F184-420x-auto.jpg"
+     }
+    }
+   },
+   {
+    "entity_id": "946CF1F8-E668-4617-9C91-464C10ACD492",
+    "name": "Jay Som",
+    "type": "urn:entity",
+    "subtype": "urn:entity:artist",
+    "popularity": 0.9700469889703713,
+    "affinity": 0.9634778618646329,
+    "properties": {
+     "description": "Jay Som is the solo project of Melina Duterte, an American singer-songwriter and multi-instrumentalist. She is known for her intimate, lo-fi indie rock and dream pop music, often characterized by lush, layered instrumentation and introspective lyrics. Duterte writes, records, and produces much of her music herself, creating a distinctive bedroom pop aesthetic. Her work has been critically acclaimed for its emotional depth and sonic texture.",
+     "image": {
+      "url": "https://images.qloo.com/i/946CF1F8-E668-4617-9C91-464C10ACD492-420x-auto.jpg"
+     }
+    }
+   },
+   {
+    "entity_id": "F9992611-6073-44AA-BEA9-F45BFB09D069",
+    "name": "Car Seat Headrest",
+    "type": "urn:entity",
+    "subtype": "urn:entity:artist",
+    "popularity": 0.9931744752242954,
+    "affinity": 0.9630377385433021,
+    "properties": {
+     "description": "Car Seat Headrest began as the solo lo-fi project of songwriter Will Toledo in 2010 and evolved into a full band known for raw, confessional lyrics and a transition from bedroom-recorded albums to fuller studio productions. They gained a cult following through prolific Bandcamp releases and word-of-mouth, released a celebrated re-recording of Twin Fantasy in 2018, and have issued critically noted albums such as Teens of Denial (2016) and Making a Door Less Open (2020) while touring internationally.",
+     "image": {
+      "url": "https://images.qloo.com/i/F9992611-6073-44AA-BEA9-F45BFB09D069-420x-auto.jpg"
+     }
+    }
+   },
+   {
+    "entity_id": "56908E37-B4A6-4466-BF3D-C0158FB9C8C3",
+    "name": "Soccer Mommy",
+    "type": "urn:entity",
+    "subtype": "urn:entity:artist",
+    "popularity": 0.9848580172882712,
+    "affinity": 0.9622267602337614,
+    "properties": {
+     "description": "Soccer Mommy is the musical project of Sophie Allison, an American singer-songwriter and musician. She gained recognition for her introspective and emotionally resonant indie rock and bedroom pop music, characterized by confessional lyrics and melodic guitar work. Her sound blends elements of indie rock, indie pop, and alternative rock, often exploring themes of youth, relationships, and personal growth.",
+     "image": {
+      "url": "https://images.qloo.com/i/56908E37-B4A6-4466-BF3D-C0158FB9C8C3-420x-auto.jpg"
+     }
+    }
+   },
+   {
+    "entity_id": "7CBA7959-7308-41A0-BF16-FE184E79024F",
+    "name": "Frankie Cosmos",
+    "type": "urn:entity",
+    "subtype": "urn:entity:artist",
+    "popularity": 0.9846024287465021,
+    "affinity": 0.9616106382035317,
+    "properties": {
+     "description": "Frankie Cosmos is the musical project of Greta Kline, an American singer-songwriter and musician known for her intimate, lo-fi indie pop music. She began releasing music in the early 2010s, gaining recognition for her concise, poetic lyrics and simple yet catchy melodies. Her work often features themes of youth, relationships, and introspection, delivered with a soft vocal style and minimalistic instrumentation. Frankie Cosmos has released several albums and EPs, building a dedicated fanbase within the indie music scene.",
+     "image": {
+      "url": "https://images.qloo.com/i/7CBA7959-7308-41A0-BF16-FE184E79024F-420x-auto.jpg"
+     }
+    }
+   },
+   {
+    "entity_id": "98921BA7-27B9-44FB-9195-0724B5BF29E1",
+    "name": "Slow Pulp",
+    "type": "urn:entity",
+    "subtype": "urn:entity:artist",
+    "popularity": 0.9741101914292642,
+    "affinity": 0.959626313611128,
+    "properties": {
+     "description": "Slow Pulp is an American indie rock band formed in Madison, Wisconsin. The band consists of Tess Wiley (vocals, guitar), Alex Leeds (bass), Henry Stoehr (guitar), and Emily Massey (drums). They are known for their introspective lyrics, lush melodies, and blending of indie rock with dream pop and shoegaze influences. Their music often features emotional storytelling and a warm, textured sound that resonates with fans of contemporary indie music.",
+     "image": {
+      "url": "https://images.qloo.com/i/98921BA7-27B9-44FB-9195-0724B5BF29E1-420x-auto.jpg"
+     }
+    }
+   },
+   {
+    "entity_id": "DAF68CBE-0354-462F-BB76-B54082F1586E",
+    "name": "Homeshake",
+    "type": "urn:entity",
+    "subtype": "urn:entity:artist",
+    "popularity": 0.9812830544796807,
+    "affinity": 0.9588682321444192,
+    "properties": {
+     "description": "Homeshake is the solo project of Peter Sagar, a Canadian singer-songwriter and multi-instrumentalist. Emerging from Montreal's indie music scene, Homeshake blends elements of indie pop, lo-fi, R&B, and synthpop to create a smooth, intimate sound characterized by mellow vocals and laid-back grooves. The project is noted for its bedroom pop aesthetic, combining electronic and organic instrumentation to produce a warm, nostalgic atmosphere.",
+     "image": {
+      "url": "https://images.qloo.com/i/DAF68CBE-0354-462F-BB76-B54082F1586E-420x-auto.jpg"
+     }
+    }
+   },
+   {
+    "entity_id": "FD8B128B-6F17-45FE-AD7E-CB16806F7E37",
+    "name": "TV Girl",
+    "type": "urn:entity",
+    "subtype": "urn:entity:artist",
+    "popularity": 0.9898321635242383,
+    "affinity": 0.9587874374626992,
+    "properties": {
+     "description": "TV Girl is an American indie pop band formed in the early 2010s in Southern California. Built around Brad Petering's deadpan, intimate vocals and Jason Wyman's sample-forward production, the group's music blends lo-fi tape hiss, vintage pop hooks and modern chillwave textures. They became a cult favorite online through streaming platforms and social media, notable for short, narrative-driven songs that fuse nostalgia, romantic cynicism and playful melodicism.",
+     "image": {
+      "url": "https://images.qloo.com/i/FD8B128B-6F17-45FE-AD7E-CB16806F7E37-420x-auto.jpg"
+     }
+    }
+   },
+   {
+    "entity_id": "144F1259-C207-44A7-8367-D5CCC51FF5A9",
+    "name": "Snail Mail",
+    "type": "urn:entity",
+    "subtype": "urn:entity:artist",
+    "popularity": 0.9825577204123496,
+    "affinity": 0.9586443719382104,
+    "properties": {
+     "description": "Snail Mail is the stage name of Lindsey Jordan, an American singer-songwriter and guitarist known for her introspective lyrics and melodic indie rock sound. Emerging in the late 2010s, Snail Mail gained critical acclaim for her debut album 'Lush' which showcased her skillful guitar work and emotionally resonant songwriting. Her music blends elements of indie rock, indie pop, and emo, characterized by raw, honest lyricism and a youthful yet mature perspective.",
+     "image": {
+      "url": "https://images.qloo.com/i/144F1259-C207-44A7-8367-D5CCC51FF5A9-420x-auto.jpg"
+     }
+    }
+   },
+   {
+    "entity_id": "E3BD2650-8E5C-43FB-B5A7-C1C7753A6293",
+    "name": "Mitski",
+    "type": "urn:entity",
+    "subtype": "urn:entity:artist",
+    "popularity": 0.9963955462058208,
+    "affinity": 0.9580895404132628,
+    "properties": {
+     "description": "Mitski (born Mitsuki Laycock; also known as Mitski Miyawaki) is a Japanese-American singer-songwriter whose work blends indie rock, art-pop and confessional songwriting. Born in Mie Prefecture, Japan, to a Japanese mother and an American father, she moved frequently as a child due to her father's State Department work, living across Asia and Africa before settling in the United States. She studied studio composition at Purchase College, self-releasing two early albums as student projects before gaining wider attention with 2014's Bury Me at Makeout Creek. After signing to Dead Oceans in 2015, she released critically acclaimed albums including Puberty 2 (2016), Be the Cowboy (2018) and Laurel Hell (2022). Mitski's songwriting is noted for its emotional directness, striking imagery and dramatic dynamics; she has received widespread critical praise and earned an Academy Award nomination for co-writing \"This Is a Life\" (Everything Everywhere All at Once).",
+     "image": {
+      "url": "https://images.qloo.com/i/E3BD2650-8E5C-43FB-B5A7-C1C7753A6293-420x-auto.jpg"
+     }
+    }
+   },
+   {
+    "entity_id": "E5928AFF-6309-427E-8A54-DB4AD5946219",
+    "name": "King Krule",
+    "type": "urn:entity",
+    "subtype": "urn:entity:artist",
+    "popularity": 0.9950258537640327,
+    "affinity": 0.9579060400875644,
+    "properties": {
+     "description": "King Krule (born Archy Marshall) is an English singer-songwriter and multi-instrumentalist whose work fuses elements of indie rock, jazz, trip hop and lo-fi production. Rising from South London as a teenager, Marshall established a signature brooding, nocturnal sound built around his deep, raspy baritone, sparse guitars, jazz-influenced arrangements and hip-hop-aware beats. Critically lauded albums include 6 Feet Beneath the Moon (debut full-length), The OOZ and Man Alive!, and he has been noted for cinematic songwriting, literary lyricism and genre-blurring production.",
+     "image": {
+      "url": "https://images.qloo.com/i/E5928AFF-6309-427E-8A54-DB4AD5946219-420x-auto.jpg"
+     }
+    }
+   },
+   {
+    "entity_id": "B0983E75-B0AF-41A6-844C-147DECDBC07E",
+    "name": "Dehd",
+    "type": "urn:entity",
+    "subtype": "urn:entity:artist",
+    "popularity": 0.9388225887842505,
+    "affinity": 0.9576730519324318,
+    "properties": {
+     "description": "Dehd is an American indie rock band formed in Chicago, Illinois, consisting of Emily Kempf (vocals, bass), Jason Balla (vocals, guitar), and Eric McGrady (drums). They are recognized for their distinctive blend of indie rock, dream pop, and garage rock, characterized by lo-fi production, catchy melodies, and harmonious vocals. Their music often features a nostalgic yet fresh sound that draws from 90s alternative and post-punk influences.",
+     "image": {
+      "url": "https://images.qloo.com/i/B0983E75-B0AF-41A6-844C-147DECDBC07E-420x-auto.jpg"
+     }
+    }
+   },
+   {
+    "entity_id": "1876D090-D6E6-423A-A3CC-F801B81E2A2A",
+    "name": "Alex G",
+    "type": "urn:entity",
+    "subtype": "urn:entity:artist",
+    "popularity": 0.9905006258642497,
+    "affinity": 0.9575955807199036,
+    "properties": {
+     "description": "Alexander Giannascoli (known professionally as Alex G or Sandy Alex G) is an American singer-songwriter and multi-instrumentalist who rose from a prolific DIY Bandcamp presence to international indie prominence. He is known for intimate, home-recorded arrangements that blend lo-fi textures, melodic guitar work, and experimental production, and for moving between sparse acoustic songs and fuller, inventive rock arrangements on studio releases.",
+     "image": {
+      "url": "https://images.qloo.com/i/1876D090-D6E6-423A-A3CC-F801B81E2A2A-420x-auto.jpg"
+     }
+    }
+   },
+   {
+    "entity_id": "140C7EC0-57DD-49DD-AC51-2D58C9F2BE32",
+    "name": "Good Morning",
+    "type": "urn:entity",
+    "subtype": "urn:entity:artist",
+    "popularity": 0.9625988767211267,
+    "affinity": 0.9575255445797345,
+    "properties": {
+     "description": "Good Morning is an Australian indie rock band that blends elements of indie pop, dream pop, and lo-fi music. They are recognized for their mellow, introspective sound characterized by soft vocals, jangly guitars, and a laid-back atmosphere. Their music often explores themes of youth, nostalgia, and emotional vulnerability.",
+     "image": {
+      "url": "https://images.qloo.com/i/140C7EC0-57DD-49DD-AC51-2D58C9F2BE32-420x-auto.jpg"
+     }
+    }
+   },
+   {
+    "entity_id": "729724D1-7184-4385-A63D-5241F61E8D8F",
+    "name": "Porches",
+    "type": "urn:entity",
+    "subtype": "urn:entity:artist",
+    "popularity": 0.9713314852315698,
+    "affinity": 0.9570905805377949,
+    "properties": {
+     "description": "Porches is an American music project primarily led by Aaron Maine, known for blending indie rock with synthpop and dream pop elements. The project features a mix of electronic and lo-fi sounds, creating an atmospheric and introspective style. Porches has released several albums and is recognized for its emotive lyrics and textured production.",
+     "image": {
+      "url": "https://images.qloo.com/i/729724D1-7184-4385-A63D-5241F61E8D8F-420x-auto.jpg"
+     }
+    }
+   },
+   {
+    "entity_id": "7E57EBD1-1839-464F-A0B8-A3191ED9E804",
+    "name": "Weyes Blood",
+    "type": "urn:entity",
+    "subtype": "urn:entity:artist",
+    "popularity": 0.9895536375492335,
+    "affinity": 0.9561635337713416,
+    "properties": {
+     "description": "Weyes Blood, the stage name of Natalie Mering, is an American singer-songwriter and musician whose work blends elements of indie rock, psychedelic folk, and baroque pop. She is known for her rich, orchestral arrangements and introspective lyrics, often exploring themes of love, existentialism, and the human condition. Her music features a blend of vintage sounds with modern sensibilities, creating a timeless and ethereal atmosphere.",
+     "image": {
+      "url": "https://images.qloo.com/i/7E57EBD1-1839-464F-A0B8-A3191ED9E804-420x-auto.jpg"
+     }
+    }
+   },
+   {
+    "entity_id": "8E87EB51-B623-4642-A54D-0EE494C11CBF",
+    "name": "Unknown Mortal Orchestra",
+    "type": "urn:entity",
+    "subtype": "urn:entity:artist",
+    "popularity": 0.995923690436401,
+    "affinity": 0.9552682588595887,
+    "properties": {
+     "description": "Unknown Mortal Orchestra is a New Zealand-American psychedelic rock band formed in 2010, led by Ruban Nielson. The band is known for its eclectic blend of psychedelic rock, indie rock, and lo-fi aesthetics, often incorporating elements of funk and neo-psychedelia. Their music features experimental production techniques, catchy melodies, and introspective lyrics. The band has released several critically acclaimed albums and is noted for its innovative sound and Ruban Nielson's distinctive vocals and guitar work.",
+     "image": {
+      "url": "https://images.qloo.com/i/8E87EB51-B623-4642-A54D-0EE494C11CBF-420x-auto.jpg"
+     }
+    }
+   }
+  ],
+  "result_count": 20,
+  "provenance": {
+   "source": "Qloo API",
+   "endpoint": "/v2/insights",
+   "documentation": "https://docs.qloo.com/reference/insights-api-deep-dive",
+   "requests": [
+    {
+     "method": "GET",
+     "path": "/v2/insights",
+     "query": {
+      "filter.type": "urn:entity:artist",
+      "take": 20,
+      "signal.interests.entities": [
+       "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+       "AA21934D-3A6E-4973-983F-28604C44E3AC",
+       "B58E846A-D1F1-4C6A-AFA7-9230F74CAEE0",
+       "A854F678-4242-4C4B-A21C-38EE521C885B"
+      ]
+     }
+    }
+   ],
+   "transport": "mcp"
+  },
+  "query_intent": {
+   "schema_version": "1.0-preview.1",
+   "source_contract_version": "1.0.0",
+   "operation": "recommend",
+   "job": "recommend",
+   "signals": {
+    "entities": [
+     "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+     "AA21934D-3A6E-4973-983F-28604C44E3AC",
+     "B58E846A-D1F1-4C6A-AFA7-9230F74CAEE0",
+     "A854F678-4242-4C4B-A21C-38EE521C885B"
+    ]
+   },
+   "filters": {},
+   "operators": {},
+   "output": {
+    "limit": 20,
+    "explain": false
+   },
+   "assumptions": [],
+   "unresolved": [],
+   "target": {
+    "type": "artist"
+   }
+  },
+  "execution": {
+   "transport": "mcp",
+   "transport_name": "Qloo canonical MCP",
+   "correlation_id": "mcp-2",
+   "duration_ms": 1593
+  }
+ }
+}

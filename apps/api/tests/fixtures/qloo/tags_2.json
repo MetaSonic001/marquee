@@ -1,0 +1,91 @@
+{
+ "tool": "qloo_find_tags",
+ "args": {
+  "query": "energy drinks",
+  "limit": 5
+ },
+ "envelope": {
+  "schema_version": "1.0-preview.1",
+  "operation": "find_tags",
+  "status": "ok",
+  "interpretation": {
+   "query": "energy drinks",
+   "semantic": true
+  },
+  "results": [
+   {
+    "id": "urn:tag:product_category:qloo:energy_drinks",
+    "name": "Energy Drinks",
+    "type": "urn:tag:product_category:qloo",
+    "popularity": 0.9802887638523818
+   },
+   {
+    "id": "urn:tag:interests:qloo:energy_drinks",
+    "name": "Energy Drinks",
+    "type": "urn:tag:interests:qloo",
+    "popularity": 0.9971718340178855
+   },
+   {
+    "id": "urn:tag:product_service:qloo:energy_drinks",
+    "name": "Energy Drinks",
+    "type": "urn:tag:product_service:qloo",
+    "popularity": 0.9905247642815391
+   },
+   {
+    "id": "urn:tag:genre:brand:food_and_beverage:drinks:energy_drink",
+    "name": "Energy Drink",
+    "type": "urn:tag:genre:brand",
+    "popularity": 0.977584145556611
+   },
+   {
+    "id": "urn:tag:product_service:qloo:energy_drink",
+    "name": "Energy Drink",
+    "type": "urn:tag:product_service:qloo",
+    "popularity": 0.9767131068779382
+   }
+  ],
+  "result_count": 5,
+  "provenance": {
+   "source": "Qloo API",
+   "endpoint": "/v2/tags",
+   "documentation": "https://docs.qloo.com/reference/get-tags",
+   "requests": [
+    {
+     "method": "GET",
+     "path": "/v2/tags",
+     "query": {
+      "filter.query": "energy drinks",
+      "feature.semantic_search": true,
+      "take": 5
+     }
+    }
+   ],
+   "transport": "mcp"
+  },
+  "query_intent": {
+   "schema_version": "1.0-preview.1",
+   "source_contract_version": "1.0.0",
+   "operation": "find_tags",
+   "job": "find_tags",
+   "signals": {},
+   "filters": {},
+   "operators": {},
+   "output": {
+    "limit": 5
+   },
+   "assumptions": [
+    "semantic=true"
+   ],
+   "unresolved": [],
+   "target": {
+    "concept": "energy drinks"
+   }
+  },
+  "execution": {
+   "transport": "mcp",
+   "transport_name": "Qloo canonical MCP",
+   "correlation_id": "mcp-5",
+   "duration_ms": 914
+  }
+ }
+}

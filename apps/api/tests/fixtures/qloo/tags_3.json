@@ -1,0 +1,91 @@
+{
+ "tool": "qloo_find_tags",
+ "args": {
+  "query": "telecommunications brand",
+  "limit": 5
+ },
+ "envelope": {
+  "schema_version": "1.0-preview.1",
+  "operation": "find_tags",
+  "status": "ok",
+  "interpretation": {
+   "query": "telecommunications brand",
+   "semantic": true
+  },
+  "results": [
+   {
+    "id": "urn:tag:genre:brand:telecom",
+    "name": "Telecommunication",
+    "type": "urn:tag:genre:brand",
+    "popularity": 0.9947660707421643
+   },
+   {
+    "id": "urn:tag:industry:qloo:telecommunications",
+    "name": "Telecommunications",
+    "type": "urn:tag:industry:qloo",
+    "popularity": 0.9979201889800491
+   },
+   {
+    "id": "urn:tag:competitor_brand:qloo:deutsche_telekom",
+    "name": "Deutsche Telekom",
+    "type": "urn:tag:competitor_brand:qloo",
+    "popularity": 0.9488764700643092
+   },
+   {
+    "id": "urn:tag:similar_brand:qloo:deutsche_telekom",
+    "name": "Deutsche Telekom",
+    "type": "urn:tag:similar_brand:qloo",
+    "popularity": 0.979716030394773
+   },
+   {
+    "id": "urn:tag:competitor_brand:qloo:telkomsel",
+    "name": "Telkomsel",
+    "type": "urn:tag:competitor_brand:qloo",
+    "popularity": 0.941474212149835
+   }
+  ],
+  "result_count": 5,
+  "provenance": {
+   "source": "Qloo API",
+   "endpoint": "/v2/tags",
+   "documentation": "https://docs.qloo.com/reference/get-tags",
+   "requests": [
+    {
+     "method": "GET",
+     "path": "/v2/tags",
+     "query": {
+      "filter.query": "telecommunications brand",
+      "feature.semantic_search": true,
+      "take": 5
+     }
+    }
+   ],
+   "transport": "mcp"
+  },
+  "query_intent": {
+   "schema_version": "1.0-preview.1",
+   "source_contract_version": "1.0.0",
+   "operation": "find_tags",
+   "job": "find_tags",
+   "signals": {},
+   "filters": {},
+   "operators": {},
+   "output": {
+    "limit": 5
+   },
+   "assumptions": [
+    "semantic=true"
+   ],
+   "unresolved": [],
+   "target": {
+    "concept": "telecommunications brand"
+   }
+  },
+  "execution": {
+   "transport": "mcp",
+   "transport_name": "Qloo canonical MCP",
+   "correlation_id": "mcp-6",
+   "duration_ms": 1634
+  }
+ }
+}

@@ -1,0 +1,249 @@
+{
+ "tool": "qloo_where_popular",
+ "args": {
+  "entity": "957B527A-CF2C-4283-A2FD-3F49741DF5DE",
+  "entity_type": "brand",
+  "within": "Austin, TX",
+  "limit": 10
+ },
+ "envelope": {
+  "schema_version": "1.0-preview.1",
+  "operation": "where_popular",
+  "status": "ok",
+  "interpretation": {
+   "entity": {
+    "input": "957B527A-CF2C-4283-A2FD-3F49741DF5DE",
+    "entityId": "957B527A-CF2C-4283-A2FD-3F49741DF5DE",
+    "name": "Pepsi",
+    "type": "urn:entity:brand",
+    "match": "identifier"
+   },
+   "within": "Austin, TX"
+  },
+  "resolution": {
+   "contract_version": "1.0-preview.1",
+   "provider": {
+    "contract_version": "1.0-preview.1",
+    "provider_id": "qloo_api",
+    "name": "Qloo native resolution",
+    "entity_strategy": "exact_name_context_or_choice",
+    "tag_strategy": "target_scoped_semantic_search_exact_name_or_choice",
+    "remote": true,
+    "uses_model": false,
+    "fallback": "none"
+   },
+   "outcomes": [
+    {
+     "input": "957B527A-CF2C-4283-A2FD-3F49741DF5DE",
+     "status": "resolved",
+     "match": "identifier",
+     "selected": {
+      "id": "957B527A-CF2C-4283-A2FD-3F49741DF5DE",
+      "name": "Pepsi",
+      "type": "urn:entity:brand",
+      "popularity": 0.997016494041464,
+      "description": "Pepsi is a global beverage brand known for its popular cola soft drinks and other flavored beverages."
+     },
+     "provenance": {
+      "contract_version": "1.0-preview.1",
+      "provider_id": "qloo_api",
+      "provider_name": "Qloo native resolution",
+      "endpoint": "/entities",
+      "strategy": "identifier_lookup",
+      "remote": true,
+      "uses_model": false
+     }
+    }
+   ]
+  },
+  "results": [
+   {
+    "location": {
+     "latitude": 30.295486,
+     "longitude": -97.7433,
+     "geohash": "9v6krg1"
+    },
+    "query": {
+     "affinity": 1,
+     "affinity_rank": 0.976122,
+     "popularity": 0.996969696969697,
+     "entity_brand_affinity_rank": 0.976122,
+     "entity_brand_affinity": 1
+    }
+   },
+   {
+    "location": {
+     "latitude": 30.26802,
+     "longitude": -97.74742,
+     "geohash": "9v6kpwn"
+    },
+    "query": {
+     "affinity": 0.996969696969697,
+     "affinity_rank": 0.896533,
+     "popularity": 1,
+     "entity_brand_affinity_rank": 0.896533,
+     "entity_brand_affinity": 0.996969696969697
+    }
+   },
+   {
+    "location": {
+     "latitude": 30.265274,
+     "longitude": -97.73918,
+     "geohash": "9v6kpvs"
+    },
+    "query": {
+     "affinity": 0.9939393939393939,
+     "affinity_rank": 0.837025,
+     "popularity": 0.9939393939393939,
+     "entity_brand_affinity_rank": 0.837025,
+     "entity_brand_affinity": 0.9939393939393939
+    }
+   },
+   {
+    "location": {
+     "latitude": 30.134811,
+     "longitude": -97.63893,
+     "geohash": "9v6e6jv"
+    },
+    "query": {
+     "affinity": 0.990909090909091,
+     "affinity_rank": 0.817088,
+     "popularity": 0.9848484848484849,
+     "entity_brand_affinity_rank": 0.817088,
+     "entity_brand_affinity": 0.990909090909091
+    }
+   },
+   {
+    "location": {
+     "latitude": 30.273514,
+     "longitude": -97.740555,
+     "geohash": "9v6kpz5"
+    },
+    "query": {
+     "affinity": 0.9878787878787879,
+     "affinity_rank": 0.800616,
+     "popularity": 0.9878787878787879,
+     "entity_brand_affinity_rank": 0.800616,
+     "entity_brand_affinity": 0.9878787878787879
+    }
+   },
+   {
+    "location": {
+     "latitude": 30.266647,
+     "longitude": -97.73918,
+     "geohash": "9v6kpvu"
+    },
+    "query": {
+     "affinity": 0.9848484848484849,
+     "affinity_rank": 0.788006,
+     "popularity": 0.990909090909091,
+     "entity_brand_affinity_rank": 0.788006,
+     "entity_brand_affinity": 0.9848484848484849
+    }
+   },
+   {
+    "location": {
+     "latitude": 30.2639,
+     "longitude": -97.73918,
+     "geohash": "9v6kpvk"
+    },
+    "query": {
+     "affinity": 0.9818181818181818,
+     "affinity_rank": 0.76945,
+     "popularity": 0.9575757575757575,
+     "entity_brand_affinity_rank": 0.76945,
+     "entity_brand_affinity": 0.9818181818181818
+    }
+   },
+   {
+    "location": {
+     "latitude": 30.2845,
+     "longitude": -97.73781,
+     "geohash": "9v6krcj"
+    },
+    "query": {
+     "affinity": 0.9787878787878788,
+     "affinity_rank": 0.767985,
+     "popularity": 0.9787878787878788,
+     "entity_brand_affinity_rank": 0.767985,
+     "entity_brand_affinity": 0.9787878787878788
+    }
+   },
+   {
+    "location": {
+     "latitude": 30.26802,
+     "longitude": -97.7433,
+     "geohash": "9v6kpy1"
+    },
+    "query": {
+     "affinity": 0.9757575757575757,
+     "affinity_rank": 0.733045,
+     "popularity": 0.9818181818181818,
+     "entity_brand_affinity_rank": 0.733045,
+     "entity_brand_affinity": 0.9757575757575757
+    }
+   },
+   {
+    "location": {
+     "latitude": 30.270767,
+     "longitude": -97.7433,
+     "geohash": "9v6kpy9"
+    },
+    "query": {
+     "affinity": 0.9727272727272728,
+     "affinity_rank": 0.722706,
+     "popularity": 0.9545454545454546,
+     "entity_brand_affinity_rank": 0.722706,
+     "entity_brand_affinity": 0.9727272727272728
+    }
+   }
+  ],
+  "result_count": 10,
+  "provenance": {
+   "source": "Qloo API",
+   "endpoint": "/v2/insights",
+   "documentation": "https://docs.qloo.com/reference/heatmaps-use-case",
+   "requests": [
+    {
+     "method": "GET",
+     "path": "/v2/insights",
+     "query": {
+      "filter.type": "urn:heatmap",
+      "signal.interests.entities": "957B527A-CF2C-4283-A2FD-3F49741DF5DE",
+      "filter.location.query": "Austin, TX",
+      "take": 10
+     }
+    }
+   ],
+   "transport": "mcp"
+  },
+  "query_intent": {
+   "schema_version": "1.0-preview.1",
+   "source_contract_version": "1.0.0",
+   "operation": "where_popular",
+   "job": "where_popular",
+   "signals": {},
+   "filters": {
+    "location": "Austin, TX"
+   },
+   "operators": {},
+   "output": {
+    "limit": 10
+   },
+   "assumptions": [],
+   "unresolved": [],
+   "target": {
+    "type": "brand",
+    "entities": [
+     "957B527A-CF2C-4283-A2FD-3F49741DF5DE"
+    ]
+   }
+  },
+  "execution": {
+   "transport": "mcp",
+   "transport_name": "Qloo canonical MCP",
+   "correlation_id": "mcp-4",
+   "duration_ms": 781
+  }
+ }
+}

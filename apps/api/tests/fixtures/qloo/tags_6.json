@@ -1,0 +1,91 @@
+{
+ "tool": "qloo_find_tags",
+ "args": {
+  "query": "banking brand",
+  "limit": 5
+ },
+ "envelope": {
+  "schema_version": "1.0-preview.1",
+  "operation": "find_tags",
+  "status": "ok",
+  "interpretation": {
+   "query": "banking brand",
+   "semantic": true
+  },
+  "results": [
+   {
+    "id": "urn:tag:competitor_brand:qloo:bank_of_america",
+    "name": "Bank Of America",
+    "type": "urn:tag:competitor_brand:qloo",
+    "popularity": 0.9840196997689117
+   },
+   {
+    "id": "urn:tag:competitor_brand:qloo:deutsche_bank",
+    "name": "Deutsche Bank",
+    "type": "urn:tag:competitor_brand:qloo",
+    "popularity": 0.9807491026887841
+   },
+   {
+    "id": "urn:tag:competitor_brand:qloo:coldwell_banker",
+    "name": "Coldwell Banker",
+    "type": "urn:tag:competitor_brand:qloo",
+    "popularity": 0.9831205427992591
+   },
+   {
+    "id": "urn:tag:competitor_brand:qloo:pnc_bank",
+    "name": "PNC Bank",
+    "type": "urn:tag:competitor_brand:qloo",
+    "popularity": 0.9677828004969554
+   },
+   {
+    "id": "urn:tag:similar_brand:qloo:deutsche_bank",
+    "name": "Deutsche Bank",
+    "type": "urn:tag:similar_brand:qloo",
+    "popularity": 0.9736614868795185
+   }
+  ],
+  "result_count": 5,
+  "provenance": {
+   "source": "Qloo API",
+   "endpoint": "/v2/tags",
+   "documentation": "https://docs.qloo.com/reference/get-tags",
+   "requests": [
+    {
+     "method": "GET",
+     "path": "/v2/tags",
+     "query": {
+      "filter.query": "banking brand",
+      "feature.semantic_search": true,
+      "take": 5
+     }
+    }
+   ],
+   "transport": "mcp"
+  },
+  "query_intent": {
+   "schema_version": "1.0-preview.1",
+   "source_contract_version": "1.0.0",
+   "operation": "find_tags",
+   "job": "find_tags",
+   "signals": {},
+   "filters": {},
+   "operators": {},
+   "output": {
+    "limit": 5
+   },
+   "assumptions": [
+    "semantic=true"
+   ],
+   "unresolved": [],
+   "target": {
+    "concept": "banking brand"
+   }
+  },
+  "execution": {
+   "transport": "mcp",
+   "transport_name": "Qloo canonical MCP",
+   "correlation_id": "mcp-9",
+   "duration_ms": 1690
+  }
+ }
+}

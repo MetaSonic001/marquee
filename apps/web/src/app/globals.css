@@ -1,0 +1,279 @@
+@import "tailwindcss";
+
+/* "Backstage pass" palette. Token names are semantic roles:
+   paper = page surface, ink = primary text / inverted fill, bulb = signal accent. */
+:root {
+  --paper: #0c0c0d;
+  --paper-2: #151517;
+  --paper-3: #232327;
+  --ink: #eee9e0;
+  --ink-2: #c9c3b8;
+  --bulb: #ff5a1f;
+  --bulb-soft: rgba(255, 90, 31, 0.14);
+  --stage: #ff5a1f;
+  --moss: #5ad19a;
+  --slate: #8d8880;
+  --night: #121214;
+  --bone: #ece6da;
+  --rule: rgba(238, 233, 224, 0.1);
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-paper-2: var(--paper-2);
+  --color-paper-3: var(--paper-3);
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --color-bulb: var(--bulb);
+  --color-bulb-soft: var(--bulb-soft);
+  --color-stage: var(--stage);
+  --color-moss: var(--moss);
+  --color-slate: var(--slate);
+  --color-night: var(--night);
+  --color-bone: var(--bone);
+  --color-rule: var(--rule);
+  --font-sans: var(--font-sans-face);
+  --font-mono: var(--font-mono-face);
+  --font-serif: var(--font-serif-face);
+}
+
+html {
+  background: var(--paper);
+  color-scheme: dark;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-sans-face), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* fine film grain over everything */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.5;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .05 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+body {
+  isolation: isolate;
+}
+body::before {
+  z-index: -1;
+}
+
+::selection {
+  background: var(--bulb);
+  color: #0c0c0d;
+}
+
+:focus-visible {
+  outline: 2px solid var(--bulb);
+  outline-offset: 2px;
+}
+
+/* Headlines: Archivo, expanded like a tour poster */
+.font-display {
+  font-family: var(--font-display-face), "Arial", sans-serif !important;
+  font-stretch: 118%;
+  font-weight: 800 !important;
+  letter-spacing: -0.015em !important;
+  text-transform: uppercase;
+  overflow-wrap: anywhere;
+}
+@media (max-width: 900px) {
+  .font-display {
+    font-stretch: 104%;
+  }
+}
+.font-serif {
+  font-family: var(--font-serif-face), Georgia, serif;
+}
+.name {
+  font-family: var(--font-serif-face), Georgia, serif;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  text-transform: none;
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+.rule-b {
+  border-bottom: 1px solid var(--rule);
+}
+.rule-t {
+  border-top: 1px solid var(--rule);
+}
+
+/* A card is a "pass": hairline frame, faint top light, no drop shadow */
+.pass {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.035), rgba(255, 255, 255, 0) 38%), var(--paper-2);
+  border: 1px solid var(--rule);
+  border-radius: 10px;
+  transition:
+    border-color 0.2s,
+    transform 0.2s;
+}
+.pass:hover {
+  border-color: rgba(255, 90, 31, 0.55);
+}
+
+/* ticket-stub perforation between a card's body and its stub */
+.perf {
+  position: relative;
+  border-top: 1px dashed rgba(238, 233, 224, 0.16);
+}
+.perf::before,
+.perf::after {
+  content: "";
+  position: absolute;
+  top: -7px;
+  width: 14px;
+  height: 14px;
+  border-radius: 999px;
+  background: var(--paper);
+  border: 1px solid var(--rule);
+}
+.perf::before {
+  left: -8px;
+}
+.perf::after {
+  right: -8px;
+}
+
+/* ---------- Split-flap board ---------- */
+.flap-board {
+  background:
+    radial-gradient(120% 140% at 50% -20%, rgba(255, 90, 31, 0.16), transparent 55%),
+    linear-gradient(180deg, #161618, #0e0e10);
+  border: 1px solid rgba(238, 233, 224, 0.12);
+  border-radius: 14px;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.05),
+    0 30px 80px -40px rgba(255, 90, 31, 0.35);
+}
+.flap {
+  position: relative;
+  display: inline-grid;
+  place-items: center;
+  width: 0.78em;
+  height: 1.12em;
+  margin: 0 0.035em;
+  border-radius: 0.09em;
+  background: linear-gradient(180deg, #232326 0 49.5%, #1b1b1e 50.5% 100%);
+  color: #f3eee6;
+  font-family: var(--font-mono-face), monospace;
+  font-weight: 500;
+  line-height: 1;
+  box-shadow:
+    inset 0 -1px 0 rgba(0, 0, 0, 0.6),
+    0 1px 0 rgba(255, 255, 255, 0.04);
+  overflow: hidden;
+}
+.flap::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.75);
+}
+.flap.lit {
+  color: var(--bulb);
+}
+.flap.space {
+  background: linear-gradient(180deg, #19191b 0 49.5%, #151517 50.5% 100%);
+}
+
+/* Live dot */
+.live-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: var(--bulb);
+  box-shadow: 0 0 0 0 rgba(255, 90, 31, 0.6);
+  animation: pulse 1.4s infinite;
+}
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 90, 31, 0.55);
+  }
+  70% {
+    box-shadow: 0 0 0 8px rgba(255, 90, 31, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 90, 31, 0);
+  }
+}
+
+.skeleton {
+  background: linear-gradient(90deg, var(--paper-2) 0%, var(--paper-3) 50%, var(--paper-2) 100%);
+  background-size: 200% 100%;
+  animation: shimmer 1.4s ease-in-out infinite;
+  border-radius: 8px;
+}
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+.ticker {
+  animation: ticker 50s linear infinite;
+}
+@keyframes ticker {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* stage light cone used behind hero sections */
+.spot {
+  background:
+    radial-gradient(60% 55% at 70% 0%, rgba(255, 90, 31, 0.22), transparent 70%),
+    radial-gradient(40% 40% at 15% 10%, rgba(238, 233, 224, 0.06), transparent 70%);
+}
+
+/* light "bone" section for rhythm on the landing page */
+.bone {
+  --paper: #ece6da;
+  --paper-2: #e3dccd;
+  --paper-3: #d6cebd;
+  --ink: #0c0c0d;
+  --slate: #5f5a52;
+  --rule: rgba(12, 12, 13, 0.14);
+  background: var(--paper);
+  color: var(--ink);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+@media print {
+  body::before {
+    display: none;
+  }
+  .no-print {
+    display: none !important;
+  }
+}

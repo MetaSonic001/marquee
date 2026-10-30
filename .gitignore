@@ -1,0 +1,32 @@
+node_modules/
+.env
+.env.local
+*.env.local
+__pycache__/
+.venv/
+*.pyc
+.next/
+.node/
+*.db
+*.sqlite
+uploads/
+.pytest_cache/
+.ruff_cache/
+test-results/
+playwright-report/
+.probe/
+docs/screenshots/*.tmp
+apps/api/marquee.db
+.vercel
+*.log
+*.tsbuildinfo
+
+# personal submission prep (not part of the product)
+docs/DEMO_SCRIPT.md
+docs/SUBMISSION.md
+docs/thumbnail.*
+docs/screenshots/
+
+# local tooling
+.claude/
+apps/web/AGENTS.md

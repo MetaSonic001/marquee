@@ -1,0 +1,91 @@
+{
+ "tool": "qloo_find_tags",
+ "args": {
+  "query": "fast food restaurants brand",
+  "limit": 5
+ },
+ "envelope": {
+  "schema_version": "1.0-preview.1",
+  "operation": "find_tags",
+  "status": "ok",
+  "interpretation": {
+   "query": "fast food restaurants brand",
+   "semantic": true
+  },
+  "results": [
+   {
+    "id": "urn:tag:cuisine:qloo:fast_food_chain",
+    "name": "Fast Food Chain",
+    "type": "urn:tag:cuisine:qloo",
+    "popularity": 0.9849179142260174
+   },
+   {
+    "id": "urn:tag:keyword:media:fast_food_restaurant",
+    "name": "fast food restaurant",
+    "type": "urn:tag:keyword:media",
+    "popularity": 0.9913191778102303
+   },
+   {
+    "id": "urn:tag:amenity:qloo:fast_food_restaurants",
+    "name": "Fast Food Restaurants",
+    "type": "urn:tag:amenity:qloo",
+    "popularity": 0.9946207667245317
+   },
+   {
+    "id": "urn:tag:product_service:qloo:fast_food",
+    "name": "Fast Food",
+    "type": "urn:tag:product_service:qloo",
+    "popularity": 0.9697947506135364
+   },
+   {
+    "id": "urn:tag:industry:qloo:fast_food",
+    "name": "Fast Food",
+    "type": "urn:tag:industry:qloo",
+    "popularity": 0.9945185041132033
+   }
+  ],
+  "result_count": 5,
+  "provenance": {
+   "source": "Qloo API",
+   "endpoint": "/v2/tags",
+   "documentation": "https://docs.qloo.com/reference/get-tags",
+   "requests": [
+    {
+     "method": "GET",
+     "path": "/v2/tags",
+     "query": {
+      "filter.query": "fast food restaurants brand",
+      "feature.semantic_search": true,
+      "take": 5
+     }
+    }
+   ],
+   "transport": "mcp"
+  },
+  "query_intent": {
+   "schema_version": "1.0-preview.1",
+   "source_contract_version": "1.0.0",
+   "operation": "find_tags",
+   "job": "find_tags",
+   "signals": {},
+   "filters": {},
+   "operators": {},
+   "output": {
+    "limit": 5
+   },
+   "assumptions": [
+    "semantic=true"
+   ],
+   "unresolved": [],
+   "target": {
+    "concept": "fast food restaurants brand"
+   }
+  },
+  "execution": {
+   "transport": "mcp",
+   "transport_name": "Qloo canonical MCP",
+   "correlation_id": "mcp-8",
+   "duration_ms": 1112
+  }
+ }
+}

@@ -1,0 +1,310 @@
+{
+ "tool": "qloo_entity_tags",
+ "args": {
+  "entities": [
+   "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+   "AA21934D-3A6E-4973-983F-28604C44E3AC",
+   "B58E846A-D1F1-4C6A-AFA7-9230F74CAEE0",
+   "A854F678-4242-4C4B-A21C-38EE521C885B"
+  ],
+  "entity_type": "artist",
+  "limit": 15
+ },
+ "envelope": {
+  "schema_version": "1.0-preview.1",
+  "operation": "entity_tags",
+  "status": "ok",
+  "interpretation": {
+   "entities": [
+    {
+     "input": "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+     "entityId": "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+     "name": "Khruangbin",
+     "type": "urn:entity:artist",
+     "match": "identifier"
+    },
+    {
+     "input": "AA21934D-3A6E-4973-983F-28604C44E3AC",
+     "entityId": "AA21934D-3A6E-4973-983F-28604C44E3AC",
+     "name": "Japanese Breakfast",
+     "type": "urn:entity:artist",
+     "match": "identifier"
+    },
+    {
+     "input": "B58E846A-D1F1-4C6A-AFA7-9230F74CAEE0",
+     "entityId": "B58E846A-D1F1-4C6A-AFA7-9230F74CAEE0",
+     "name": "Mac DeMarco",
+     "type": "urn:entity:artist",
+     "match": "identifier"
+    },
+    {
+     "input": "A854F678-4242-4C4B-A21C-38EE521C885B",
+     "entityId": "A854F678-4242-4C4B-A21C-38EE521C885B",
+     "name": "Alvvays",
+     "type": "urn:entity:artist",
+     "match": "identifier"
+    }
+   ]
+  },
+  "resolution": {
+   "contract_version": "1.0-preview.1",
+   "provider": {
+    "contract_version": "1.0-preview.1",
+    "provider_id": "qloo_api",
+    "name": "Qloo native resolution",
+    "entity_strategy": "exact_name_context_or_choice",
+    "tag_strategy": "target_scoped_semantic_search_exact_name_or_choice",
+    "remote": true,
+    "uses_model": false,
+    "fallback": "none"
+   },
+   "outcomes": [
+    {
+     "input": "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+     "status": "resolved",
+     "match": "identifier",
+     "selected": {
+      "id": "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+      "name": "Khruangbin",
+      "type": "urn:entity:artist",
+      "popularity": 0.9919334977446856,
+      "description": "Khruangbin is an American musical trio known for their eclectic blend of global musical influences and instrumental sound."
+     },
+     "provenance": {
+      "contract_version": "1.0-preview.1",
+      "provider_id": "qloo_api",
+      "provider_name": "Qloo native resolution",
+      "endpoint": "/entities",
+      "strategy": "identifier_lookup",
+      "remote": true,
+      "uses_model": false,
+      "cache_status": "memory_hit"
+     }
+    },
+    {
+     "input": "AA21934D-3A6E-4973-983F-28604C44E3AC",
+     "status": "resolved",
+     "match": "identifier",
+     "selected": {
+      "id": "AA21934D-3A6E-4973-983F-28604C44E3AC",
+      "name": "Japanese Breakfast",
+      "type": "urn:entity:artist",
+      "popularity": 0.9908100576564297,
+      "description": "Japanese Breakfast is an American indie rock band led by Michelle Zauner, known for its dreamy and experimental sound."
+     },
+     "provenance": {
+      "contract_version": "1.0-preview.1",
+      "provider_id": "qloo_api",
+      "provider_name": "Qloo native resolution",
+      "endpoint": "/entities",
+      "strategy": "identifier_lookup",
+      "remote": true,
+      "uses_model": false
+     }
+    },
+    {
+     "input": "B58E846A-D1F1-4C6A-AFA7-9230F74CAEE0",
+     "status": "resolved",
+     "match": "identifier",
+     "selected": {
+      "id": "B58E846A-D1F1-4C6A-AFA7-9230F74CAEE0",
+      "name": "Mac DeMarco",
+      "type": "urn:entity:artist",
+      "popularity": 0.9980871155254022,
+      "description": "Canadian singer-songwriter and multi-instrumentalist known for his laid-back style and lo-fi sound."
+     },
+     "provenance": {
+      "contract_version": "1.0-preview.1",
+      "provider_id": "qloo_api",
+      "provider_name": "Qloo native resolution",
+      "endpoint": "/entities",
+      "strategy": "identifier_lookup",
+      "remote": true,
+      "uses_model": false
+     }
+    },
+    {
+     "input": "A854F678-4242-4C4B-A21C-38EE521C885B",
+     "status": "resolved",
+     "match": "identifier",
+     "selected": {
+      "id": "A854F678-4242-4C4B-A21C-38EE521C885B",
+      "name": "Alvvays",
+      "type": "urn:entity:artist",
+      "popularity": 0.9938058978917786,
+      "description": "Alvvays is a Canadian indie pop band known for their catchy melodies and dreamy sound."
+     },
+     "provenance": {
+      "contract_version": "1.0-preview.1",
+      "provider_id": "qloo_api",
+      "provider_name": "Qloo native resolution",
+      "endpoint": "/entities",
+      "strategy": "identifier_lookup",
+      "remote": true,
+      "uses_model": false
+     }
+    }
+   ]
+  },
+  "results": [
+   {
+    "id": "urn:tag:specialty_dish:place:grilled_pork",
+    "name": "Grilled Pork",
+    "type": "urn:tag:specialty_dish:place",
+    "popularity": 0.9850702870877509,
+    "affinity": 1
+   },
+   {
+    "id": "urn:tag:cost_description:place:inexpensive",
+    "name": "Inexpensive",
+    "type": "urn:tag:cost_description:place",
+    "popularity": 0.9999875117087548,
+    "affinity": 1
+   },
+   {
+    "id": "urn:tag:genre:place:restaurant:bar",
+    "name": "Bar",
+    "type": "urn:tag:genre:place",
+    "popularity": 0.9999871189951937,
+    "affinity": 1
+   },
+   {
+    "id": "urn:tag:specialty_dish:place:pork_buns",
+    "name": "Pork Buns",
+    "type": "urn:tag:specialty_dish:place",
+    "popularity": 0.9707158209999022,
+    "affinity": 1
+   },
+   {
+    "id": "urn:tag:inclusivity:place:identifies_as_women_owned",
+    "name": "Identifies as women-owned",
+    "type": "urn:tag:inclusivity:place",
+    "popularity": 0.9999950518091293,
+    "affinity": 1
+   },
+   {
+    "id": "urn:tag:lifestyle:qloo:sporty",
+    "name": "Sporty",
+    "type": "urn:tag:lifestyle:qloo",
+    "popularity": 0.9794678354241142,
+    "affinity": 0.9995227256039356
+   },
+   {
+    "id": "urn:tag:aesthetic_property:qloo:sporty",
+    "name": "Sporty",
+    "type": "urn:tag:aesthetic_property:qloo",
+    "popularity": 0.9990885903672391,
+    "affinity": 0.9993412502002955
+   },
+   {
+    "id": "urn:tag:cultural_relevance:qloo:youth_culture",
+    "name": "Youth Culture",
+    "type": "urn:tag:cultural_relevance:qloo",
+    "popularity": 0.9984501166594905,
+    "affinity": 0.9990044948565567
+   },
+   {
+    "id": "urn:tag:artist:qloo:quirky",
+    "name": "Quirky",
+    "type": "urn:tag:artist:qloo",
+    "popularity": 0.9978028461679718,
+    "affinity": 0.9988710049238372
+   },
+   {
+    "id": "urn:tag:genre:person:musician",
+    "name": "Musician",
+    "type": "urn:tag:genre:person",
+    "popularity": 0.9988677282604376,
+    "affinity": 0.9987975339696654
+   },
+   {
+    "id": "urn:tag:product_service:qloo:apparel",
+    "name": "Apparel",
+    "type": "urn:tag:product_service:qloo",
+    "popularity": 0.9987746551464405,
+    "affinity": 0.9987242937505764
+   },
+   {
+    "id": "urn:tag:personal_style:qloo:sporty",
+    "name": "Sporty",
+    "type": "urn:tag:personal_style:qloo",
+    "popularity": 0.9983096037473043,
+    "affinity": 0.9978848526607592
+   },
+   {
+    "id": "urn:tag:keyword:media:dark_comedy",
+    "name": "dark comedy",
+    "type": "urn:tag:keyword:media",
+    "popularity": 0.9977926031603501,
+    "affinity": 0.9978391920013078
+   },
+   {
+    "id": "urn:tag:artist:qloo:unique",
+    "name": "Unique",
+    "type": "urn:tag:artist:qloo",
+    "popularity": 0.9977754347614022,
+    "affinity": 0.9971682441999175
+   },
+   {
+    "id": "urn:tag:lifestyle:qloo:active",
+    "name": "Active",
+    "type": "urn:tag:lifestyle:qloo",
+    "popularity": 0.9965379943301587,
+    "affinity": 0.9971542482002733
+   }
+  ],
+  "result_count": 15,
+  "provenance": {
+   "source": "Qloo API",
+   "endpoint": "/v2/insights",
+   "documentation": "https://docs.qloo.com/reference/taste-analysis",
+   "requests": [
+    {
+     "method": "GET",
+     "path": "/v2/insights",
+     "query": {
+      "filter.type": "urn:tag",
+      "signal.interests.entities": [
+       "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+       "AA21934D-3A6E-4973-983F-28604C44E3AC",
+       "B58E846A-D1F1-4C6A-AFA7-9230F74CAEE0",
+       "A854F678-4242-4C4B-A21C-38EE521C885B"
+      ],
+      "take": 15
+     }
+    }
+   ],
+   "transport": "mcp"
+  },
+  "query_intent": {
+   "schema_version": "1.0-preview.1",
+   "source_contract_version": "1.0.0",
+   "operation": "entity_tags",
+   "job": "entity_tags",
+   "signals": {
+    "entities": [
+     "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+     "AA21934D-3A6E-4973-983F-28604C44E3AC",
+     "B58E846A-D1F1-4C6A-AFA7-9230F74CAEE0",
+     "A854F678-4242-4C4B-A21C-38EE521C885B"
+    ]
+   },
+   "filters": {},
+   "operators": {},
+   "output": {
+    "limit": 15
+   },
+   "assumptions": [],
+   "unresolved": [],
+   "target": {
+    "type": "artist"
+   }
+  },
+  "execution": {
+   "transport": "mcp",
+   "transport_name": "Qloo canonical MCP",
+   "correlation_id": "mcp-7",
+   "duration_ms": 1363
+  }
+ }
+}

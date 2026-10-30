@@ -1,0 +1,129 @@
+{
+ "tool": "qloo_describe",
+ "args": {
+  "entity": "Khruangbin",
+  "type": "artist"
+ },
+ "envelope": {
+  "schema_version": "1.0-preview.1",
+  "operation": "describe",
+  "status": "ok",
+  "interpretation": {
+   "entity": {
+    "input": "Khruangbin",
+    "entityId": "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+    "name": "Khruangbin",
+    "type": "urn:entity:artist",
+    "match": "exact"
+   }
+  },
+  "resolution": {
+   "contract_version": "1.0-preview.1",
+   "provider": {
+    "contract_version": "1.0-preview.1",
+    "provider_id": "qloo_api",
+    "name": "Qloo native resolution",
+    "entity_strategy": "exact_name_context_or_choice",
+    "tag_strategy": "target_scoped_semantic_search_exact_name_or_choice",
+    "remote": true,
+    "uses_model": false,
+    "fallback": "none"
+   },
+   "outcomes": [
+    {
+     "input": "Khruangbin",
+     "status": "resolved",
+     "match": "exact",
+     "selected": {
+      "id": "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+      "name": "Khruangbin",
+      "type": "urn:entity:artist",
+      "popularity": 0.9919334977446856,
+      "description": "Khruangbin is an American musical trio known for their eclectic blend of global musical influences and instrumental sound."
+     },
+     "provenance": {
+      "contract_version": "1.0-preview.1",
+      "provider_id": "qloo_api",
+      "provider_name": "Qloo native resolution",
+      "endpoint": "/search",
+      "strategy": "exact_name_context_or_choice",
+      "remote": true,
+      "uses_model": false
+     },
+     "alternatives": [
+      {
+       "id": "9446057A-BC4E-468A-BBC7-A3D8F9B70C83",
+       "name": "Khruangbin & Leon Bridges",
+       "type": "urn:entity:artist",
+       "popularity": 0.6103720847067079,
+       "description": "A collaborative musical project blending Khruangbin's psychedelic soul with Leon Bridges' soulful vocals."
+      },
+      {
+       "id": "B52260DE-8051-48A5-80AC-B78D0A48D12F",
+       "name": "Khruangbin @ Villain",
+       "type": "urn:entity:artist",
+       "popularity": 0.19901758031921893,
+       "description": "A Texas-based trio known for their eclectic blend of global musical styles and instrumental grooves."
+      }
+     ]
+    }
+   ]
+  },
+  "results": [
+   {
+    "entity_id": "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+    "name": "Khruangbin",
+    "popularity": 0.9919334977446856,
+    "properties": {
+     "short_description": "Khruangbin is an American musical trio known for their eclectic blend of global musical influences and instrumental sound.",
+     "duration": {},
+     "image": {
+      "url": "https://images.qloo.com/i/BAF6317A-DF94-4C90-92AE-63F86560C21B-420x-auto.jpg"
+     }
+    }
+   }
+  ],
+  "result_count": 1,
+  "provenance": {
+   "source": "Qloo API",
+   "endpoint": "/entities",
+   "documentation": "https://docs.qloo.com/reference/get-entities",
+   "requests": [
+    {
+     "method": "GET",
+     "path": "/entities",
+     "query": {
+      "entity_ids": [
+       "BAF6317A-DF94-4C90-92AE-63F86560C21B"
+      ]
+     }
+    }
+   ],
+   "transport": "mcp"
+  },
+  "query_intent": {
+   "schema_version": "1.0-preview.1",
+   "source_contract_version": "1.0.0",
+   "operation": "describe",
+   "job": "describe",
+   "signals": {},
+   "filters": {},
+   "operators": {},
+   "output": {},
+   "assumptions": [],
+   "unresolved": [],
+   "target": {
+    "type": "artist",
+    "entities": [
+     "Khruangbin"
+    ]
+   }
+  },
+  "execution": {
+   "transport": "mcp",
+   "transport_name": "Qloo canonical MCP",
+   "correlation_id": "mcp-2",
+   "duration_ms": 1282
+  }
+ }
+}

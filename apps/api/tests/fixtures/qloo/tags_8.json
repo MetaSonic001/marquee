@@ -1,0 +1,91 @@
+{
+ "tool": "qloo_find_tags",
+ "args": {
+  "query": "video games brand",
+  "limit": 5
+ },
+ "envelope": {
+  "schema_version": "1.0-preview.1",
+  "operation": "find_tags",
+  "status": "ok",
+  "interpretation": {
+   "query": "video games brand",
+   "semantic": true
+  },
+  "results": [
+   {
+    "id": "urn:tag:genre:brand:games",
+    "name": "Games",
+    "type": "urn:tag:genre:brand",
+    "popularity": 0.9955996445471015
+   },
+   {
+    "id": "urn:tag:genre:brand:electronics:gaming",
+    "name": "Gaming",
+    "type": "urn:tag:genre:brand",
+    "popularity": 0.979734880645709
+   },
+   {
+    "id": "urn:tag:genre:brand:entertainment:video_game_developer",
+    "name": "Video Game Developer",
+    "type": "urn:tag:genre:brand",
+    "popularity": 0.983934166755289
+   },
+   {
+    "id": "urn:tag:product_service:qloo:video_games",
+    "name": "Video Games",
+    "type": "urn:tag:product_service:qloo",
+    "popularity": 0.9953914278169698
+   },
+   {
+    "id": "urn:tag:product_service:qloo:video_game",
+    "name": "Video Game",
+    "type": "urn:tag:product_service:qloo",
+    "popularity": 0.988113974272235
+   }
+  ],
+  "result_count": 5,
+  "provenance": {
+   "source": "Qloo API",
+   "endpoint": "/v2/tags",
+   "documentation": "https://docs.qloo.com/reference/get-tags",
+   "requests": [
+    {
+     "method": "GET",
+     "path": "/v2/tags",
+     "query": {
+      "filter.query": "video games brand",
+      "feature.semantic_search": true,
+      "take": 5
+     }
+    }
+   ],
+   "transport": "mcp"
+  },
+  "query_intent": {
+   "schema_version": "1.0-preview.1",
+   "source_contract_version": "1.0.0",
+   "operation": "find_tags",
+   "job": "find_tags",
+   "signals": {},
+   "filters": {},
+   "operators": {},
+   "output": {
+    "limit": 5
+   },
+   "assumptions": [
+    "semantic=true"
+   ],
+   "unresolved": [],
+   "target": {
+    "concept": "video games brand"
+   }
+  },
+  "execution": {
+   "transport": "mcp",
+   "transport_name": "Qloo canonical MCP",
+   "correlation_id": "mcp-11",
+   "duration_ms": 1268
+  }
+ }
+}

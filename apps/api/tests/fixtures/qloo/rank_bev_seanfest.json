@@ -1,0 +1,588 @@
+{
+ "tool": "qloo_rank",
+ "args": {
+  "options": [
+   "Pepsi",
+   "Coca-Cola",
+   "Gatorade",
+   "Red Bull",
+   "Liquid Death"
+  ],
+  "option_type": "brand",
+  "signals": [
+   "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+   "AA21934D-3A6E-4973-983F-28604C44E3AC",
+   "B58E846A-D1F1-4C6A-AFA7-9230F74CAEE0",
+   "A854F678-4242-4C4B-A21C-38EE521C885B"
+  ]
+ },
+ "envelope": {
+  "schema_version": "1.0-preview.1",
+  "operation": "rank",
+  "status": "ok",
+  "interpretation": {
+   "option_type": "urn:entity:brand",
+   "options": [
+    {
+     "input": "Pepsi",
+     "entityId": "957B527A-CF2C-4283-A2FD-3F49741DF5DE",
+     "name": "Pepsi",
+     "type": "urn:entity:brand",
+     "match": "exact"
+    },
+    {
+     "input": "Coca-Cola",
+     "entityId": "A539C8C9-4733-41A9-911A-11AC2B6D475A",
+     "name": "Coca-Cola",
+     "type": "urn:entity:brand",
+     "match": "exact"
+    },
+    {
+     "input": "Gatorade",
+     "entityId": "18316CE7-595D-4469-8FDF-43D1B70021E4",
+     "name": "Gatorade",
+     "type": "urn:entity:brand",
+     "match": "exact"
+    },
+    {
+     "input": "Red Bull",
+     "entityId": "409FAF5A-BC5F-4DC3-943D-E3B5F20B471D",
+     "name": "Red Bull",
+     "type": "urn:entity:brand",
+     "match": "exact"
+    },
+    {
+     "input": "Liquid Death",
+     "entityId": "4DF7C265-52D9-4A99-8803-F62C2302D561",
+     "name": "Liquid Death",
+     "type": "urn:entity:brand",
+     "match": "exact"
+    }
+   ],
+   "signals": [
+    {
+     "input": "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+     "entityId": "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+     "name": "Khruangbin",
+     "type": "urn:entity:artist",
+     "match": "identifier"
+    },
+    {
+     "input": "AA21934D-3A6E-4973-983F-28604C44E3AC",
+     "entityId": "AA21934D-3A6E-4973-983F-28604C44E3AC",
+     "name": "Japanese Breakfast",
+     "type": "urn:entity:artist",
+     "match": "identifier"
+    },
+    {
+     "input": "B58E846A-D1F1-4C6A-AFA7-9230F74CAEE0",
+     "entityId": "B58E846A-D1F1-4C6A-AFA7-9230F74CAEE0",
+     "name": "Mac DeMarco",
+     "type": "urn:entity:artist",
+     "match": "identifier"
+    },
+    {
+     "input": "A854F678-4242-4C4B-A21C-38EE521C885B",
+     "entityId": "A854F678-4242-4C4B-A21C-38EE521C885B",
+     "name": "Alvvays",
+     "type": "urn:entity:artist",
+     "match": "identifier"
+    }
+   ],
+   "include_tags": [],
+   "exclude_tags": []
+  },
+  "resolution": {
+   "contract_version": "1.0-preview.1",
+   "provider": {
+    "contract_version": "1.0-preview.1",
+    "provider_id": "qloo_api",
+    "name": "Qloo native resolution",
+    "entity_strategy": "exact_name_context_or_choice",
+    "tag_strategy": "target_scoped_semantic_search_exact_name_or_choice",
+    "remote": true,
+    "uses_model": false,
+    "fallback": "none"
+   },
+   "outcomes": [
+    {
+     "input": "Pepsi",
+     "status": "resolved",
+     "match": "exact",
+     "selected": {
+      "id": "957B527A-CF2C-4283-A2FD-3F49741DF5DE",
+      "name": "Pepsi",
+      "type": "urn:entity:brand",
+      "popularity": 0.997016494041464,
+      "description": "Pepsi is a global beverage brand known for its popular cola soft drinks and other flavored beverages."
+     },
+     "provenance": {
+      "contract_version": "1.0-preview.1",
+      "provider_id": "qloo_api",
+      "provider_name": "Qloo native resolution",
+      "endpoint": "/search",
+      "strategy": "exact_name_context_or_choice",
+      "remote": true,
+      "uses_model": false
+     },
+     "alternatives": [
+      {
+       "id": "EBD8C20D-690B-448F-A86D-6491FC6D2B8C",
+       "name": "Pepsi Max",
+       "type": "urn:entity:brand",
+       "popularity": 0.49883880591954705,
+       "description": "Pepsi Max is a sugar-free, maximum taste cola beverage available primarily in Asian, European, and Australia/New Zealand markets."
+      },
+      {
+       "id": "F22AF8FD-B3EA-4F57-83B8-0D5BFC6958C8",
+       "name": "Pepsi Wild Cherry",
+       "type": "urn:entity:brand",
+       "popularity": 0.3335,
+       "description": "Pepsi Wild Cherry is a cherry-flavored variant of Pepsi cola known for its unique cherry flavor and sweet, crisp taste."
+      },
+      {
+       "id": "62778D8C-FE9C-4D13-AF6E-1BE34A58E593",
+       "name": "Pepsi Nitro",
+       "type": "urn:entity:brand",
+       "popularity": 0.3335,
+       "description": "Pepsi Nitro is a nitrogen-infused cola soft drink by PepsiCo, known for its creamy, smooth texture and smaller bubbles."
+      },
+      {
+       "id": "F1AA44B6-E9E6-4673-96FB-F463844BB04A",
+       "name": "Diet Pepsi",
+       "type": "urn:entity:brand",
+       "popularity": 0.3335,
+       "description": "Diet Pepsi is a diet carbonated cola soft drink with zero sugar, zero calories, and zero carbs, produced by PepsiCo."
+      }
+     ]
+    },
+    {
+     "input": "Coca-Cola",
+     "status": "resolved",
+     "match": "exact",
+     "selected": {
+      "id": "A539C8C9-4733-41A9-911A-11AC2B6D475A",
+      "name": "Coca-Cola",
+      "type": "urn:entity:brand",
+      "popularity": 0.9988557576579479,
+      "description": "Coca-Cola is a global beverage brand known for its iconic soft drinks, committed to sustainability and local production."
+     },
+     "provenance": {
+      "contract_version": "1.0-preview.1",
+      "provider_id": "qloo_api",
+      "provider_name": "Qloo native resolution",
+      "endpoint": "/search",
+      "strategy": "exact_name_context_or_choice",
+      "remote": true,
+      "uses_model": false
+     },
+     "alternatives": [
+      {
+       "id": "7A6A2326-662C-4A71-9A8B-AD868F9E9FE3",
+       "name": "Coca-Cola Scholars Foundation",
+       "type": "urn:entity:brand",
+       "popularity": 0.4256072960282077,
+       "description": "The Coca-Cola Scholars Foundation offers college scholarships to exceptional high school students dedicated to leadership and service."
+      },
+      {
+       "id": "957B527A-CF2C-4283-A2FD-3F49741DF5DE",
+       "name": "Pepsi",
+       "type": "urn:entity:brand",
+       "popularity": 0.997016494041464,
+       "description": "Pepsi is a global beverage brand known for its popular cola soft drinks and other flavored beverages."
+      },
+      {
+       "id": "B7DC9672-443F-4E4E-8317-4E46E385A987",
+       "name": "Diet Pepsi Cola Wild Cherry",
+       "type": "urn:entity:brand",
+       "popularity": 0.3335,
+       "description": "Diet Pepsi Cola Wild Cherry is a zero-calorie, cherry-flavored diet cola beverage by PepsiCo, known for its bold, bubbly taste and sweet cherry flavor."
+      },
+      {
+       "id": "51A94F17-0C9C-4DB2-B803-6F1A19F2C76D",
+       "name": "Colacao",
+       "type": "urn:entity:brand",
+       "popularity": 0.6783916190605347,
+       "description": "Cola Cao is a popular Spanish chocolate drink mix made from natural cocoa, known for its rich, chocolatey flavor and vitamin-enriched formula."
+      }
+     ]
+    },
+    {
+     "input": "Gatorade",
+     "status": "resolved",
+     "match": "exact",
+     "selected": {
+      "id": "18316CE7-595D-4469-8FDF-43D1B70021E4",
+      "name": "Gatorade",
+      "type": "urn:entity:brand",
+      "popularity": 0.9897526741367327,
+      "description": "Gatorade is a sports drink brand known for hydration and energy replenishment for athletes worldwide."
+     },
+     "provenance": {
+      "contract_version": "1.0-preview.1",
+      "provider_id": "qloo_api",
+      "provider_name": "Qloo native resolution",
+      "endpoint": "/search",
+      "strategy": "exact_name_context_or_choice",
+      "remote": true,
+      "uses_model": false
+     },
+     "alternatives": [
+      {
+       "id": "8D9BCB37-5906-42A5-8012-D7982D29BBF3",
+       "name": "Gatorade Thirst Quencher",
+       "type": "urn:entity:brand",
+       "popularity": 0.3335,
+       "description": "Gatorade Thirst Quencher is a sports drink designed to hydrate and replenish electrolytes lost in sweat, available in various flavors and formats."
+      },
+      {
+       "id": "9A9657E4-72E6-4263-BD3F-BE966976C58E",
+       "name": "Gatorade G2",
+       "type": "urn:entity:brand",
+       "popularity": 0.3335,
+       "description": "Gatorade G2 is a lower sugar sports drink by Gatorade designed to help athletes hydrate and replenish energy with fewer calories than the original Gatorade."
+      },
+      {
+       "id": "19E084C2-0B06-40F4-9B03-623894FA22B6",
+       "name": "Gatorade Zero",
+       "type": "urn:entity:brand",
+       "popularity": 0.3335,
+       "description": "Gatorade Zero is a zero-sugar sports drink with electrolytes designed to hydrate and replenish what athletes lose in sweat."
+      }
+     ]
+    },
+    {
+     "input": "Red Bull",
+     "status": "resolved",
+     "match": "exact",
+     "selected": {
+      "id": "409FAF5A-BC5F-4DC3-943D-E3B5F20B471D",
+      "name": "Red Bull",
+      "type": "urn:entity:brand",
+      "popularity": 0.999296502856368,
+      "description": "Red Bull is a global brand known for its energy drinks, including original, sugar-free, zero-calorie, and flavored editions, and its involvement in sports and entertainment events."
+     },
+     "provenance": {
+      "contract_version": "1.0-preview.1",
+      "provider_id": "qloo_api",
+      "provider_name": "Qloo native resolution",
+      "endpoint": "/search",
+      "strategy": "exact_name_context_or_choice",
+      "remote": true,
+      "uses_model": false
+     },
+     "alternatives": [
+      {
+       "id": "776152C5-ED96-4A52-98A7-A393D4EDA478",
+       "name": "Red Bull Racing",
+       "type": "urn:entity:brand",
+       "popularity": 0.9982793985523215,
+       "description": "An elite Formula One team established in 2005 that has evolved into one of the most successful competitors in motorsport history. Known for its 'work hard, play hard' philosophy, the team combines world-class aerodynamic design with aggressive racing strategies to capture multiple Constructors' and Drivers' championships. It serves as a central hub for cutting-edge automotive innovation and global sports entertainment, continuously pushing the boundaries of engineering. The organization maintain"
+      },
+      {
+       "id": "7437509F-9508-4B30-8561-D8879DC63AC9",
+       "name": "Red Bull X-Fighters",
+       "type": "urn:entity:brand",
+       "popularity": 0.9187587937142954,
+       "description": "Red Bull X-Fighters is a freestyle motocross competition series organized by Red Bull, featuring top FMX riders performing extreme tricks and stunts."
+      },
+      {
+       "id": "EAB22C11-BF13-44EB-BB94-C0F9134E75B0",
+       "name": "Red Bull Air Race World Championship",
+       "type": "urn:entity:brand",
+       "popularity": 0.8990693495617975,
+       "description": "An international air racing championship featuring skilled pilots navigating challenging courses in high-speed aircraft."
+      },
+      {
+       "id": "4AD848F9-835F-4F34-89C3-045769682279",
+       "name": "Red Bull Cliff Diving",
+       "type": "urn:entity:brand",
+       "popularity": 0.8984421352409689,
+       "description": "Red Bull Cliff Diving is an extreme sports event series featuring divers performing acrobatics from heights over 20 meters."
+      }
+     ]
+    },
+    {
+     "input": "Liquid Death",
+     "status": "resolved",
+     "match": "exact",
+     "selected": {
+      "id": "4DF7C265-52D9-4A99-8803-F62C2302D561",
+      "name": "Liquid Death",
+      "type": "urn:entity:brand",
+      "popularity": 0.9201996914783611,
+      "description": "Liquid Death is a canned water brand known for its mountain water sold in large recyclable cans with a bold, edgy marketing style."
+     },
+     "provenance": {
+      "contract_version": "1.0-preview.1",
+      "provider_id": "qloo_api",
+      "provider_name": "Qloo native resolution",
+      "endpoint": "/search",
+      "strategy": "exact_name_context_or_choice",
+      "remote": true,
+      "uses_model": false
+     },
+     "alternatives": [
+      {
+       "id": "9203670F-0181-49DF-B26B-8571BF7F53D8",
+       "name": "Death Stranding",
+       "type": "urn:entity:brand",
+       "popularity": 0.9653167432320184,
+       "description": "Death Stranding is an action game developed and published by Kojima Productions, known for its unique gameplay and storytelling."
+      },
+      {
+       "id": "E3C491FF-774C-4A09-8BC0-48EA3F6CF8C6",
+       "name": "Liquid I.V.",
+       "type": "urn:entity:brand",
+       "popularity": 0.9155633910257497,
+       "description": "Liquid I.V. is a functional hydration brand offering science-backed electrolyte powder drink mixes that enhance water absorption and hydration."
+      },
+      {
+       "id": "8E104A95-D942-4B31-88AC-07B26D1DE219",
+       "name": "Death Wish Coffee Co.",
+       "type": "urn:entity:brand",
+       "popularity": 0.8735569832686342,
+       "description": "Death Wish Coffee Co. is a brand known for its organic, fair trade, and high-caffeine dark roast coffee products, including premium cold brew lattes."
+      },
+      {
+       "id": "70117C4A-F6ED-4628-BA93-D12BD9230388",
+       "name": "Death Row Records",
+       "type": "urn:entity:brand",
+       "popularity": 0.8604109101388348,
+       "description": "Death Row Records is an American record label known for pioneering West Coast hip hop and launching iconic artists like Dr. Dre and Snoop Dogg."
+      }
+     ]
+    },
+    {
+     "input": "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+     "status": "resolved",
+     "match": "identifier",
+     "selected": {
+      "id": "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+      "name": "Khruangbin",
+      "type": "urn:entity:artist",
+      "popularity": 0.9919334977446856,
+      "description": "Khruangbin is an American musical trio known for their eclectic blend of global musical influences and instrumental sound."
+     },
+     "provenance": {
+      "contract_version": "1.0-preview.1",
+      "provider_id": "qloo_api",
+      "provider_name": "Qloo native resolution",
+      "endpoint": "/entities",
+      "strategy": "identifier_lookup",
+      "remote": true,
+      "uses_model": false
+     }
+    },
+    {
+     "input": "AA21934D-3A6E-4973-983F-28604C44E3AC",
+     "status": "resolved",
+     "match": "identifier",
+     "selected": {
+      "id": "AA21934D-3A6E-4973-983F-28604C44E3AC",
+      "name": "Japanese Breakfast",
+      "type": "urn:entity:artist",
+      "popularity": 0.9908100576564297,
+      "description": "Japanese Breakfast is an American indie rock band led by Michelle Zauner, known for its dreamy and experimental sound."
+     },
+     "provenance": {
+      "contract_version": "1.0-preview.1",
+      "provider_id": "qloo_api",
+      "provider_name": "Qloo native resolution",
+      "endpoint": "/entities",
+      "strategy": "identifier_lookup",
+      "remote": true,
+      "uses_model": false
+     }
+    },
+    {
+     "input": "B58E846A-D1F1-4C6A-AFA7-9230F74CAEE0",
+     "status": "resolved",
+     "match": "identifier",
+     "selected": {
+      "id": "B58E846A-D1F1-4C6A-AFA7-9230F74CAEE0",
+      "name": "Mac DeMarco",
+      "type": "urn:entity:artist",
+      "popularity": 0.9980871155254022,
+      "description": "Canadian singer-songwriter and multi-instrumentalist known for his laid-back style and lo-fi sound."
+     },
+     "provenance": {
+      "contract_version": "1.0-preview.1",
+      "provider_id": "qloo_api",
+      "provider_name": "Qloo native resolution",
+      "endpoint": "/entities",
+      "strategy": "identifier_lookup",
+      "remote": true,
+      "uses_model": false
+     }
+    },
+    {
+     "input": "A854F678-4242-4C4B-A21C-38EE521C885B",
+     "status": "resolved",
+     "match": "identifier",
+     "selected": {
+      "id": "A854F678-4242-4C4B-A21C-38EE521C885B",
+      "name": "Alvvays",
+      "type": "urn:entity:artist",
+      "popularity": 0.9938058978917786,
+      "description": "Alvvays is a Canadian indie pop band known for their catchy melodies and dreamy sound."
+     },
+     "provenance": {
+      "contract_version": "1.0-preview.1",
+      "provider_id": "qloo_api",
+      "provider_name": "Qloo native resolution",
+      "endpoint": "/entities",
+      "strategy": "identifier_lookup",
+      "remote": true,
+      "uses_model": false
+     }
+    }
+   ]
+  },
+  "results": [
+   {
+    "entity_id": "409FAF5A-BC5F-4DC3-943D-E3B5F20B471D",
+    "name": "Red Bull",
+    "type": "urn:entity",
+    "subtype": "urn:entity:brand",
+    "popularity": 0.999296502856368,
+    "affinity": 0.8131069146856333,
+    "properties": {
+     "description": "Red Bull is a world-renowned energy drink brand recognized for its unique identity in high-performance and extreme-sports culture. Established in 1987, the company produces a variety of energy drinks and is deeply integrated into global media and event sponsorship. The brand positions itself as a catalyst for mental and physical alertness, appealing to a broad demographic of active, performance-driven consumers. Through its extensive involvement in motorsports, music, and gaming, it maintains a strong cultural relevance as a leader in the energy beverage industry.",
+     "short_description": "Red Bull is a global brand known for its energy drinks, including original, sugar-free, zero-calorie, and flavored editions, and its involvement in sports and entertainment events.",
+     "image": {
+      "url": "https://images.qloo.com/i/409FAF5A-BC5F-4DC3-943D-E3B5F20B471D-420x-auto.jpg"
+     }
+    }
+   },
+   {
+    "entity_id": "A539C8C9-4733-41A9-911A-11AC2B6D475A",
+    "name": "Coca-Cola",
+    "type": "urn:entity",
+    "subtype": "urn:entity:brand",
+    "popularity": 0.9988557576579479,
+    "affinity": 0.7411664266042238,
+    "properties": {
+     "description": "Coca-Cola is the world's most ubiquitous beverage brand, synonymous with the cola soft drink category since its invention in the late 19th century. Built on a foundation of universal optimism and refreshment, the brand maintains a massive global footprint through highly localized production and distribution. It consistently occupies a central role in social moments, from everyday meals to major global sporting events and holidays. The brand is defined by its iconic red aesthetic, proprietary bottle silhouette, and a commitment to evolving its sustainability practices while maintaining a deeply established heritage.",
+     "short_description": "Coca-Cola is a global beverage brand known for its iconic soft drinks, committed to sustainability and local production.",
+     "image": {
+      "url": "https://images.qloo.com/i/A539C8C9-4733-41A9-911A-11AC2B6D475A-420x-auto.jpg"
+     }
+    }
+   },
+   {
+    "entity_id": "4DF7C265-52D9-4A99-8803-F62C2302D561",
+    "name": "Liquid Death",
+    "type": "urn:entity",
+    "subtype": "urn:entity:brand",
+    "popularity": 0.9201996914783611,
+    "affinity": 0.7364853612577508,
+    "properties": {
+     "description": "A beverage company that challenges industry norms by selling mountain water and flavored sparkling drinks in sustainable aluminum cans. Known for its distinctively edgy and provocative marketing, the brand aims to make environmental sustainability accessible and entertaining. By replacing single-use plastic bottles with infinitely recyclable aluminum, it captures a loyal following among younger, eco-conscious demographics. Its product range has expanded from still water to include various flavored carbonated waters, teas, and energy drinks.",
+     "short_description": "Liquid Death is a canned water brand known for its mountain water sold in large recyclable cans with a bold, edgy marketing style.",
+     "image": {
+      "url": "https://images.qloo.com/i/4DF7C265-52D9-4A99-8803-F62C2302D561-420x-auto.jpg"
+     }
+    }
+   },
+   {
+    "entity_id": "18316CE7-595D-4469-8FDF-43D1B70021E4",
+    "name": "Gatorade",
+    "type": "urn:entity",
+    "subtype": "urn:entity:brand",
+    "popularity": 0.9897526741367327,
+    "affinity": 0.725711780507956,
+    "properties": {
+     "description": "Originally developed at the University of Florida to aid the performance of student-athletes, this iconic brand has become synonymous with sports hydration and recovery. It provides a range of beverages and nutrition products scientifically designed to replace lost fluids and electrolytes during physical activity. The brand maintains a dominant market position by catering to athletes ranging from youth teams to professional organizations. Its identity is rooted in the intersection of performance science and competitive spirit, consistently fueling the pursuit of physical achievement.",
+     "short_description": "Gatorade is a sports drink brand known for hydration and energy replenishment for athletes worldwide.",
+     "image": {
+      "url": "https://images.qloo.com/i/18316CE7-595D-4469-8FDF-43D1B70021E4-420x-auto.jpg"
+     }
+    }
+   },
+   {
+    "entity_id": "957B527A-CF2C-4283-A2FD-3F49741DF5DE",
+    "name": "Pepsi",
+    "type": "urn:entity",
+    "subtype": "urn:entity:brand",
+    "popularity": 0.997016494041464,
+    "affinity": 0.6969163261270649,
+    "properties": {
+     "description": "An iconic, globally available carbonated soft drink that stands as a flagship product of its parent corporation. With a history rooted in bold, refreshing cola flavors, the brand has maintained its position through heavy investment in music, sports, and entertainment partnerships. It serves as a mass-market staple appealing to a wide demographic looking for classic refreshment in casual and social settings. The brand continues to innovate with zero-sugar variants and modern packaging to remain relevant to contemporary consumer tastes.",
+     "short_description": "Pepsi is a global beverage brand known for its popular cola soft drinks and other flavored beverages.",
+     "image": {
+      "url": "https://images.qloo.com/i/957B527A-CF2C-4283-A2FD-3F49741DF5DE-420x-auto.jpg"
+     }
+    }
+   }
+  ],
+  "result_count": 5,
+  "provenance": {
+   "source": "Qloo API",
+   "endpoint": "/v2/insights",
+   "documentation": "https://docs.qloo.com/reference/insights-api-deep-dive",
+   "requests": [
+    {
+     "method": "GET",
+     "path": "/v2/insights",
+     "query": {
+      "filter.type": "urn:entity:brand",
+      "filter.results.entities": [
+       "957B527A-CF2C-4283-A2FD-3F49741DF5DE",
+       "A539C8C9-4733-41A9-911A-11AC2B6D475A",
+       "18316CE7-595D-4469-8FDF-43D1B70021E4",
+       "409FAF5A-BC5F-4DC3-943D-E3B5F20B471D",
+       "4DF7C265-52D9-4A99-8803-F62C2302D561"
+      ],
+      "take": 5,
+      "signal.interests.entities": [
+       "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+       "AA21934D-3A6E-4973-983F-28604C44E3AC",
+       "B58E846A-D1F1-4C6A-AFA7-9230F74CAEE0",
+       "A854F678-4242-4C4B-A21C-38EE521C885B"
+      ]
+     }
+    }
+   ],
+   "transport": "mcp"
+  },
+  "query_intent": {
+   "schema_version": "1.0-preview.1",
+   "source_contract_version": "1.0.0",
+   "operation": "rank",
+   "job": "rank",
+   "signals": {
+    "entities": [
+     "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+     "AA21934D-3A6E-4973-983F-28604C44E3AC",
+     "B58E846A-D1F1-4C6A-AFA7-9230F74CAEE0",
+     "A854F678-4242-4C4B-A21C-38EE521C885B"
+    ]
+   },
+   "filters": {
+    "candidateEntities": [
+     "Pepsi",
+     "Coca-Cola",
+     "Gatorade",
+     "Red Bull",
+     "Liquid Death"
+    ]
+   },
+   "operators": {},
+   "output": {
+    "limit": 5
+   },
+   "assumptions": [],
+   "unresolved": [],
+   "target": {
+    "type": "brand"
+   }
+  },
+  "execution": {
+   "transport": "mcp",
+   "transport_name": "Qloo canonical MCP",
+   "correlation_id": "mcp-2",
+   "duration_ms": 1351
+  }
+ }
+}

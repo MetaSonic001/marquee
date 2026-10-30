@@ -1,0 +1,143 @@
+{
+ "tool": "qloo_describe",
+ "args": {
+  "entity": "Pepsi",
+  "type": "brand"
+ },
+ "envelope": {
+  "schema_version": "1.0-preview.1",
+  "operation": "describe",
+  "status": "ok",
+  "interpretation": {
+   "entity": {
+    "input": "Pepsi",
+    "entityId": "957B527A-CF2C-4283-A2FD-3F49741DF5DE",
+    "name": "Pepsi",
+    "type": "urn:entity:brand",
+    "match": "exact"
+   }
+  },
+  "resolution": {
+   "contract_version": "1.0-preview.1",
+   "provider": {
+    "contract_version": "1.0-preview.1",
+    "provider_id": "qloo_api",
+    "name": "Qloo native resolution",
+    "entity_strategy": "exact_name_context_or_choice",
+    "tag_strategy": "target_scoped_semantic_search_exact_name_or_choice",
+    "remote": true,
+    "uses_model": false,
+    "fallback": "none"
+   },
+   "outcomes": [
+    {
+     "input": "Pepsi",
+     "status": "resolved",
+     "match": "exact",
+     "selected": {
+      "id": "957B527A-CF2C-4283-A2FD-3F49741DF5DE",
+      "name": "Pepsi",
+      "type": "urn:entity:brand",
+      "popularity": 0.997016494041464,
+      "description": "Pepsi is a global beverage brand known for its popular cola soft drinks and other flavored beverages."
+     },
+     "provenance": {
+      "contract_version": "1.0-preview.1",
+      "provider_id": "qloo_api",
+      "provider_name": "Qloo native resolution",
+      "endpoint": "/search",
+      "strategy": "exact_name_context_or_choice",
+      "remote": true,
+      "uses_model": false
+     },
+     "alternatives": [
+      {
+       "id": "EBD8C20D-690B-448F-A86D-6491FC6D2B8C",
+       "name": "Pepsi Max",
+       "type": "urn:entity:brand",
+       "popularity": 0.49883880591954705,
+       "description": "Pepsi Max is a sugar-free, maximum taste cola beverage available primarily in Asian, European, and Australia/New Zealand markets."
+      },
+      {
+       "id": "F22AF8FD-B3EA-4F57-83B8-0D5BFC6958C8",
+       "name": "Pepsi Wild Cherry",
+       "type": "urn:entity:brand",
+       "popularity": 0.3335,
+       "description": "Pepsi Wild Cherry is a cherry-flavored variant of Pepsi cola known for its unique cherry flavor and sweet, crisp taste."
+      },
+      {
+       "id": "62778D8C-FE9C-4D13-AF6E-1BE34A58E593",
+       "name": "Pepsi Nitro",
+       "type": "urn:entity:brand",
+       "popularity": 0.3335,
+       "description": "Pepsi Nitro is a nitrogen-infused cola soft drink by PepsiCo, known for its creamy, smooth texture and smaller bubbles."
+      },
+      {
+       "id": "F1AA44B6-E9E6-4673-96FB-F463844BB04A",
+       "name": "Diet Pepsi",
+       "type": "urn:entity:brand",
+       "popularity": 0.3335,
+       "description": "Diet Pepsi is a diet carbonated cola soft drink with zero sugar, zero calories, and zero carbs, produced by PepsiCo."
+      }
+     ]
+    }
+   ]
+  },
+  "results": [
+   {
+    "entity_id": "957B527A-CF2C-4283-A2FD-3F49741DF5DE",
+    "name": "Pepsi",
+    "popularity": 0.997016494041464,
+    "properties": {
+     "description": "An iconic, globally available carbonated soft drink that stands as a flagship product of its parent corporation. With a history rooted in bold, refreshing cola flavors, the brand has maintained its position through heavy investment in music, sports, and entertainment partnerships. It serves as a mass-market staple appealing to a wide demographic looking for classic refreshment in casual and social settings. The brand continues to innovate with zero-sugar variants and modern packaging to remain relevant to contemporary consumer tastes.",
+     "short_description": "Pepsi is a global beverage brand known for its popular cola soft drinks and other flavored beverages.",
+     "image": {
+      "url": "https://images.qloo.com/i/957B527A-CF2C-4283-A2FD-3F49741DF5DE-420x-auto.jpg"
+     }
+    }
+   }
+  ],
+  "result_count": 1,
+  "provenance": {
+   "source": "Qloo API",
+   "endpoint": "/entities",
+   "documentation": "https://docs.qloo.com/reference/get-entities",
+   "requests": [
+    {
+     "method": "GET",
+     "path": "/entities",
+     "query": {
+      "entity_ids": [
+       "957B527A-CF2C-4283-A2FD-3F49741DF5DE"
+      ]
+     }
+    }
+   ],
+   "transport": "mcp"
+  },
+  "query_intent": {
+   "schema_version": "1.0-preview.1",
+   "source_contract_version": "1.0.0",
+   "operation": "describe",
+   "job": "describe",
+   "signals": {},
+   "filters": {},
+   "operators": {},
+   "output": {},
+   "assumptions": [],
+   "unresolved": [],
+   "target": {
+    "type": "brand",
+    "entities": [
+     "Pepsi"
+    ]
+   }
+  },
+  "execution": {
+   "transport": "mcp",
+   "transport_name": "Qloo canonical MCP",
+   "correlation_id": "mcp-4",
+   "duration_ms": 579
+  }
+ }
+}

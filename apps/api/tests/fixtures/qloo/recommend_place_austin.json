@@ -1,0 +1,767 @@
+{
+ "tool": "qloo_recommend",
+ "args": {
+  "target_type": "place",
+  "signals": [
+   "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+   "AA21934D-3A6E-4973-983F-28604C44E3AC",
+   "B58E846A-D1F1-4C6A-AFA7-9230F74CAEE0",
+   "A854F678-4242-4C4B-A21C-38EE521C885B"
+  ],
+  "filter_location": "Austin, TX",
+  "limit": 10
+ },
+ "envelope": {
+  "schema_version": "1.0-preview.1",
+  "operation": "recommend",
+  "status": "ok",
+  "interpretation": {
+   "target_type": "urn:entity:place",
+   "signals": [
+    {
+     "input": "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+     "entityId": "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+     "name": "Khruangbin",
+     "type": "urn:entity:artist",
+     "match": "identifier"
+    },
+    {
+     "input": "AA21934D-3A6E-4973-983F-28604C44E3AC",
+     "entityId": "AA21934D-3A6E-4973-983F-28604C44E3AC",
+     "name": "Japanese Breakfast",
+     "type": "urn:entity:artist",
+     "match": "identifier"
+    },
+    {
+     "input": "B58E846A-D1F1-4C6A-AFA7-9230F74CAEE0",
+     "entityId": "B58E846A-D1F1-4C6A-AFA7-9230F74CAEE0",
+     "name": "Mac DeMarco",
+     "type": "urn:entity:artist",
+     "match": "identifier"
+    },
+    {
+     "input": "A854F678-4242-4C4B-A21C-38EE521C885B",
+     "entityId": "A854F678-4242-4C4B-A21C-38EE521C885B",
+     "name": "Alvvays",
+     "type": "urn:entity:artist",
+     "match": "identifier"
+    }
+   ],
+   "signal_tags": [],
+   "filter_location": "Austin, TX",
+   "include_tags": [],
+   "exclude_tags": []
+  },
+  "resolution": {
+   "contract_version": "1.0-preview.1",
+   "provider": {
+    "contract_version": "1.0-preview.1",
+    "provider_id": "qloo_api",
+    "name": "Qloo native resolution",
+    "entity_strategy": "exact_name_context_or_choice",
+    "tag_strategy": "target_scoped_semantic_search_exact_name_or_choice",
+    "remote": true,
+    "uses_model": false,
+    "fallback": "none"
+   },
+   "outcomes": [
+    {
+     "input": "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+     "status": "resolved",
+     "match": "identifier",
+     "selected": {
+      "id": "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+      "name": "Khruangbin",
+      "type": "urn:entity:artist",
+      "popularity": 0.9919334977446856,
+      "description": "Khruangbin is an American musical trio known for their eclectic blend of global musical influences and instrumental sound."
+     },
+     "provenance": {
+      "contract_version": "1.0-preview.1",
+      "provider_id": "qloo_api",
+      "provider_name": "Qloo native resolution",
+      "endpoint": "/entities",
+      "strategy": "identifier_lookup",
+      "remote": true,
+      "uses_model": false,
+      "cache_status": "memory_hit"
+     }
+    },
+    {
+     "input": "AA21934D-3A6E-4973-983F-28604C44E3AC",
+     "status": "resolved",
+     "match": "identifier",
+     "selected": {
+      "id": "AA21934D-3A6E-4973-983F-28604C44E3AC",
+      "name": "Japanese Breakfast",
+      "type": "urn:entity:artist",
+      "popularity": 0.9908100576564297,
+      "description": "Japanese Breakfast is an American indie rock band led by Michelle Zauner, known for its dreamy and experimental sound."
+     },
+     "provenance": {
+      "contract_version": "1.0-preview.1",
+      "provider_id": "qloo_api",
+      "provider_name": "Qloo native resolution",
+      "endpoint": "/entities",
+      "strategy": "identifier_lookup",
+      "remote": true,
+      "uses_model": false,
+      "cache_status": "memory_hit"
+     }
+    },
+    {
+     "input": "B58E846A-D1F1-4C6A-AFA7-9230F74CAEE0",
+     "status": "resolved",
+     "match": "identifier",
+     "selected": {
+      "id": "B58E846A-D1F1-4C6A-AFA7-9230F74CAEE0",
+      "name": "Mac DeMarco",
+      "type": "urn:entity:artist",
+      "popularity": 0.9980871155254022,
+      "description": "Canadian singer-songwriter and multi-instrumentalist known for his laid-back style and lo-fi sound."
+     },
+     "provenance": {
+      "contract_version": "1.0-preview.1",
+      "provider_id": "qloo_api",
+      "provider_name": "Qloo native resolution",
+      "endpoint": "/entities",
+      "strategy": "identifier_lookup",
+      "remote": true,
+      "uses_model": false,
+      "cache_status": "memory_hit"
+     }
+    },
+    {
+     "input": "A854F678-4242-4C4B-A21C-38EE521C885B",
+     "status": "resolved",
+     "match": "identifier",
+     "selected": {
+      "id": "A854F678-4242-4C4B-A21C-38EE521C885B",
+      "name": "Alvvays",
+      "type": "urn:entity:artist",
+      "popularity": 0.9938058978917786,
+      "description": "Alvvays is a Canadian indie pop band known for their catchy melodies and dreamy sound."
+     },
+     "provenance": {
+      "contract_version": "1.0-preview.1",
+      "provider_id": "qloo_api",
+      "provider_name": "Qloo native resolution",
+      "endpoint": "/entities",
+      "strategy": "identifier_lookup",
+      "remote": true,
+      "uses_model": false,
+      "cache_status": "memory_hit"
+     }
+    }
+   ]
+  },
+  "results": [
+   {
+    "entity_id": "C1A96FC0-E6AD-40CB-95D4-5840AE160292",
+    "name": "Blanton Museum of Art",
+    "type": "urn:entity",
+    "subtype": "urn:entity:place",
+    "popularity": 0.9987023146605569,
+    "affinity": 0.9033514128806447,
+    "explainability": {
+     "signal.interests.entities": [
+      {
+       "entity_id": "B58E846A-D1F1-4C6A-AFA7-9230F74CAEE0",
+       "score": 0.25749071186145117
+      },
+      {
+       "entity_id": "AA21934D-3A6E-4973-983F-28604C44E3AC",
+       "score": 0.2537432259952679
+      },
+      {
+       "entity_id": "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+       "score": 0.25088038083425834
+      },
+      {
+       "entity_id": "A854F678-4242-4C4B-A21C-38EE521C885B",
+       "score": 0.23788568130902266
+      }
+     ]
+    },
+    "properties": {
+     "description": "Expansive art museum in Austin showcasing Renaissance to 20th-century American paintings, Latin American art, and Greek and Roman sculpture.",
+     "short_description": "Expansive art museum in Austin showcasing Renaissance to 20th-century American paintings, Latin American art, and Greek and Roman sculpture.",
+     "image": {
+      "url": "https://images.qloo.com/i/C1A96FC0-E6AD-40CB-95D4-5840AE160292-420x-auto.jpg"
+     },
+     "geocode": {
+      "city": "Austin",
+      "name": null,
+      "metro": "Austin",
+      "country": "United States",
+      "country_code": "US",
+      "admin1_region": "Texas",
+      "admin2_region": "Travis County"
+     },
+     "address": "200 E Martin Luther King Jr Blvd Austin, TX 78712",
+     "price_level": null,
+     "business_rating": 4.699999809265137
+    }
+   },
+   {
+    "entity_id": "AD657709-6CF6-447E-9B1B-435C6FC49C04",
+    "name": "Eden Co-op",
+    "type": "urn:entity",
+    "subtype": "urn:entity:place",
+    "popularity": 0.41619556621389764,
+    "affinity": 0.9003261914150015,
+    "explainability": {
+     "signal.interests.entities": [
+      {
+       "entity_id": "A854F678-4242-4C4B-A21C-38EE521C885B",
+       "score": 0.2527513681855534
+      },
+      {
+       "entity_id": "B58E846A-D1F1-4C6A-AFA7-9230F74CAEE0",
+       "score": 0.25110997872711105
+      },
+      {
+       "entity_id": "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+       "score": 0.249165977291138
+      },
+      {
+       "entity_id": "AA21934D-3A6E-4973-983F-28604C44E3AC",
+       "score": 0.24697267579619753
+      }
+     ]
+    },
+    "properties": {
+     "description": "Student-run cooperative housing near the University of Texas on Rio Grande Street, offering affordable, communal living with shared facilities and member-managed operations.",
+     "short_description": "Student-run cooperative housing near the University of Texas on Rio Grande Street, offering affordable, communal living with shared facilities and member-managed operations.",
+     "image": {
+      "url": "https://images.qloo.com/i/AD657709-6CF6-447E-9B1B-435C6FC49C04-420x-auto.jpg"
+     },
+     "geocode": {
+      "city": "Austin",
+      "name": "West Campus",
+      "metro": "Austin",
+      "country": "United States",
+      "country_code": "US",
+      "admin1_region": "Texas",
+      "admin2_region": "Travis County"
+     },
+     "address": "1910 Rio Grande St Austin, TX 78705",
+     "price_level": null,
+     "business_rating": 4.599999904632568
+    }
+   },
+   {
+    "entity_id": "F62316FD-A3D9-432B-A64C-0B84239372FD",
+    "name": "Visual Arts Center",
+    "type": "urn:entity",
+    "subtype": "urn:entity:place",
+    "popularity": 0.8523708805873182,
+    "affinity": 0.8989301902823174,
+    "explainability": {
+     "signal.interests.entities": [
+      {
+       "entity_id": "B58E846A-D1F1-4C6A-AFA7-9230F74CAEE0",
+       "score": 0.26006171719401106
+      },
+      {
+       "entity_id": "AA21934D-3A6E-4973-983F-28604C44E3AC",
+       "score": 0.25421140973561024
+      },
+      {
+       "entity_id": "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+       "score": 0.24835083599898505
+      },
+      {
+       "entity_id": "A854F678-4242-4C4B-A21C-38EE521C885B",
+       "score": 0.2373760370713937
+      }
+     ]
+    },
+    "properties": {
+     "description": "University-affiliated contemporary art center presenting rotating exhibitions, artist talks, and public programs at the University of Texas at Austin.",
+     "short_description": "University-affiliated contemporary art center presenting rotating exhibitions, artist talks, and public programs at the University of Texas at Austin.",
+     "image": {
+      "url": "https://images.qloo.com/i/F62316FD-A3D9-432B-A64C-0B84239372FD-420x-auto.jpg"
+     },
+     "geocode": {
+      "city": "Austin",
+      "name": null,
+      "metro": "Austin",
+      "country": "United States",
+      "country_code": "US",
+      "admin1_region": "Texas",
+      "admin2_region": "Travis County"
+     },
+     "address": "2301 San Jacinto Blvd Austin, TX 78712",
+     "price_level": null,
+     "business_rating": 4.800000190734863
+    }
+   },
+   {
+    "entity_id": "46767E21-1406-4C93-B24A-81E98EBBF9E4",
+    "name": "Uncommon Objects",
+    "type": "urn:entity",
+    "subtype": "urn:entity:place",
+    "popularity": 0.9926991966497543,
+    "affinity": 0.896480416941555,
+    "explainability": {
+     "signal.interests.entities": [
+      {
+       "entity_id": "B58E846A-D1F1-4C6A-AFA7-9230F74CAEE0",
+       "score": 0.25570052524608283
+      },
+      {
+       "entity_id": "AA21934D-3A6E-4973-983F-28604C44E3AC",
+       "score": 0.2530355195347236
+      },
+      {
+       "entity_id": "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+       "score": 0.25156428745269993
+      },
+      {
+       "entity_id": "A854F678-4242-4C4B-A21C-38EE521C885B",
+       "score": 0.2396996677664937
+      }
+     ]
+    },
+    "properties": {
+     "description": "Eclectic emporium of antiques and curiosities\u2014vintage jewelry, taxidermy, toys, gadgets and oddities in a quirky, attic-like shopping experience.",
+     "short_description": "Eclectic emporium of antiques and curiosities\u2014vintage jewelry, taxidermy, toys, gadgets and oddities in a quirky, attic-like shopping experience.",
+     "image": {
+      "url": "https://images.qloo.com/i/46767E21-1406-4C93-B24A-81E98EBBF9E4-420x-auto.jpg"
+     },
+     "geocode": {
+      "city": "Austin",
+      "name": "South Lamar",
+      "metro": "Austin",
+      "country": "United States",
+      "country_code": "US",
+      "admin1_region": "Texas",
+      "admin2_region": "Travis County"
+     },
+     "address": "1602 Fort View Rd Austin, TX 78704",
+     "price_level": 3,
+     "business_rating": 4.400000095367432
+    }
+   },
+   {
+    "entity_id": "250116EB-5407-4CC2-BAFC-571854035DB0",
+    "name": "Cathedral of Junk",
+    "type": "urn:entity",
+    "subtype": "urn:entity:place",
+    "popularity": 0.9880413104857507,
+    "affinity": 0.8957584290048451,
+    "explainability": {
+     "signal.interests.entities": [
+      {
+       "entity_id": "AA21934D-3A6E-4973-983F-28604C44E3AC",
+       "score": 0.2552902406647453
+      },
+      {
+       "entity_id": "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+       "score": 0.25311648908745044
+      },
+      {
+       "entity_id": "B58E846A-D1F1-4C6A-AFA7-9230F74CAEE0",
+       "score": 0.2522899139037063
+      },
+      {
+       "entity_id": "A854F678-4242-4C4B-A21C-38EE521C885B",
+       "score": 0.23930335634409786
+      }
+     ]
+    },
+    "properties": {
+     "description": "Whimsical multilevel assemblage of over 60 tons of discarded furniture and objects built into a backyard art environment in south Austin.",
+     "short_description": "Whimsical multilevel assemblage of over 60 tons of discarded furniture and objects built into a backyard art environment in south Austin.",
+     "image": {
+      "url": "https://images.qloo.com/i/250116EB-5407-4CC2-BAFC-571854035DB0-420x-auto.jpg"
+     },
+     "geocode": {
+      "city": "Austin",
+      "name": "West Congress",
+      "metro": "Austin",
+      "country": "United States",
+      "country_code": "US",
+      "admin1_region": "Texas",
+      "admin2_region": "Travis County"
+     },
+     "address": "4422 Lareina Dr Austin, TX 78745",
+     "price_level": null,
+     "business_rating": 4.5
+    }
+   },
+   {
+    "entity_id": "C3F45C30-344C-4C5E-8368-BFC4AD0D4170",
+    "name": "The Contemporary Austin - Jones Center",
+    "type": "urn:entity",
+    "subtype": "urn:entity:place",
+    "popularity": 0.9734092443039841,
+    "affinity": 0.8874303729016906,
+    "explainability": {
+     "signal.interests.entities": [
+      {
+       "entity_id": "B58E846A-D1F1-4C6A-AFA7-9230F74CAEE0",
+       "score": 0.2575700108756043
+      },
+      {
+       "entity_id": "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+       "score": 0.2512137799524309
+      },
+      {
+       "entity_id": "AA21934D-3A6E-4973-983F-28604C44E3AC",
+       "score": 0.2508436956687682
+      },
+      {
+       "entity_id": "A854F678-4242-4C4B-A21C-38EE521C885B",
+       "score": 0.24037251350319655
+      }
+     ]
+    },
+    "properties": {
+     "description": "Downtown Austin museum showcasing contemporary Texas artists with rotating exhibitions, public programs, and events.",
+     "short_description": "Downtown Austin museum showcasing contemporary Texas artists with rotating exhibitions, public programs, and events.",
+     "image": {
+      "url": "https://images.qloo.com/i/C3F45C30-344C-4C5E-8368-BFC4AD0D4170-420x-auto.jpg"
+     },
+     "geocode": {
+      "city": "Austin",
+      "name": "Downtown",
+      "metro": "Austin",
+      "country": "United States",
+      "country_code": "US",
+      "admin1_region": "Texas",
+      "admin2_region": "Travis County"
+     },
+     "address": "700 Congress Ave Austin, TX 78701",
+     "price_level": null,
+     "business_rating": 4
+    }
+   },
+   {
+    "entity_id": "A73FC5BF-E9A2-479F-A65D-EC72EA89BB7B",
+    "name": "Roadhouse Relics",
+    "type": "urn:entity",
+    "subtype": "urn:entity:place",
+    "popularity": 0.9323353767187784,
+    "affinity": 0.8857278597568947,
+    "explainability": {
+     "signal.interests.entities": [
+      {
+       "entity_id": "AA21934D-3A6E-4973-983F-28604C44E3AC",
+       "score": 0.2559901115720976
+      },
+      {
+       "entity_id": "B58E846A-D1F1-4C6A-AFA7-9230F74CAEE0",
+       "score": 0.2516009445817408
+      },
+      {
+       "entity_id": "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+       "score": 0.2492915961090597
+      },
+      {
+       "entity_id": "A854F678-4242-4C4B-A21C-38EE521C885B",
+       "score": 0.24311734773710197
+      }
+     ]
+    },
+    "properties": {
+     "description": "Studio-gallery in Austin showcasing Todd Sanders' vintage-inspired Americana neon artworks crafted with modern materials and specialized weathering techniques.",
+     "short_description": "Studio-gallery in Austin showcasing Todd Sanders' vintage-inspired Americana neon artworks crafted with modern materials and specialized weathering techniques.",
+     "image": {
+      "url": "https://images.qloo.com/i/A73FC5BF-E9A2-479F-A65D-EC72EA89BB7B-420x-auto.jpg"
+     },
+     "geocode": {
+      "city": "Austin",
+      "name": null,
+      "metro": "Austin",
+      "country": "United States",
+      "country_code": "US",
+      "admin1_region": "Texas",
+      "admin2_region": "Travis County"
+     },
+     "address": "1720 S 1st St Austin, TX 78704",
+     "price_level": null,
+     "business_rating": 4.5
+    }
+   },
+   {
+    "entity_id": "BD50FF3F-409A-4ECF-A114-D26FDC9EDEAF",
+    "name": "Harry Ransom Center",
+    "type": "urn:entity",
+    "subtype": "urn:entity:place",
+    "popularity": 0.9682147883753247,
+    "affinity": 0.8854295502108854,
+    "explainability": {
+     "signal.interests.entities": [
+      {
+       "entity_id": "B58E846A-D1F1-4C6A-AFA7-9230F74CAEE0",
+       "score": 0.2576141820015483
+      },
+      {
+       "entity_id": "AA21934D-3A6E-4973-983F-28604C44E3AC",
+       "score": 0.2524047970902116
+      },
+      {
+       "entity_id": "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+       "score": 0.24924859536379118
+      },
+      {
+       "entity_id": "A854F678-4242-4C4B-A21C-38EE521C885B",
+       "score": 0.24073242554444893
+      }
+     ]
+    },
+    "properties": {
+     "description": "World-renowned humanities research center housing millions of rare books, manuscripts, photographs, and thousands of artworks and archival collections.",
+     "short_description": "World-renowned humanities research center housing millions of rare books, manuscripts, photographs, and thousands of artworks and archival collections.",
+     "image": {
+      "url": "https://images.qloo.com/i/BD50FF3F-409A-4ECF-A114-D26FDC9EDEAF-420x-auto.jpg"
+     },
+     "geocode": {
+      "city": "Austin",
+      "name": null,
+      "metro": "Austin",
+      "country": "United States",
+      "country_code": "US",
+      "admin1_region": "Texas",
+      "admin2_region": "Travis County"
+     },
+     "address": "The University of Texas at Austin 300 W 21st St Austin, TX 78712",
+     "price_level": null,
+     "business_rating": 4.699999809265137
+    }
+   },
+   {
+    "entity_id": "366F0755-8A49-4EEC-A8FF-DC59557B639A",
+    "name": "CHESS CLUB",
+    "type": "urn:entity",
+    "subtype": "urn:entity:place",
+    "popularity": 0.8347079102901415,
+    "affinity": 0.8833901481548236,
+    "explainability": {
+     "signal.interests.entities": [
+      {
+       "entity_id": "A854F678-4242-4C4B-A21C-38EE521C885B",
+       "score": 0.2550886959343166
+      },
+      {
+       "entity_id": "B58E846A-D1F1-4C6A-AFA7-9230F74CAEE0",
+       "score": 0.2514384983533883
+      },
+      {
+       "entity_id": "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+       "score": 0.24982276174044268
+      },
+      {
+       "entity_id": "AA21934D-3A6E-4973-983F-28604C44E3AC",
+       "score": 0.24365004397185258
+      }
+     ]
+    },
+    "properties": {
+     "description": "Lively downtown Austin bar-restaurant hosting live music and dance nights with a full bar, outdoor seating, and an LGBTQ+-friendly atmosphere.",
+     "short_description": "Lively downtown Austin bar-restaurant hosting live music and dance nights with a full bar, outdoor seating, and an LGBTQ+-friendly atmosphere.",
+     "image": {
+      "url": "https://images.qloo.com/i/366F0755-8A49-4EEC-A8FF-DC59557B639A-420x-auto.jpg"
+     },
+     "geocode": {
+      "city": "Austin",
+      "name": "Downtown",
+      "metro": "Austin",
+      "country": "United States",
+      "country_code": "US",
+      "admin1_region": "Texas",
+      "admin2_region": "Travis County"
+     },
+     "address": "617 Red River St Austin, TX 78701",
+     "price_level": 1,
+     "business_rating": 4.400000095367432
+    }
+   },
+   {
+    "entity_id": "546BC63E-5861-46CC-B129-67AE2396D018",
+    "name": "East Austin Succulents",
+    "type": "urn:entity",
+    "subtype": "urn:entity:place",
+    "popularity": 0.9887160622874105,
+    "affinity": 0.8827385037527264,
+    "explainability": {
+     "signal.interests.entities": [
+      {
+       "entity_id": "B58E846A-D1F1-4C6A-AFA7-9230F74CAEE0",
+       "score": 0.2540844873368641
+      },
+      {
+       "entity_id": "AA21934D-3A6E-4973-983F-28604C44E3AC",
+       "score": 0.2530988725141326
+      },
+      {
+       "entity_id": "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+       "score": 0.25207527538487995
+      },
+      {
+       "entity_id": "A854F678-4242-4C4B-A21C-38EE521C885B",
+       "score": 0.24074136476412333
+      }
+     ]
+    },
+    "properties": {
+     "description": "Open-air nursery specializing in cacti and succulents, offering special-occasion arrangements and landscaping design in East Austin.",
+     "short_description": "Open-air nursery specializing in cacti and succulents, offering special-occasion arrangements and landscaping design in East Austin.",
+     "image": {
+      "url": "https://images.qloo.com/i/546BC63E-5861-46CC-B129-67AE2396D018-420x-auto.jpg"
+     },
+     "geocode": {
+      "city": "Austin",
+      "name": "Govalle",
+      "metro": "Austin",
+      "country": "United States",
+      "country_code": "US",
+      "admin1_region": "Texas",
+      "admin2_region": "Travis County"
+     },
+     "address": "7310 Sherwood Rd Austin, TX 78745",
+     "price_level": null,
+     "business_rating": 4.800000190734863
+    }
+   }
+  ],
+  "result_count": 10,
+  "explainability": {
+   "signal.interests.entities": {
+    "effect_on_top3_recs": [
+     {
+      "entity_id": "B58E846A-D1F1-4C6A-AFA7-9230F74CAEE0",
+      "avg_score": 0.2562208025941911
+     },
+     {
+      "entity_id": "AA21934D-3A6E-4973-983F-28604C44E3AC",
+      "avg_score": 0.25164243717569185
+     },
+     {
+      "entity_id": "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+      "avg_score": 0.2494657313747938
+     },
+     {
+      "entity_id": "A854F678-4242-4C4B-A21C-38EE521C885B",
+      "avg_score": 0.24267102885532324
+     }
+    ],
+    "effect_on_top5_recs": [
+     {
+      "entity_id": "B58E846A-D1F1-4C6A-AFA7-9230F74CAEE0",
+      "avg_score": 0.2553305693864725
+     },
+     {
+      "entity_id": "AA21934D-3A6E-4973-983F-28604C44E3AC",
+      "avg_score": 0.2526506143453089
+     },
+     {
+      "entity_id": "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+      "avg_score": 0.25061559413290635
+     },
+     {
+      "entity_id": "A854F678-4242-4C4B-A21C-38EE521C885B",
+      "avg_score": 0.24140322213531226
+     }
+    ],
+    "effect_on_top10_recs": [
+     {
+      "entity_id": "B58E846A-D1F1-4C6A-AFA7-9230F74CAEE0",
+      "avg_score": 0.25489609700815075
+     },
+     {
+      "entity_id": "AA21934D-3A6E-4973-983F-28604C44E3AC",
+      "avg_score": 0.2519240592543607
+     },
+     {
+      "entity_id": "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+      "avg_score": 0.2504729979215136
+     },
+     {
+      "entity_id": "A854F678-4242-4C4B-A21C-38EE521C885B",
+      "avg_score": 0.24270684581597485
+     }
+    ],
+    "effect_on_all_recs": [
+     {
+      "entity_id": "B58E846A-D1F1-4C6A-AFA7-9230F74CAEE0",
+      "avg_score": 0.25489609700815075
+     },
+     {
+      "entity_id": "AA21934D-3A6E-4973-983F-28604C44E3AC",
+      "avg_score": 0.2519240592543607
+     },
+     {
+      "entity_id": "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+      "avg_score": 0.2504729979215136
+     },
+     {
+      "entity_id": "A854F678-4242-4C4B-A21C-38EE521C885B",
+      "avg_score": 0.24270684581597485
+     }
+    ]
+   }
+  },
+  "provenance": {
+   "source": "Qloo API",
+   "endpoint": "/v2/insights",
+   "documentation": "https://docs.qloo.com/reference/insights-api-deep-dive",
+   "requests": [
+    {
+     "method": "GET",
+     "path": "/v2/insights",
+     "query": {
+      "filter.type": "urn:entity:place",
+      "take": 10,
+      "signal.interests.entities": [
+       "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+       "AA21934D-3A6E-4973-983F-28604C44E3AC",
+       "B58E846A-D1F1-4C6A-AFA7-9230F74CAEE0",
+       "A854F678-4242-4C4B-A21C-38EE521C885B"
+      ],
+      "filter.location.query": "Austin, TX",
+      "feature.explainability": true
+     }
+    }
+   ],
+   "transport": "mcp"
+  },
+  "query_intent": {
+   "schema_version": "1.0-preview.1",
+   "source_contract_version": "1.0.0",
+   "operation": "recommend",
+   "job": "recommend",
+   "signals": {
+    "entities": [
+     "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+     "AA21934D-3A6E-4973-983F-28604C44E3AC",
+     "B58E846A-D1F1-4C6A-AFA7-9230F74CAEE0",
+     "A854F678-4242-4C4B-A21C-38EE521C885B"
+    ]
+   },
+   "filters": {
+    "location": "Austin, TX"
+   },
+   "operators": {},
+   "output": {
+    "limit": 10,
+    "explain": true
+   },
+   "assumptions": [
+    "explain=true"
+   ],
+   "unresolved": [],
+   "target": {
+    "type": "place"
+   }
+  },
+  "execution": {
+   "transport": "mcp",
+   "transport_name": "Qloo canonical MCP",
+   "correlation_id": "mcp-5",
+   "duration_ms": 1065
+  }
+ }
+}

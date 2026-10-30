@@ -1,0 +1,201 @@
+{
+ "tool": "qloo_trends",
+ "args": {
+  "entities": [
+   "BAF6317A-DF94-4C90-92AE-63F86560C21B"
+  ],
+  "entity_type": "artist",
+  "start_date": "2026-04-01",
+  "end_date": "2026-10-01"
+ },
+ "envelope": {
+  "schema_version": "1.0-preview.1",
+  "operation": "trends",
+  "status": "ok",
+  "interpretation": {
+   "entity_type": "urn:entity:artist",
+   "start_date": "2026-04-01",
+   "end_date": "2026-10-01"
+  },
+  "resolution": {
+   "contract_version": "1.0-preview.1",
+   "provider": {
+    "contract_version": "1.0-preview.1",
+    "provider_id": "qloo_api",
+    "name": "Qloo native resolution",
+    "entity_strategy": "exact_name_context_or_choice",
+    "tag_strategy": "target_scoped_semantic_search_exact_name_or_choice",
+    "remote": true,
+    "uses_model": false,
+    "fallback": "none"
+   },
+   "outcomes": [
+    {
+     "input": "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+     "status": "resolved",
+     "match": "identifier",
+     "selected": {
+      "id": "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+      "name": "Khruangbin",
+      "type": "urn:entity:artist",
+      "popularity": 0.9919334977446856,
+      "description": "Khruangbin is an American musical trio known for their eclectic blend of global musical influences and instrumental sound."
+     },
+     "provenance": {
+      "contract_version": "1.0-preview.1",
+      "provider_id": "qloo_api",
+      "provider_name": "Qloo native resolution",
+      "endpoint": "/entities",
+      "strategy": "identifier_lookup",
+      "remote": true,
+      "uses_model": false
+     }
+    }
+   ]
+  },
+  "series": [
+   {
+    "entity": {
+     "input": "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+     "entityId": "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+     "name": "Khruangbin",
+     "type": "urn:entity:artist",
+     "match": "identifier"
+    },
+    "points": [
+     {
+      "date": "2026-09-30",
+      "population_percentile": 0.11033921058290723,
+      "population_rank": "38430",
+      "population_rank_velocity": 0,
+      "velocity_fold_change": 0,
+      "population_percent_delta": 0
+     },
+     {
+      "date": "2026-09-23",
+      "population_percentile": 0.11033921058290723,
+      "population_rank": "38430",
+      "population_rank_velocity": 0,
+      "velocity_fold_change": 0,
+      "population_percent_delta": 0
+     },
+     {
+      "date": "2026-09-16",
+      "population_percentile": 0.11033921058290723,
+      "population_rank": "38430",
+      "population_rank_velocity": 0,
+      "velocity_fold_change": 0,
+      "population_percent_delta": 0
+     },
+     {
+      "date": "2026-09-09",
+      "population_percentile": 0.11033921058290723,
+      "population_rank": "38430",
+      "population_rank_velocity": 0,
+      "velocity_fold_change": 0,
+      "population_percent_delta": 0
+     },
+     {
+      "date": "2026-09-02",
+      "population_percentile": 0.11033921058290723,
+      "population_rank": "38430",
+      "population_rank_velocity": 0,
+      "velocity_fold_change": 0,
+      "population_percent_delta": 0
+     },
+     {
+      "date": "2026-08-26",
+      "population_percentile": 0.11033921058290723,
+      "population_rank": "38430",
+      "population_rank_velocity": 0,
+      "velocity_fold_change": 0,
+      "population_percent_delta": 0
+     },
+     {
+      "date": "2026-08-19",
+      "population_percentile": 0.11033921058290723,
+      "population_rank": "38430",
+      "population_rank_velocity": 0,
+      "velocity_fold_change": 0,
+      "population_percent_delta": 0
+     },
+     {
+      "date": "2026-08-12",
+      "population_percentile": 0.11033921058290723,
+      "population_rank": "38430",
+      "population_rank_velocity": 0,
+      "velocity_fold_change": 0,
+      "population_percent_delta": 0
+     },
+     {
+      "date": "2026-08-05",
+      "population_percentile": 0.11033921058290723,
+      "population_rank": "38430",
+      "population_rank_velocity": 0,
+      "velocity_fold_change": 0,
+      "population_percent_delta": 0
+     },
+     {
+      "date": "2026-07-29",
+      "population_percentile": 0.11033921058290723,
+      "population_rank": "38430",
+      "population_rank_velocity": 0,
+      "velocity_fold_change": 0,
+      "population_percent_delta": 0
+     }
+    ]
+   }
+  ],
+  "result_count": 1,
+  "provenance": {
+   "source": "Qloo API",
+   "endpoint": "/v2/trending",
+   "documentation": "https://docs.qloo.com/reference/get-trending",
+   "requests": [
+    {
+     "method": "GET",
+     "path": "/v2/trending",
+     "query": {
+      "filter.type": "urn:entity:artist",
+      "filter.start_date": "2026-04-01",
+      "filter.end_date": "2026-10-01",
+      "signal.interests.entities": "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+      "take": 10
+     }
+    }
+   ],
+   "transport": "mcp"
+  },
+  "query_intent": {
+   "schema_version": "1.0-preview.1",
+   "source_contract_version": "1.0.0",
+   "operation": "trends",
+   "job": "trends",
+   "signals": {},
+   "filters": {
+    "startDate": "2026-04-01",
+    "endDate": "2026-10-01"
+   },
+   "operators": {},
+   "output": {
+    "limit": 10
+   },
+   "assumptions": [
+    "limit=10"
+   ],
+   "unresolved": [],
+   "target": {
+    "type": "artist",
+    "entities": [
+     "BAF6317A-DF94-4C90-92AE-63F86560C21B"
+    ]
+   }
+  },
+  "execution": {
+   "transport": "mcp",
+   "transport_name": "Qloo canonical MCP",
+   "correlation_id": "mcp-5",
+   "duration_ms": 476
+  }
+ }
+}

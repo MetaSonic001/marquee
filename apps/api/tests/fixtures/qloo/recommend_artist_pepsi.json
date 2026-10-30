@@ -1,0 +1,397 @@
+{
+ "tool": "qloo_recommend",
+ "args": {
+  "target_type": "artist",
+  "signals": [
+   "957B527A-CF2C-4283-A2FD-3F49741DF5DE"
+  ],
+  "limit": 20,
+  "explain": false
+ },
+ "envelope": {
+  "schema_version": "1.0-preview.1",
+  "operation": "recommend",
+  "status": "ok",
+  "interpretation": {
+   "target_type": "urn:entity:artist",
+   "signals": [
+    {
+     "input": "957B527A-CF2C-4283-A2FD-3F49741DF5DE",
+     "entityId": "957B527A-CF2C-4283-A2FD-3F49741DF5DE",
+     "name": "Pepsi",
+     "type": "urn:entity:brand",
+     "match": "identifier"
+    }
+   ],
+   "signal_tags": [],
+   "include_tags": [],
+   "exclude_tags": []
+  },
+  "resolution": {
+   "contract_version": "1.0-preview.1",
+   "provider": {
+    "contract_version": "1.0-preview.1",
+    "provider_id": "qloo_api",
+    "name": "Qloo native resolution",
+    "entity_strategy": "exact_name_context_or_choice",
+    "tag_strategy": "target_scoped_semantic_search_exact_name_or_choice",
+    "remote": true,
+    "uses_model": false,
+    "fallback": "none"
+   },
+   "outcomes": [
+    {
+     "input": "957B527A-CF2C-4283-A2FD-3F49741DF5DE",
+     "status": "resolved",
+     "match": "identifier",
+     "selected": {
+      "id": "957B527A-CF2C-4283-A2FD-3F49741DF5DE",
+      "name": "Pepsi",
+      "type": "urn:entity:brand",
+      "popularity": 0.997016494041464,
+      "description": "Pepsi is a global beverage brand known for its popular cola soft drinks and other flavored beverages."
+     },
+     "provenance": {
+      "contract_version": "1.0-preview.1",
+      "provider_id": "qloo_api",
+      "provider_name": "Qloo native resolution",
+      "endpoint": "/entities",
+      "strategy": "identifier_lookup",
+      "remote": true,
+      "uses_model": false
+     }
+    }
+   ]
+  },
+  "results": [
+   {
+    "entity_id": "332AB05F-95B1-4440-B0C4-34C117ECAEB6",
+    "name": "Enrique Iglesias",
+    "type": "urn:entity",
+    "subtype": "urn:entity:artist",
+    "popularity": 0.9987449947243904,
+    "affinity": 0.9660813556274312,
+    "properties": {
+     "description": "Enrique Iglesias is a Spanish singer, songwriter, and record producer who has achieved international success with his Latin pop and mainstream pop music. He is known for his romantic ballads and dance tracks, blending Latin rhythms with contemporary pop and R&B influences. Iglesias has sold over 170 million records worldwide, making him one of the best-selling Latin music artists of all time.",
+     "image": {
+      "url": "https://images.qloo.com/i/332AB05F-95B1-4440-B0C4-34C117ECAEB6-420x-auto.jpg"
+     }
+    }
+   },
+   {
+    "entity_id": "58F3AF6B-EC34-4BFC-B345-F4210EDE4C43",
+    "name": "Shakira",
+    "type": "urn:entity",
+    "subtype": "urn:entity:artist",
+    "popularity": 0.9994888229164619,
+    "affinity": 0.9611192396652294,
+    "properties": {
+     "description": "Shakira is a Colombian singer, songwriter, dancer, and record producer who rose to international fame in the late 1990s and early 2000s. She is known for her distinctive mezzo-soprano voice, her unique blend of Latin, rock, and pop music, and her dynamic stage presence. Shakira has released numerous hit albums and singles, becoming one of the best-selling Latin artists of all time. She is also recognized for her belly dancing skills and her ability to sing in multiple languages, including Spanish and English.",
+     "image": {
+      "url": "https://images.qloo.com/i/58F3AF6B-EC34-4BFC-B345-F4210EDE4C43-420x-auto.jpg"
+     }
+    }
+   },
+   {
+    "entity_id": "89F7C958-0EAD-4211-AAEF-686B8A0BD3DD",
+    "name": "Ricky Martin",
+    "type": "urn:entity",
+    "subtype": "urn:entity:artist",
+    "popularity": 0.9945048463519651,
+    "affinity": 0.9551991560052635,
+    "properties": {
+     "description": "Ricky Martin is a Puerto Rican singer, actor, and author who rose to fame as a member of the boy band Menudo before launching a successful solo career. He is widely credited with helping to bring Latin pop to the global mainstream in the late 1990s and early 2000s. Known for his energetic performances and charismatic stage presence, Martin has released numerous hit singles and albums, blending Latin rhythms with pop and dance music.",
+     "image": {
+      "url": "https://images.qloo.com/i/89F7C958-0EAD-4211-AAEF-686B8A0BD3DD-420x-auto.jpg"
+     }
+    }
+   },
+   {
+    "entity_id": "8223F4C7-4D91-4042-8A2B-F83C699B27E0",
+    "name": "Pitbull",
+    "type": "urn:entity",
+    "subtype": "urn:entity:artist",
+    "popularity": 0.998954708399688,
+    "affinity": 0.9445820173170749,
+    "properties": {
+     "description": "Armando Christian P\u00e9rez (Pitbull) is a Miami-born rapper, singer and entrepreneur known for high-energy, bilingual party anthems that blend hip-hop, reggaeton and pop. He launched his recording career in the early 2000s (first recorded appearance 2002) and released his debut album M.I.A.M.I. in 2004. Over the 2000s and 2010s he scored global pop hits and high-profile collaborations, founded his label Mr 305 Inc., and became a prominent crossover figure bringing Latin sounds into mainstream U.S. and international pop music.",
+     "image": {
+      "url": "https://images.qloo.com/i/8223F4C7-4D91-4042-8A2B-F83C699B27E0-420x-auto.jpg"
+     }
+    }
+   },
+   {
+    "entity_id": "3FB8E68F-C7FC-4354-88D8-CF9D34D6D437",
+    "name": "Belinda",
+    "type": "urn:entity",
+    "subtype": "urn:entity:artist",
+    "popularity": 0.9846614107176795,
+    "affinity": 0.944062674623206,
+    "properties": {
+     "description": "Belinda Peregr\u00edn Sch\u00fcll (known professionally as Belinda) is a Spanish\u2011Mexican singer, songwriter and actress who rose to fame in the early 2000s. She debuted musically in 2003 with the self\u2011titled album Belinda, which sold millions worldwide and produced several hit singles. A former telenovela performer who successfully transitioned to mainstream pop, she blends Latin pop, electropop and dance\u2011pop, and has received multiple award nominations and regional hits across Mexico, Spain and Latin America.",
+     "image": {
+      "url": "https://images.qloo.com/i/3FB8E68F-C7FC-4354-88D8-CF9D34D6D437-420x-auto.jpg"
+     }
+    }
+   },
+   {
+    "entity_id": "A32C33EB-8DC6-4FB6-83AA-07DBDA352E99",
+    "name": "Thal\u00eda",
+    "type": "urn:entity",
+    "subtype": "urn:entity:artist",
+    "popularity": 0.9833212092614801,
+    "affinity": 0.9428120589360849,
+    "properties": {
+     "description": "Thal\u00eda, born Ariadna Thal\u00eda Sodi Miranda, is a Mexican singer, songwriter, and actress who has been a prominent figure in Latin pop music since the early 1990s. She is often referred to as the 'Queen of Latin Pop' due to her influential career and widespread popularity across Latin America and beyond. Thal\u00eda's music blends pop with tropical and dance elements, and she has also acted in several successful telenovelas, which helped boost her fame. She is known for her charismatic stage presence and versatile vocal style.",
+     "image": {
+      "url": "https://images.qloo.com/i/A32C33EB-8DC6-4FB6-83AA-07DBDA352E99-420x-auto.jpg"
+     }
+    }
+   },
+   {
+    "entity_id": "33A00C9F-6842-49F8-B26A-34D5346FF75A",
+    "name": "Jason Der\u00fclo",
+    "type": "urn:entity",
+    "subtype": "urn:entity:artist",
+    "popularity": 0.9986860127532129,
+    "affinity": 0.939952725774984,
+    "properties": {
+     "description": "Jason Der\u00fclo is an American singer, songwriter, and dancer who rose to fame in the late 2000s with a string of hit singles blending pop, R&B, and dance music. Known for his smooth vocals, energetic performances, and catchy hooks, Der\u00fclo has established himself as a prominent figure in contemporary pop music. His music often features themes of love, relationships, and partying, and he is recognized for his danceable beats and charismatic stage presence.",
+     "image": {
+      "url": "https://images.qloo.com/i/33A00C9F-6842-49F8-B26A-34D5346FF75A-420x-auto.jpg"
+     }
+    }
+   },
+   {
+    "entity_id": "809B75F5-6747-459D-8A98-EA31A5CF7C80",
+    "name": "P!nk",
+    "type": "urn:entity",
+    "subtype": "urn:entity:artist",
+    "popularity": 0.9993446447646948,
+    "affinity": 0.9390978243157657,
+    "properties": {
+     "description": "Alecia Beth Moore (P!nk) is an American singer-songwriter who rose from 1990s R&B beginnings to become a global pop-rock superstar. Known for a distinctive raspy voice, confessional songwriting and daring aerial live shows, she has sold over 90 million records, earned multiple Grammys and major industry awards, and reinvented her sound across R&B, pop, rock and folk collaborations while maintaining wide commercial and critical success.",
+     "image": {
+      "url": "https://images.qloo.com/i/809B75F5-6747-459D-8A98-EA31A5CF7C80-420x-auto.jpg"
+     }
+    }
+   },
+   {
+    "entity_id": "9001A86F-4C88-4E8A-A943-02E35EFF83D2",
+    "name": "Juanes",
+    "type": "urn:entity",
+    "subtype": "urn:entity:artist",
+    "popularity": 0.9952585048725662,
+    "affinity": 0.9386097417819415,
+    "properties": {
+     "description": "Juanes, born Juan Esteban Aristiz\u00e1bal V\u00e1squez, is a Colombian musician, singer, and songwriter who gained international fame for his blend of rock and pop with traditional Latin American rhythms. He is known for his socially conscious lyrics and melodic compositions that often incorporate elements of Colombian folk music. Juanes has won multiple Grammy and Latin Grammy Awards and is recognized for his contributions to Latin music and humanitarian efforts.",
+     "image": {
+      "url": "https://images.qloo.com/i/9001A86F-4C88-4E8A-A943-02E35EFF83D2-420x-auto.jpg"
+     }
+    }
+   },
+   {
+    "entity_id": "676A76B8-926C-4BA1-A6EF-0F32A5EA4225",
+    "name": "Maroon 5",
+    "type": "urn:entity",
+    "subtype": "urn:entity:artist",
+    "popularity": 0.9999049734908807,
+    "affinity": 0.9362095502123509,
+    "properties": {
+     "description": "Maroon 5 is an American pop-rock band from Los Angeles, formed in 1994 (originally as Kara's Flowers). They achieved major commercial success with their 2002 breakthrough album Songs About Jane and have since become one of the world's best-known contemporary pop-rock acts. Fronted by Adam Levine, the band blends guitar-driven rock with pop, funk and R&B production, and has produced numerous international hits across the 2000s and 2010s. Maroon 5 are known for radio-friendly hooks, polished production and high-profile collaborations, and have received multiple awards and sustained global chart success.",
+     "image": {
+      "url": "https://images.qloo.com/i/676A76B8-926C-4BA1-A6EF-0F32A5EA4225-420x-auto.jpg"
+     }
+    }
+   },
+   {
+    "entity_id": "97AE0BCA-1D43-44B7-841B-79CB80339791",
+    "name": "Kelly Clarkson",
+    "type": "urn:entity",
+    "subtype": "urn:entity:artist",
+    "popularity": 0.9993970731835191,
+    "affinity": 0.9357880958559883,
+    "properties": {
+     "description": "Kelly Clarkson is an American singer-songwriter and television personality who rose to fame after winning the first season of American Idol in 2002. She is known for a powerful, versatile voice that spans pop, pop-rock and adult contemporary, and for hit singles such as \"Since U Been Gone\" and \"Stronger (What Doesn't Kill You)\". Clarkson has released multiple multi-platinum albums, won Grammy Awards, and expanded into television as a coach and as host of The Kelly Clarkson Show. Her work spans anthemic pop-rock songs, intimate piano ballads, and occasional country-tinged tracks, making her a crossover artist with wide mainstream appeal.",
+     "image": {
+      "url": "https://images.qloo.com/i/97AE0BCA-1D43-44B7-841B-79CB80339791-420x-auto.jpg"
+     }
+    }
+   },
+   {
+    "entity_id": "A8A77393-4BF2-4389-971D-8F0089C6F603",
+    "name": "Avril Lavigne",
+    "type": "urn:entity",
+    "subtype": "urn:entity:artist",
+    "popularity": 0.9997607953391136,
+    "affinity": 0.9350666332750119,
+    "properties": {
+     "description": "Avril Lavigne is a Canadian singer-songwriter who rose to worldwide fame in the early 2000s for bringing a skate-punk, rebellious aesthetic to mainstream pop. Her music fuses punk attitude with radio-friendly hooks, and she is known for youthful anthems, melodic guitar-driven songs and a distinctively slightly raspy vocal tone. She achieved major commercial success with her debut album Let Go (2002) and continued to chart with subsequent records that alternated between rawer alternative rock and polished pop.",
+     "image": {
+      "url": "https://images.qloo.com/i/A8A77393-4BF2-4389-971D-8F0089C6F603-420x-auto.jpg"
+     }
+    }
+   },
+   {
+    "entity_id": "BE94A541-4FEC-49CE-8865-C54834FD8484",
+    "name": "Katy Perry",
+    "type": "urn:entity",
+    "subtype": "urn:entity:artist",
+    "popularity": 0.9998787592814685,
+    "affinity": 0.9349643945780838,
+    "properties": {
+     "description": "Katy Perry is an American singer, songwriter, and television judge who rose to fame with her 2008 hit single 'I Kissed a Girl.' Known for her wide vocal range and colorful, playful image, she has become one of the best-selling music artists worldwide. Her music spans pop, dance-pop, and electropop genres, often featuring themes of love, self-empowerment, and fun. Perry has released multiple chart-topping albums and singles, and is recognized for her theatrical performances and music videos.",
+     "image": {
+      "url": "https://images.qloo.com/i/BE94A541-4FEC-49CE-8865-C54834FD8484-420x-auto.jpg"
+     }
+    }
+   },
+   {
+    "entity_id": "8F87D1BF-1FBF-494C-894A-551159034049",
+    "name": "HA-ASH",
+    "type": "urn:entity",
+    "subtype": "urn:entity:artist",
+    "popularity": 0.9632575087326085,
+    "affinity": 0.9344786477804299,
+    "properties": {
+     "description": "Ha-Ash is a Mexican-American pop duo formed by sisters Hanna Nicole and Ashley Grace Perez Mosa. They blend Latin pop with country and pop rock influences, creating a distinctive sound that has earned them widespread popularity in Latin America and beyond. Known for their emotive ballads and catchy pop tunes, Ha-Ash has released multiple successful albums and singles, gaining a loyal fanbase.",
+     "image": {
+      "url": "https://images.qloo.com/i/8F87D1BF-1FBF-494C-894A-551159034049-420x-auto.jpg"
+     }
+    }
+   },
+   {
+    "entity_id": "CEDADC54-BF0C-4E0C-93E4-D8F8F6FAD126",
+    "name": "Jesse & Joy",
+    "type": "urn:entity",
+    "subtype": "urn:entity:artist",
+    "popularity": 0.9825183990982312,
+    "affinity": 0.933884835934253,
+    "properties": {
+     "description": "Jesse & Joy is a Mexican pop duo formed by siblings Jesse and Joy Huerta. They are known for their blend of Latin pop, pop rock, and folk influences, creating melodic and emotionally resonant music. Their songs often feature acoustic elements and ballads, highlighting their vocal harmonies and songwriting skills. They have achieved significant success in Latin America and internationally, earning multiple awards and recognition for their contributions to Latin music.",
+     "image": {
+      "url": "https://images.qloo.com/i/CEDADC54-BF0C-4E0C-93E4-D8F8F6FAD126-420x-auto.jpg"
+     }
+    }
+   },
+   {
+    "entity_id": "007C6FE0-7F4B-4F5F-AAEE-6A1133BBE16D",
+    "name": "Daddy Yankee",
+    "type": "urn:entity",
+    "subtype": "urn:entity:artist",
+    "popularity": 0.9956877625516911,
+    "affinity": 0.9331511091780185,
+    "properties": {
+     "description": "Daddy Yankee, born Ram\u00f3n Luis Ayala Rodr\u00edguez, is a Puerto Rican singer, songwriter, rapper, actor, and record producer. He is widely regarded as one of the pioneers of reggaeton, a genre that blends Latin rhythms with hip hop and reggae influences. Daddy Yankee gained international fame with hits like 'Gasolina' and has played a significant role in popularizing reggaeton worldwide. His music often features energetic beats, catchy hooks, and lyrics that explore themes of urban life, partying, and romance.",
+     "image": {
+      "url": "https://images.qloo.com/i/007C6FE0-7F4B-4F5F-AAEE-6A1133BBE16D-420x-auto.jpg"
+     }
+    }
+   },
+   {
+    "entity_id": "77817E65-28C1-4569-B744-B9FB4BDF8B22",
+    "name": "Backstreet Boys",
+    "type": "urn:entity",
+    "subtype": "urn:entity:artist",
+    "popularity": 0.9985254507205631,
+    "affinity": 0.9331199154061184,
+    "properties": {
+     "description": "Formed in Orlando in 1993 and assembled by Lou Pearlman, the Backstreet Boys are one of the best-selling boy bands in history. Famous for tight five-part harmonies, polished choreography and radio-ready singles, they achieved global commercial success with albums such as Millennium (1999) and Black & Blue (2000). Over decades they\u2019ve sold over 100 million records worldwide, toured extensively, and remained culturally prominent through reunions, new albums and large-scale tours.",
+     "image": {
+      "url": "https://images.qloo.com/i/77817E65-28C1-4569-B744-B9FB4BDF8B22-420x-auto.jpg"
+     }
+    }
+   },
+   {
+    "entity_id": "92EC38CD-02E5-465A-8A36-3068A59A990B",
+    "name": "Luis Fonsi",
+    "type": "urn:entity",
+    "subtype": "urn:entity:artist",
+    "popularity": 0.9913722483272057,
+    "affinity": 0.9302071705918975,
+    "properties": {
+     "description": "Luis Fonsi is a Puerto Rican singer, songwriter, and actor who gained international fame with his hit single 'Despacito.' He is known for blending Latin pop with reggaeton and ballad styles, creating music that appeals to a broad audience. Over his career, he has released numerous albums and singles, earning multiple awards and nominations.",
+     "image": {
+      "url": "https://images.qloo.com/i/92EC38CD-02E5-465A-8A36-3068A59A990B-420x-auto.jpg"
+     }
+    }
+   },
+   {
+    "entity_id": "705FCAEF-5937-446C-BEC0-EDDDBBE35A04",
+    "name": "Selena Gomez & the Scene",
+    "type": "urn:entity",
+    "subtype": "urn:entity:artist",
+    "popularity": 0.9967559915852388,
+    "affinity": 0.930119589204193,
+    "properties": {
+     "description": "Selena Gomez & The Scene was an American pop band formed in 2008, fronted by singer and actress Selena Gomez. The band was known for its catchy dance-pop and electropop sound, appealing primarily to a teen audience. They released three studio albums before disbanding in 2012, with Gomez pursuing a solo career. The group was notable for blending pop with electronic elements and teen pop sensibilities, producing hits that charted on the Billboard Hot 100 and other charts.",
+     "image": {
+      "url": "https://images.qloo.com/i/705FCAEF-5937-446C-BEC0-EDDDBBE35A04-420x-auto.jpg"
+     }
+    }
+   },
+   {
+    "entity_id": "1370390A-E95D-4379-8796-D14E48F6A5F3",
+    "name": "Reik",
+    "type": "urn:entity",
+    "subtype": "urn:entity:artist",
+    "popularity": 0.9883805516780371,
+    "affinity": 0.929703744215052,
+    "properties": {
+     "description": "Reik is a Mexican band formed in 2003, consisting of Jes\u00fas Navarro, Julio Ram\u00edrez, and Gilberto Mar\u00edn. They are known for their romantic ballads and Latin pop sound, blending pop rock elements with heartfelt lyrics. Over the years, they have become one of the most popular Latin pop groups, with numerous hits and collaborations with other Latin artists. Their music often features smooth vocals, melodic instrumentation, and themes of love and relationships.",
+     "image": {
+      "url": "https://images.qloo.com/i/1370390A-E95D-4379-8796-D14E48F6A5F3-420x-auto.jpg"
+     }
+    }
+   }
+  ],
+  "result_count": 20,
+  "provenance": {
+   "source": "Qloo API",
+   "endpoint": "/v2/insights",
+   "documentation": "https://docs.qloo.com/reference/insights-api-deep-dive",
+   "requests": [
+    {
+     "method": "GET",
+     "path": "/v2/insights",
+     "query": {
+      "filter.type": "urn:entity:artist",
+      "take": 20,
+      "signal.interests.entities": [
+       "957B527A-CF2C-4283-A2FD-3F49741DF5DE"
+      ]
+     }
+    }
+   ],
+   "transport": "mcp"
+  },
+  "query_intent": {
+   "schema_version": "1.0-preview.1",
+   "source_contract_version": "1.0.0",
+   "operation": "recommend",
+   "job": "recommend",
+   "signals": {
+    "entities": [
+     "957B527A-CF2C-4283-A2FD-3F49741DF5DE"
+    ]
+   },
+   "filters": {},
+   "operators": {},
+   "output": {
+    "limit": 20,
+    "explain": false
+   },
+   "assumptions": [],
+   "unresolved": [],
+   "target": {
+    "type": "artist"
+   }
+  },
+  "execution": {
+   "transport": "mcp",
+   "transport_name": "Qloo canonical MCP",
+   "correlation_id": "mcp-5",
+   "duration_ms": 504
+  }
+ }
+}

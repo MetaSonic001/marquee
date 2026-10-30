@@ -1,0 +1,1586 @@
+{
+ "tool": "qloo_compare_audiences",
+ "args": {
+  "group_a": [
+   "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+   "AA21934D-3A6E-4973-983F-28604C44E3AC",
+   "B58E846A-D1F1-4C6A-AFA7-9230F74CAEE0",
+   "A854F678-4242-4C4B-A21C-38EE521C885B"
+  ],
+  "group_b": [
+   "A5380B09-5504-4BD9-B7B4-85E8337B46D0",
+   "13532075-D9AB-4F22-A269-B5F2AADB44E9",
+   "B58FF9A5-340B-47E0-80B7-394027A8AB41",
+   "D0FB2FA3-01FF-4F46-A501-F53EE746CD66",
+   "3B162979-5DDE-4953-922C-E58751CCDB66",
+   "968D1C61-5F40-473E-912D-722CAD853884",
+   "83DB72AE-17EA-4FB3-8C4D-411118DEBC80",
+   "E77EA427-C2C1-487E-AD1C-34BFB434F961",
+   "082A9824-17C2-4E40-B360-C5CC9515B317",
+   "C977220F-11A7-4F93-8714-AEDC57674191"
+  ],
+  "limit": 20
+ },
+ "envelope": {
+  "schema_version": "1.0-preview.1",
+  "operation": "compare_audiences",
+  "status": "ok",
+  "interpretation": {
+   "group_a": [
+    {
+     "input": "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+     "entityId": "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+     "name": "Khruangbin",
+     "type": "urn:entity:artist",
+     "match": "identifier"
+    },
+    {
+     "input": "AA21934D-3A6E-4973-983F-28604C44E3AC",
+     "entityId": "AA21934D-3A6E-4973-983F-28604C44E3AC",
+     "name": "Japanese Breakfast",
+     "type": "urn:entity:artist",
+     "match": "identifier"
+    },
+    {
+     "input": "B58E846A-D1F1-4C6A-AFA7-9230F74CAEE0",
+     "entityId": "B58E846A-D1F1-4C6A-AFA7-9230F74CAEE0",
+     "name": "Mac DeMarco",
+     "type": "urn:entity:artist",
+     "match": "identifier"
+    },
+    {
+     "input": "A854F678-4242-4C4B-A21C-38EE521C885B",
+     "entityId": "A854F678-4242-4C4B-A21C-38EE521C885B",
+     "name": "Alvvays",
+     "type": "urn:entity:artist",
+     "match": "identifier"
+    }
+   ],
+   "group_b": [
+    {
+     "input": "A5380B09-5504-4BD9-B7B4-85E8337B46D0",
+     "entityId": "A5380B09-5504-4BD9-B7B4-85E8337B46D0",
+     "name": "Bastille",
+     "type": "urn:entity:artist",
+     "match": "identifier"
+    },
+    {
+     "input": "13532075-D9AB-4F22-A269-B5F2AADB44E9",
+     "entityId": "13532075-D9AB-4F22-A269-B5F2AADB44E9",
+     "name": "Foster the People",
+     "type": "urn:entity:artist",
+     "match": "identifier"
+    },
+    {
+     "input": "B58FF9A5-340B-47E0-80B7-394027A8AB41",
+     "entityId": "B58FF9A5-340B-47E0-80B7-394027A8AB41",
+     "name": "fun.",
+     "type": "urn:entity:artist",
+     "match": "identifier"
+    },
+    {
+     "input": "D0FB2FA3-01FF-4F46-A501-F53EE746CD66",
+     "entityId": "D0FB2FA3-01FF-4F46-A501-F53EE746CD66",
+     "name": "Ellie Goulding",
+     "type": "urn:entity:artist",
+     "match": "identifier"
+    },
+    {
+     "input": "3B162979-5DDE-4953-922C-E58751CCDB66",
+     "entityId": "3B162979-5DDE-4953-922C-E58751CCDB66",
+     "name": "Young the Giant",
+     "type": "urn:entity:artist",
+     "match": "identifier"
+    },
+    {
+     "input": "968D1C61-5F40-473E-912D-722CAD853884",
+     "entityId": "968D1C61-5F40-473E-912D-722CAD853884",
+     "name": "Two Door Cinema Club",
+     "type": "urn:entity:artist",
+     "match": "identifier"
+    },
+    {
+     "input": "83DB72AE-17EA-4FB3-8C4D-411118DEBC80",
+     "entityId": "83DB72AE-17EA-4FB3-8C4D-411118DEBC80",
+     "name": "Walk the Moon",
+     "type": "urn:entity:artist",
+     "match": "identifier"
+    },
+    {
+     "input": "E77EA427-C2C1-487E-AD1C-34BFB434F961",
+     "entityId": "E77EA427-C2C1-487E-AD1C-34BFB434F961",
+     "name": "Neon Trees",
+     "type": "urn:entity:artist",
+     "match": "identifier"
+    },
+    {
+     "input": "082A9824-17C2-4E40-B360-C5CC9515B317",
+     "entityId": "082A9824-17C2-4E40-B360-C5CC9515B317",
+     "name": "The Naked and Famous",
+     "type": "urn:entity:artist",
+     "match": "identifier"
+    },
+    {
+     "input": "C977220F-11A7-4F93-8714-AEDC57674191",
+     "entityId": "C977220F-11A7-4F93-8714-AEDC57674191",
+     "name": "The 1975",
+     "type": "urn:entity:artist",
+     "match": "identifier"
+    }
+   ]
+  },
+  "resolution": {
+   "contract_version": "1.0-preview.1",
+   "provider": {
+    "contract_version": "1.0-preview.1",
+    "provider_id": "qloo_api",
+    "name": "Qloo native resolution",
+    "entity_strategy": "exact_name_context_or_choice",
+    "tag_strategy": "target_scoped_semantic_search_exact_name_or_choice",
+    "remote": true,
+    "uses_model": false,
+    "fallback": "none"
+   },
+   "outcomes": [
+    {
+     "input": "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+     "status": "resolved",
+     "match": "identifier",
+     "selected": {
+      "id": "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+      "name": "Khruangbin",
+      "type": "urn:entity:artist",
+      "popularity": 0.9919334977446856,
+      "description": "Khruangbin is an American musical trio known for their eclectic blend of global musical influences and instrumental sound."
+     },
+     "provenance": {
+      "contract_version": "1.0-preview.1",
+      "provider_id": "qloo_api",
+      "provider_name": "Qloo native resolution",
+      "endpoint": "/entities",
+      "strategy": "identifier_lookup",
+      "remote": true,
+      "uses_model": false
+     }
+    },
+    {
+     "input": "AA21934D-3A6E-4973-983F-28604C44E3AC",
+     "status": "resolved",
+     "match": "identifier",
+     "selected": {
+      "id": "AA21934D-3A6E-4973-983F-28604C44E3AC",
+      "name": "Japanese Breakfast",
+      "type": "urn:entity:artist",
+      "popularity": 0.9908100576564297,
+      "description": "Japanese Breakfast is an American indie rock band led by Michelle Zauner, known for its dreamy and experimental sound."
+     },
+     "provenance": {
+      "contract_version": "1.0-preview.1",
+      "provider_id": "qloo_api",
+      "provider_name": "Qloo native resolution",
+      "endpoint": "/entities",
+      "strategy": "identifier_lookup",
+      "remote": true,
+      "uses_model": false
+     }
+    },
+    {
+     "input": "B58E846A-D1F1-4C6A-AFA7-9230F74CAEE0",
+     "status": "resolved",
+     "match": "identifier",
+     "selected": {
+      "id": "B58E846A-D1F1-4C6A-AFA7-9230F74CAEE0",
+      "name": "Mac DeMarco",
+      "type": "urn:entity:artist",
+      "popularity": 0.9980871155254022,
+      "description": "Canadian singer-songwriter and multi-instrumentalist known for his laid-back style and lo-fi sound."
+     },
+     "provenance": {
+      "contract_version": "1.0-preview.1",
+      "provider_id": "qloo_api",
+      "provider_name": "Qloo native resolution",
+      "endpoint": "/entities",
+      "strategy": "identifier_lookup",
+      "remote": true,
+      "uses_model": false
+     }
+    },
+    {
+     "input": "A854F678-4242-4C4B-A21C-38EE521C885B",
+     "status": "resolved",
+     "match": "identifier",
+     "selected": {
+      "id": "A854F678-4242-4C4B-A21C-38EE521C885B",
+      "name": "Alvvays",
+      "type": "urn:entity:artist",
+      "popularity": 0.9938058978917786,
+      "description": "Alvvays is a Canadian indie pop band known for their catchy melodies and dreamy sound."
+     },
+     "provenance": {
+      "contract_version": "1.0-preview.1",
+      "provider_id": "qloo_api",
+      "provider_name": "Qloo native resolution",
+      "endpoint": "/entities",
+      "strategy": "identifier_lookup",
+      "remote": true,
+      "uses_model": false
+     }
+    },
+    {
+     "input": "A5380B09-5504-4BD9-B7B4-85E8337B46D0",
+     "status": "resolved",
+     "match": "identifier",
+     "selected": {
+      "id": "A5380B09-5504-4BD9-B7B4-85E8337B46D0",
+      "name": "Bastille",
+      "type": "urn:entity:artist",
+      "popularity": 0.9986269065587984,
+      "description": "Bastille is a British indie pop band known for their anthemic sound and emotive lyrics."
+     },
+     "provenance": {
+      "contract_version": "1.0-preview.1",
+      "provider_id": "qloo_api",
+      "provider_name": "Qloo native resolution",
+      "endpoint": "/entities",
+      "strategy": "identifier_lookup",
+      "remote": true,
+      "uses_model": false
+     }
+    },
+    {
+     "input": "13532075-D9AB-4F22-A269-B5F2AADB44E9",
+     "status": "resolved",
+     "match": "identifier",
+     "selected": {
+      "id": "13532075-D9AB-4F22-A269-B5F2AADB44E9",
+      "name": "Foster the People",
+      "type": "urn:entity:artist",
+      "popularity": 0.999433219414934,
+      "description": "An American indie pop band known for their catchy melodies and hit single 'Pumped Up Kicks'."
+     },
+     "provenance": {
+      "contract_version": "1.0-preview.1",
+      "provider_id": "qloo_api",
+      "provider_name": "Qloo native resolution",
+      "endpoint": "/entities",
+      "strategy": "identifier_lookup",
+      "remote": true,
+      "uses_model": false
+     }
+    },
+    {
+     "input": "B58FF9A5-340B-47E0-80B7-394027A8AB41",
+     "status": "resolved",
+     "match": "identifier",
+     "selected": {
+      "id": "B58FF9A5-340B-47E0-80B7-394027A8AB41",
+      "name": "fun.",
+      "type": "urn:entity:artist",
+      "popularity": 0.9985897959252524,
+      "description": "An American indie pop band known for their anthemic sound and hit single 'We Are Young'."
+     },
+     "provenance": {
+      "contract_version": "1.0-preview.1",
+      "provider_id": "qloo_api",
+      "provider_name": "Qloo native resolution",
+      "endpoint": "/entities",
+      "strategy": "identifier_lookup",
+      "remote": true,
+      "uses_model": false
+     }
+    },
+    {
+     "input": "D0FB2FA3-01FF-4F46-A501-F53EE746CD66",
+     "status": "resolved",
+     "match": "identifier",
+     "selected": {
+      "id": "D0FB2FA3-01FF-4F46-A501-F53EE746CD66",
+      "name": "Ellie Goulding",
+      "type": "urn:entity:artist",
+      "popularity": 0.9995276828457783,
+      "description": "English singer and songwriter known for her ethereal voice and electronic pop sound."
+     },
+     "provenance": {
+      "contract_version": "1.0-preview.1",
+      "provider_id": "qloo_api",
+      "provider_name": "Qloo native resolution",
+      "endpoint": "/entities",
+      "strategy": "identifier_lookup",
+      "remote": true,
+      "uses_model": false
+     }
+    },
+    {
+     "input": "3B162979-5DDE-4953-922C-E58751CCDB66",
+     "status": "resolved",
+     "match": "identifier",
+     "selected": {
+      "id": "3B162979-5DDE-4953-922C-E58751CCDB66",
+      "name": "Young the Giant",
+      "type": "urn:entity:artist",
+      "popularity": 0.9970075334586098,
+      "description": "Young the Giant is an American alternative rock band known for their melodic and energetic sound."
+     },
+     "provenance": {
+      "contract_version": "1.0-preview.1",
+      "provider_id": "qloo_api",
+      "provider_name": "Qloo native resolution",
+      "endpoint": "/entities",
+      "strategy": "identifier_lookup",
+      "remote": true,
+      "uses_model": false
+     }
+    },
+    {
+     "input": "968D1C61-5F40-473E-912D-722CAD853884",
+     "status": "resolved",
+     "match": "identifier",
+     "selected": {
+      "id": "968D1C61-5F40-473E-912D-722CAD853884",
+      "name": "Two Door Cinema Club",
+      "type": "urn:entity:artist",
+      "popularity": 0.9994399668028514,
+      "description": "Two Door Cinema Club is a Northern Irish indie rock band known for their catchy melodies and energetic performances."
+     },
+     "provenance": {
+      "contract_version": "1.0-preview.1",
+      "provider_id": "qloo_api",
+      "provider_name": "Qloo native resolution",
+      "endpoint": "/entities",
+      "strategy": "identifier_lookup",
+      "remote": true,
+      "uses_model": false
+     }
+    },
+    {
+     "input": "83DB72AE-17EA-4FB3-8C4D-411118DEBC80",
+     "status": "resolved",
+     "match": "identifier",
+     "selected": {
+      "id": "83DB72AE-17EA-4FB3-8C4D-411118DEBC80",
+      "name": "Walk the Moon",
+      "type": "urn:entity:artist",
+      "popularity": 0.9962147153783092,
+      "description": "Walk The Moon is an American rock band known for their catchy indie and alternative rock sound."
+     },
+     "provenance": {
+      "contract_version": "1.0-preview.1",
+      "provider_id": "qloo_api",
+      "provider_name": "Qloo native resolution",
+      "endpoint": "/entities",
+      "strategy": "identifier_lookup",
+      "remote": true,
+      "uses_model": false
+     }
+    },
+    {
+     "input": "E77EA427-C2C1-487E-AD1C-34BFB434F961",
+     "status": "resolved",
+     "match": "identifier",
+     "selected": {
+      "id": "E77EA427-C2C1-487E-AD1C-34BFB434F961",
+      "name": "Neon Trees",
+      "type": "urn:entity:artist",
+      "popularity": 0.9964373791795851,
+      "description": "Neon Trees is an American rock band known for their catchy alternative and pop rock sound."
+     },
+     "provenance": {
+      "contract_version": "1.0-preview.1",
+      "provider_id": "qloo_api",
+      "provider_name": "Qloo native resolution",
+      "endpoint": "/entities",
+      "strategy": "identifier_lookup",
+      "remote": true,
+      "uses_model": false
+     }
+    },
+    {
+     "input": "082A9824-17C2-4E40-B360-C5CC9515B317",
+     "status": "resolved",
+     "match": "identifier",
+     "selected": {
+      "id": "082A9824-17C2-4E40-B360-C5CC9515B317",
+      "name": "The Naked and Famous",
+      "type": "urn:entity:artist",
+      "popularity": 0.9980567522797736,
+      "description": "The Naked and Famous is a New Zealand indie electronic band known for their energetic synth-driven sound."
+     },
+     "provenance": {
+      "contract_version": "1.0-preview.1",
+      "provider_id": "qloo_api",
+      "provider_name": "Qloo native resolution",
+      "endpoint": "/entities",
+      "strategy": "identifier_lookup",
+      "remote": true,
+      "uses_model": false
+     }
+    },
+    {
+     "input": "C977220F-11A7-4F93-8714-AEDC57674191",
+     "status": "resolved",
+     "match": "identifier",
+     "selected": {
+      "id": "C977220F-11A7-4F93-8714-AEDC57674191",
+      "name": "The 1975",
+      "type": "urn:entity:artist",
+      "popularity": 0.9977834830691169,
+      "description": "The 1975 is an English pop rock band known for their eclectic sound blending indie rock, synthpop, and electronic music."
+     },
+     "provenance": {
+      "contract_version": "1.0-preview.1",
+      "provider_id": "qloo_api",
+      "provider_name": "Qloo native resolution",
+      "endpoint": "/entities",
+      "strategy": "identifier_lookup",
+      "remote": true,
+      "uses_model": false
+     }
+    }
+   ]
+  },
+  "results": {
+   "tags": [
+    {
+     "tag_id": "urn:tag:genre:music:rock",
+     "name": "Rock",
+     "type": "urn:tag",
+     "subtype": "urn:tag:genre:music",
+     "entity_id": "B01B5563-0D1C-4DAE-8F3F-114964DA4714",
+     "popularity": 0.9998010287300981,
+     "query": {
+      "score": 0.9524530439168452,
+      "a.signal.interests.entities": [
+       "[detail omitted]",
+       "[detail omitted]"
+      ],
+      "b.signal.interests.entities": [
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]"
+      ]
+     }
+    },
+    {
+     "tag_id": "urn:tag:genre:music:funk",
+     "name": "Funk",
+     "type": "urn:tag",
+     "subtype": "urn:tag:genre:music",
+     "entity_id": "47ED0FA8-991E-45F2-9074-D95153C98ED7",
+     "popularity": 0.9989218336820088,
+     "query": {
+      "score": 0.8806072893397019,
+      "a.signal.interests.entities": [
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]"
+      ],
+      "b.signal.interests.entities": [
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]"
+      ]
+     }
+    },
+    {
+     "tag_id": "urn:tag:genre:music:funk",
+     "name": "Funk",
+     "type": "urn:tag",
+     "subtype": "urn:tag:genre:music",
+     "entity_id": "47ED0FA8-991E-45F2-9074-D95153C98ED7",
+     "popularity": 0.9989218336820088,
+     "query": {
+      "score": 0.8806072893397019,
+      "a.signal.interests.entities": [
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]"
+      ],
+      "b.signal.interests.entities": [
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]"
+      ]
+     }
+    },
+    {
+     "tag_id": "urn:tag:genre:music:funk",
+     "name": "Funk",
+     "type": "urn:tag",
+     "subtype": "urn:tag:genre:music",
+     "entity_id": "47ED0FA8-991E-45F2-9074-D95153C98ED7",
+     "popularity": 0.9989218336820088,
+     "query": {
+      "score": 0.8806072893397019,
+      "a.signal.interests.entities": [
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]"
+      ],
+      "b.signal.interests.entities": [
+       "[detail omitted]"
+      ]
+     }
+    },
+    {
+     "tag_id": "urn:tag:genre:music:post_punk",
+     "name": "Post Punk",
+     "type": "urn:tag",
+     "subtype": "urn:tag:genre:music",
+     "entity_id": "114DC829-312C-4AAE-927A-9CBE777C69DC",
+     "popularity": 0.9989387494116497,
+     "query": {
+      "score": 0.7309812497448915,
+      "a.signal.interests.entities": [
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]"
+      ],
+      "b.signal.interests.entities": [
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]"
+      ]
+     }
+    },
+    {
+     "tag_id": "urn:tag:genre:music:post_punk",
+     "name": "Post Punk",
+     "type": "urn:tag",
+     "subtype": "urn:tag:genre:music",
+     "entity_id": "114DC829-312C-4AAE-927A-9CBE777C69DC",
+     "popularity": 0.9989387494116497,
+     "query": {
+      "score": 0.7309812497448915,
+      "a.signal.interests.entities": [
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]"
+      ],
+      "b.signal.interests.entities": [
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]"
+      ]
+     }
+    },
+    {
+     "tag_id": "urn:tag:genre:music:indie",
+     "name": "Indie",
+     "type": "urn:tag",
+     "subtype": "urn:tag:genre:music",
+     "entity_id": "585E738B-3D23-4F9C-A30C-FB31A930D30B",
+     "popularity": 0.9996067092858475,
+     "query": {
+      "score": 0.7309812497448915,
+      "a.signal.interests.entities": [
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]"
+      ],
+      "b.signal.interests.entities": [
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]"
+      ]
+     }
+    },
+    {
+     "tag_id": "urn:tag:genre:music:post_punk",
+     "name": "Post Punk",
+     "type": "urn:tag",
+     "subtype": "urn:tag:genre:music",
+     "entity_id": "114DC829-312C-4AAE-927A-9CBE777C69DC",
+     "popularity": 0.9989387494116497,
+     "query": {
+      "score": 0.7308498709537321,
+      "a.signal.interests.entities": [
+       "[detail omitted]"
+      ],
+      "b.signal.interests.entities": [
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]"
+      ]
+     }
+    },
+    {
+     "tag_id": "urn:tag:genre:music:post_punk",
+     "name": "Post Punk",
+     "type": "urn:tag",
+     "subtype": "urn:tag:genre:music",
+     "entity_id": "114DC829-312C-4AAE-927A-9CBE777C69DC",
+     "popularity": 0.9989387494116497,
+     "query": {
+      "score": 0.7308498709537321,
+      "a.signal.interests.entities": [
+       "[detail omitted]"
+      ],
+      "b.signal.interests.entities": [
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]"
+      ]
+     }
+    },
+    {
+     "tag_id": "urn:tag:genre:music:funk",
+     "name": "Funk",
+     "type": "urn:tag",
+     "subtype": "urn:tag:genre:music",
+     "entity_id": "47ED0FA8-991E-45F2-9074-D95153C98ED7",
+     "popularity": 0.9989218336820088,
+     "query": {
+      "score": 0.7308498709537321,
+      "a.signal.interests.entities": [
+       "[detail omitted]"
+      ],
+      "b.signal.interests.entities": [
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]"
+      ]
+     }
+    },
+    {
+     "tag_id": "urn:tag:genre:music:funk",
+     "name": "Funk",
+     "type": "urn:tag",
+     "subtype": "urn:tag:genre:music",
+     "entity_id": "47ED0FA8-991E-45F2-9074-D95153C98ED7",
+     "popularity": 0.9989218336820088,
+     "query": {
+      "score": 0.7308498709537321,
+      "a.signal.interests.entities": [
+       "[detail omitted]"
+      ],
+      "b.signal.interests.entities": [
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]"
+      ]
+     }
+    },
+    {
+     "tag_id": "urn:tag:genre:music:funk",
+     "name": "Funk",
+     "type": "urn:tag",
+     "subtype": "urn:tag:genre:music",
+     "entity_id": "47ED0FA8-991E-45F2-9074-D95153C98ED7",
+     "popularity": 0.9989218336820088,
+     "query": {
+      "score": 0.7308498709537321,
+      "a.signal.interests.entities": [
+       "[detail omitted]"
+      ],
+      "b.signal.interests.entities": [
+       "[detail omitted]"
+      ]
+     }
+    },
+    {
+     "tag_id": "urn:tag:genre:music:rock",
+     "name": "Rock",
+     "type": "urn:tag",
+     "subtype": "urn:tag:genre:music",
+     "entity_id": "B01B5563-0D1C-4DAE-8F3F-114964DA4714",
+     "popularity": 0.9998010287300981,
+     "query": {
+      "score": 0.7308498709537321,
+      "a.signal.interests.entities": [
+       "[detail omitted]"
+      ],
+      "b.signal.interests.entities": [
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]"
+      ]
+     }
+    },
+    {
+     "tag_id": "urn:tag:genre:music:funk",
+     "name": "Funk",
+     "type": "urn:tag",
+     "subtype": "urn:tag:genre:music",
+     "entity_id": "47ED0FA8-991E-45F2-9074-D95153C98ED7",
+     "popularity": 0.9989218336820088,
+     "query": {
+      "score": 0.7308465411172421,
+      "a.signal.interests.entities": [
+       "[detail omitted]",
+       "[detail omitted]"
+      ],
+      "b.signal.interests.entities": [
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]"
+      ]
+     }
+    },
+    {
+     "tag_id": "urn:tag:genre:music:funk",
+     "name": "Funk",
+     "type": "urn:tag",
+     "subtype": "urn:tag:genre:music",
+     "entity_id": "47ED0FA8-991E-45F2-9074-D95153C98ED7",
+     "popularity": 0.9989218336820088,
+     "query": {
+      "score": 0.7308465411172421,
+      "a.signal.interests.entities": [
+       "[detail omitted]",
+       "[detail omitted]"
+      ],
+      "b.signal.interests.entities": [
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]"
+      ]
+     }
+    },
+    {
+     "tag_id": "urn:tag:genre:music:funk",
+     "name": "Funk",
+     "type": "urn:tag",
+     "subtype": "urn:tag:genre:music",
+     "entity_id": "47ED0FA8-991E-45F2-9074-D95153C98ED7",
+     "popularity": 0.9989218336820088,
+     "query": {
+      "score": 0.7308465411172421,
+      "a.signal.interests.entities": [
+       "[detail omitted]",
+       "[detail omitted]"
+      ],
+      "b.signal.interests.entities": [
+       "[detail omitted]"
+      ]
+     }
+    },
+    {
+     "tag_id": "urn:tag:style:qloo:engaging",
+     "name": "Engaging",
+     "type": "urn:tag",
+     "subtype": "urn:tag:style:qloo",
+     "entity_id": "3F4ACC42-080A-4FC3-85F1-BE70AA7B774A",
+     "popularity": 0.9949500785800129,
+     "query": {
+      "score": 0.7300645416298027,
+      "a.signal.interests.entities": [
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]"
+      ],
+      "b.signal.interests.entities": [
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]"
+      ]
+     }
+    },
+    {
+     "tag_id": "urn:tag:theme:qloo:love",
+     "name": "Love",
+     "type": "urn:tag",
+     "subtype": "urn:tag:theme:qloo",
+     "entity_id": "FE9F1B33-D668-4A8C-80FD-60B78D5F13FD",
+     "popularity": 0.9934362577424425,
+     "query": {
+      "score": 0.7297661168313316,
+      "a.signal.interests.entities": [
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]"
+      ],
+      "b.signal.interests.entities": [
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]"
+      ]
+     }
+    },
+    {
+     "tag_id": "urn:tag:style:qloo:energetic",
+     "name": "Energetic",
+     "type": "urn:tag",
+     "subtype": "urn:tag:style:qloo",
+     "entity_id": "DDA96216-6F10-4D64-BA4B-3553DA45652B",
+     "popularity": 0.993239807710086,
+     "query": {
+      "score": 0.7297273723004448,
+      "a.signal.interests.entities": [
+       "[detail omitted]",
+       "[detail omitted]"
+      ],
+      "b.signal.interests.entities": [
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]"
+      ]
+     }
+    },
+    {
+     "tag_id": "urn:tag:audience:qloo:passionate",
+     "name": "Passionate",
+     "type": "urn:tag",
+     "subtype": "urn:tag:audience:qloo",
+     "entity_id": "F5485D5E-6C8E-4CE8-951C-3B13AD76D935",
+     "popularity": 0.9920842192844597,
+     "query": {
+      "score": 0.7294993952774845,
+      "a.signal.interests.entities": [
+       "[detail omitted]",
+       "[detail omitted]"
+      ],
+      "b.signal.interests.entities": [
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]",
+       "[detail omitted]"
+      ]
+     }
+    }
+   ],
+   "a": [
+    {
+     "tag_id": "urn:tag:instrument:qloo:drums",
+     "name": "Drums",
+     "type": "urn:tag",
+     "subtype": "urn:tag:instrument:qloo",
+     "entity_id": "C75E4195-3F50-4BF1-B4FE-0B3DFB211923",
+     "popularity": 0.98776233,
+     "query": {
+      "count": "4"
+     }
+    },
+    {
+     "tag_id": "urn:tag:genre:music:indie",
+     "name": "Indie",
+     "type": "urn:tag",
+     "subtype": "urn:tag:genre:music",
+     "entity_id": "585E738B-3D23-4F9C-A30C-FB31A930D30B",
+     "popularity": 0.9996067,
+     "query": {
+      "count": "3"
+     }
+    },
+    {
+     "tag_id": "urn:tag:audience:qloo:dedicated",
+     "name": "DedicateD",
+     "type": "urn:tag",
+     "subtype": "urn:tag:audience:qloo",
+     "entity_id": "5A0F0ADE-6B19-49BB-9AB7-BD1505D4AF68",
+     "popularity": 0.9908824,
+     "query": {
+      "count": "3"
+     }
+    },
+    {
+     "tag_id": "urn:tag:music:qloo:melodic",
+     "name": "Melodic",
+     "type": "urn:tag",
+     "subtype": "urn:tag:music:qloo",
+     "entity_id": "AEDE7DAB-D607-41AD-AAB7-77048675DCAD",
+     "popularity": 0.9827355,
+     "query": {
+      "count": "3"
+     }
+    },
+    {
+     "tag_id": "urn:tag:style:qloo:engaging",
+     "name": "Engaging",
+     "type": "urn:tag",
+     "subtype": "urn:tag:style:qloo",
+     "entity_id": "3F4ACC42-080A-4FC3-85F1-BE70AA7B774A",
+     "popularity": 0.99495006,
+     "query": {
+      "count": "3"
+     }
+    },
+    {
+     "tag_id": "urn:tag:style:qloo:intimate",
+     "name": "Intimate",
+     "type": "urn:tag",
+     "subtype": "urn:tag:style:qloo",
+     "entity_id": "BF2FC01A-8DBA-40F4-B564-AF1A99817E2B",
+     "popularity": 0.9891952,
+     "query": {
+      "count": "3"
+     }
+    },
+    {
+     "tag_id": "urn:tag:genre:music:lo_fi",
+     "name": "Lo - Fi",
+     "type": "urn:tag",
+     "subtype": "urn:tag:genre:music",
+     "entity_id": "F2F8AABB-140A-41EA-A2CB-7FCF2AD21C68",
+     "popularity": 0.9985869,
+     "query": {
+      "count": "3"
+     }
+    },
+    {
+     "tag_id": "urn:tag:instrument:qloo:bass_guitar",
+     "name": "Bass Guitar",
+     "type": "urn:tag",
+     "subtype": "urn:tag:instrument:qloo",
+     "entity_id": "6E9F94F5-1C9B-4DE2-984E-91E96054D325",
+     "popularity": 0.94070673,
+     "query": {
+      "count": "3"
+     }
+    },
+    {
+     "tag_id": "urn:tag:instrument:qloo:guitar",
+     "name": "Guitar",
+     "type": "urn:tag",
+     "subtype": "urn:tag:instrument:qloo",
+     "entity_id": "48648868-95A5-4F0B-B517-71ECBB9F4EBD",
+     "popularity": 0.9918993,
+     "query": {
+      "count": "3"
+     }
+    },
+    {
+     "tag_id": "urn:tag:theme:qloo:love",
+     "name": "Love",
+     "type": "urn:tag",
+     "subtype": "urn:tag:theme:qloo",
+     "entity_id": "FE9F1B33-D668-4A8C-80FD-60B78D5F13FD",
+     "popularity": 0.9934363,
+     "query": {
+      "count": "3"
+     }
+    },
+    {
+     "tag_id": "urn:tag:artist:qloo:laid_back",
+     "name": "Laid-back",
+     "type": "urn:tag",
+     "subtype": "urn:tag:artist:qloo",
+     "entity_id": "CA1336D2-E057-48A2-95E1-F235BFB8F08C",
+     "popularity": 0.52246463,
+     "query": {
+      "count": "2"
+     }
+    },
+    {
+     "tag_id": "urn:tag:instrument:qloo:keyboard",
+     "name": "Keyboard",
+     "type": "urn:tag",
+     "subtype": "urn:tag:instrument:qloo",
+     "entity_id": "D876E436-2726-4F64-A9B6-D4F163EE994E",
+     "popularity": 0.9646506,
+     "query": {
+      "count": "2"
+     }
+    },
+    {
+     "tag_id": "urn:tag:artist:qloo:melodic",
+     "name": "Melodic",
+     "type": "urn:tag",
+     "subtype": "urn:tag:artist:qloo",
+     "entity_id": "03F6ED3F-AFD6-4491-AC63-ACB2822E6506",
+     "popularity": 0.9168785,
+     "query": {
+      "count": "2"
+     }
+    },
+    {
+     "tag_id": "urn:tag:artist:qloo:dreamy",
+     "name": "Dreamy",
+     "type": "urn:tag",
+     "subtype": "urn:tag:artist:qloo",
+     "entity_id": "090C7B7F-4CA3-4092-BB34-72A41307D040",
+     "popularity": 0.66033787,
+     "query": {
+      "count": "2"
+     }
+    },
+    {
+     "tag_id": "urn:tag:artist:qloo:introspective",
+     "name": "Introspective",
+     "type": "urn:tag",
+     "subtype": "urn:tag:artist:qloo",
+     "entity_id": "37B3BB7B-51D4-43D1-BE6B-03C60CB4A1D1",
+     "popularity": 0.948403,
+     "query": {
+      "count": "2"
+     }
+    },
+    {
+     "tag_id": "urn:tag:audience:qloo:youthful",
+     "name": "Youthful",
+     "type": "urn:tag",
+     "subtype": "urn:tag:audience:qloo",
+     "entity_id": "4BE268AF-EF5D-4D05-A959-FDF7A3DD724A",
+     "popularity": 0.97720027,
+     "query": {
+      "count": "2"
+     }
+    },
+    {
+     "tag_id": "urn:tag:theme:qloo:youth",
+     "name": "Youth",
+     "type": "urn:tag",
+     "subtype": "urn:tag:theme:qloo",
+     "entity_id": "B0F17700-99DA-43BE-AF0F-865180858F47",
+     "popularity": 0.95011324,
+     "query": {
+      "count": "2"
+     }
+    },
+    {
+     "tag_id": "urn:tag:music:qloo:dreamy",
+     "name": "Dreamy",
+     "type": "urn:tag",
+     "subtype": "urn:tag:music:qloo",
+     "entity_id": "5ADC6DC6-2264-4CED-8DA1-682DED7098A1",
+     "popularity": 0.89951,
+     "query": {
+      "count": "2"
+     }
+    },
+    {
+     "tag_id": "urn:tag:theme:qloo:nostalgia",
+     "name": "Nostalgia",
+     "type": "urn:tag",
+     "subtype": "urn:tag:theme:qloo",
+     "entity_id": "AAA219BE-CF50-4A2F-8229-D66149E84688",
+     "popularity": 0.9688569,
+     "query": {
+      "count": "2"
+     }
+    },
+    {
+     "tag_id": "urn:tag:theme:qloo:relationships",
+     "name": "Relationships",
+     "type": "urn:tag",
+     "subtype": "urn:tag:theme:qloo",
+     "entity_id": "09D46DB5-52A0-4537-B313-28E49753491C",
+     "popularity": 0.9684871,
+     "query": {
+      "count": "2"
+     }
+    }
+   ],
+   "b": [
+    {
+     "tag_id": "urn:tag:instrument:qloo:guitar",
+     "name": "Guitar",
+     "type": "urn:tag",
+     "subtype": "urn:tag:instrument:qloo",
+     "entity_id": "48648868-95A5-4F0B-B517-71ECBB9F4EBD",
+     "popularity": 0.9918993,
+     "query": {
+      "count": "10"
+     }
+    },
+    {
+     "tag_id": "urn:tag:audience:qloo:passionate",
+     "name": "Passionate",
+     "type": "urn:tag",
+     "subtype": "urn:tag:audience:qloo",
+     "entity_id": "F5485D5E-6C8E-4CE8-951C-3B13AD76D935",
+     "popularity": 0.9920842,
+     "query": {
+      "count": "10"
+     }
+    },
+    {
+     "tag_id": "urn:tag:genre:music:indie",
+     "name": "Indie",
+     "type": "urn:tag",
+     "subtype": "urn:tag:genre:music",
+     "entity_id": "585E738B-3D23-4F9C-A30C-FB31A930D30B",
+     "popularity": 0.9996067,
+     "query": {
+      "count": "10"
+     }
+    },
+    {
+     "tag_id": "urn:tag:style:qloo:energetic",
+     "name": "Energetic",
+     "type": "urn:tag",
+     "subtype": "urn:tag:style:qloo",
+     "entity_id": "DDA96216-6F10-4D64-BA4B-3553DA45652B",
+     "popularity": 0.9932398,
+     "query": {
+      "count": "10"
+     }
+    },
+    {
+     "tag_id": "urn:tag:instrument:qloo:vocals",
+     "name": "Vocals",
+     "type": "urn:tag",
+     "subtype": "urn:tag:instrument:qloo",
+     "entity_id": "BC4B0E4D-F317-47A7-94A5-62BBD3D42042",
+     "popularity": 0.99063975,
+     "query": {
+      "count": "10"
+     }
+    },
+    {
+     "tag_id": "urn:tag:style:qloo:engaging",
+     "name": "Engaging",
+     "type": "urn:tag",
+     "subtype": "urn:tag:style:qloo",
+     "entity_id": "3F4ACC42-080A-4FC3-85F1-BE70AA7B774A",
+     "popularity": 0.99495006,
+     "query": {
+      "count": "10"
+     }
+    },
+    {
+     "tag_id": "urn:tag:style:qloo:dynamic",
+     "name": "Dynamic",
+     "type": "urn:tag",
+     "subtype": "urn:tag:style:qloo",
+     "entity_id": "4900E325-E17B-482E-A421-A36C21F51569",
+     "popularity": 0.9926158,
+     "query": {
+      "count": "10"
+     }
+    },
+    {
+     "tag_id": "urn:tag:instrument:qloo:drums",
+     "name": "Drums",
+     "type": "urn:tag",
+     "subtype": "urn:tag:instrument:qloo",
+     "entity_id": "C75E4195-3F50-4BF1-B4FE-0B3DFB211923",
+     "popularity": 0.98776233,
+     "query": {
+      "count": "9"
+     }
+    },
+    {
+     "tag_id": "urn:tag:genre:music:alternative_rock",
+     "name": "Alternative Rock",
+     "type": "urn:tag",
+     "subtype": "urn:tag:genre:music",
+     "entity_id": "61E68939-BFDA-4842-AAFF-AC7FDD210523",
+     "popularity": 0.9996177,
+     "query": {
+      "count": "8"
+     }
+    },
+    {
+     "tag_id": "urn:tag:artist:qloo:melodic",
+     "name": "Melodic",
+     "type": "urn:tag",
+     "subtype": "urn:tag:artist:qloo",
+     "entity_id": "03F6ED3F-AFD6-4491-AC63-ACB2822E6506",
+     "popularity": 0.9168785,
+     "query": {
+      "count": "8"
+     }
+    },
+    {
+     "tag_id": "urn:tag:music:qloo:melodic",
+     "name": "Melodic",
+     "type": "urn:tag",
+     "subtype": "urn:tag:music:qloo",
+     "entity_id": "AEDE7DAB-D607-41AD-AAB7-77048675DCAD",
+     "popularity": 0.9827355,
+     "query": {
+      "count": "8"
+     }
+    },
+    {
+     "tag_id": "urn:tag:artist:qloo:energetic",
+     "name": "Energetic",
+     "type": "urn:tag",
+     "subtype": "urn:tag:artist:qloo",
+     "entity_id": "DFB8114C-7F27-43EE-81F5-AC5A5E061149",
+     "popularity": 0.9736526,
+     "query": {
+      "count": "8"
+     }
+    },
+    {
+     "tag_id": "urn:tag:audience:qloo:loyal",
+     "name": "Loyal",
+     "type": "urn:tag",
+     "subtype": "urn:tag:audience:qloo",
+     "entity_id": "EDDB06AD-35FE-431E-A2A5-4F5589471FEE",
+     "popularity": 0.99202645,
+     "query": {
+      "count": "8"
+     }
+    },
+    {
+     "tag_id": "urn:tag:audience:qloo:youthful",
+     "name": "Youthful",
+     "type": "urn:tag",
+     "subtype": "urn:tag:audience:qloo",
+     "entity_id": "4BE268AF-EF5D-4D05-A959-FDF7A3DD724A",
+     "popularity": 0.97720027,
+     "query": {
+      "count": "7"
+     }
+    },
+    {
+     "tag_id": "urn:tag:theme:qloo:love",
+     "name": "Love",
+     "type": "urn:tag",
+     "subtype": "urn:tag:theme:qloo",
+     "entity_id": "FE9F1B33-D668-4A8C-80FD-60B78D5F13FD",
+     "popularity": 0.9934363,
+     "query": {
+      "count": "6"
+     }
+    },
+    {
+     "tag_id": "urn:tag:artist:qloo:catchy",
+     "name": "Catchy",
+     "type": "urn:tag",
+     "subtype": "urn:tag:artist:qloo",
+     "entity_id": "15656172-6715-4AAF-9B91-3DECE27650AF",
+     "popularity": 0.7609434,
+     "query": {
+      "count": "6"
+     }
+    },
+    {
+     "tag_id": "urn:tag:theme:qloo:youth",
+     "name": "Youth",
+     "type": "urn:tag",
+     "subtype": "urn:tag:theme:qloo",
+     "entity_id": "B0F17700-99DA-43BE-AF0F-865180858F47",
+     "popularity": 0.95011324,
+     "query": {
+      "count": "6"
+     }
+    },
+    {
+     "tag_id": "urn:tag:audience:qloo:energetic",
+     "name": "Energetic",
+     "type": "urn:tag",
+     "subtype": "urn:tag:audience:qloo",
+     "entity_id": "94D7AB36-1A18-47D4-B6D0-C9F48B477CEB",
+     "popularity": 0.9764722,
+     "query": {
+      "count": "6"
+     }
+    },
+    {
+     "tag_id": "urn:tag:music:qloo:catchy",
+     "name": "Catchy",
+     "type": "urn:tag",
+     "subtype": "urn:tag:music:qloo",
+     "entity_id": "3CA468CF-B702-4C37-A9B8-EA098F7A608E",
+     "popularity": 0.9790145,
+     "query": {
+      "count": "6"
+     }
+    },
+    {
+     "tag_id": "urn:tag:theme:qloo:self_discovery",
+     "name": "Self-discovery",
+     "type": "urn:tag",
+     "subtype": "urn:tag:theme:qloo",
+     "entity_id": "461712D3-F361-489F-8736-49ABB2DF7F30",
+     "popularity": 0.97895676,
+     "query": {
+      "count": "6"
+     }
+    }
+   ],
+   "matchEntities": []
+  },
+  "provenance": {
+   "source": "Qloo API",
+   "endpoint": "/v2/analysis/compare",
+   "documentation": "https://docs.qloo.com/reference/analysis-compare",
+   "requests": [
+    {
+     "method": "GET",
+     "path": "/v2/analysis/compare",
+     "query": {
+      "a.signal.interests.entities": [
+       "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+       "AA21934D-3A6E-4973-983F-28604C44E3AC",
+       "B58E846A-D1F1-4C6A-AFA7-9230F74CAEE0",
+       "A854F678-4242-4C4B-A21C-38EE521C885B"
+      ],
+      "b.signal.interests.entities": [
+       "A5380B09-5504-4BD9-B7B4-85E8337B46D0",
+       "13532075-D9AB-4F22-A269-B5F2AADB44E9",
+       "B58FF9A5-340B-47E0-80B7-394027A8AB41",
+       "D0FB2FA3-01FF-4F46-A501-F53EE746CD66",
+       "3B162979-5DDE-4953-922C-E58751CCDB66",
+       "968D1C61-5F40-473E-912D-722CAD853884",
+       "83DB72AE-17EA-4FB3-8C4D-411118DEBC80",
+       "E77EA427-C2C1-487E-AD1C-34BFB434F961",
+       "082A9824-17C2-4E40-B360-C5CC9515B317",
+       "C977220F-11A7-4F93-8714-AEDC57674191"
+      ],
+      "take": 20
+     }
+    }
+   ],
+   "transport": "mcp"
+  },
+  "query_intent": {
+   "schema_version": "1.0-preview.1",
+   "source_contract_version": "1.0.0",
+   "operation": "compare_audiences",
+   "job": "compare_audiences",
+   "signals": {
+    "groups": [
+     [
+      "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+      "AA21934D-3A6E-4973-983F-28604C44E3AC",
+      "B58E846A-D1F1-4C6A-AFA7-9230F74CAEE0",
+      "A854F678-4242-4C4B-A21C-38EE521C885B"
+     ],
+     [
+      "A5380B09-5504-4BD9-B7B4-85E8337B46D0",
+      "13532075-D9AB-4F22-A269-B5F2AADB44E9",
+      "B58FF9A5-340B-47E0-80B7-394027A8AB41",
+      "D0FB2FA3-01FF-4F46-A501-F53EE746CD66",
+      "3B162979-5DDE-4953-922C-E58751CCDB66",
+      "968D1C61-5F40-473E-912D-722CAD853884",
+      "83DB72AE-17EA-4FB3-8C4D-411118DEBC80",
+      "E77EA427-C2C1-487E-AD1C-34BFB434F961",
+      "082A9824-17C2-4E40-B360-C5CC9515B317",
+      "C977220F-11A7-4F93-8714-AEDC57674191"
+     ]
+    ]
+   },
+   "filters": {},
+   "operators": {},
+   "output": {
+    "limit": 20
+   },
+   "assumptions": [],
+   "unresolved": []
+  },
+  "execution": {
+   "transport": "mcp",
+   "transport_name": "Qloo canonical MCP",
+   "correlation_id": "mcp-2",
+   "duration_ms": 2780
+  }
+ }
+}

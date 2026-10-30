@@ -1,0 +1,91 @@
+{
+ "tool": "qloo_find_tags",
+ "args": {
+  "query": "automotive brand",
+  "limit": 5
+ },
+ "envelope": {
+  "schema_version": "1.0-preview.1",
+  "operation": "find_tags",
+  "status": "ok",
+  "interpretation": {
+   "query": "automotive brand",
+   "semantic": true
+  },
+  "results": [
+   {
+    "id": "urn:tag:genre:brand:automotive",
+    "name": "Automotive",
+    "type": "urn:tag:genre:brand",
+    "popularity": 0.9943990406478956
+   },
+   {
+    "id": "urn:tag:genre:brand:entertainment:media:automotive",
+    "name": "Automotive",
+    "type": "urn:tag:genre:brand",
+    "popularity": 0.958542171859937
+   },
+   {
+    "id": "urn:tag:customer_segment:qloo:automotive_manufacturers",
+    "name": "Automotive Manufacturers",
+    "type": "urn:tag:customer_segment:qloo",
+    "popularity": 0.987573443326642
+   },
+   {
+    "id": "urn:tag:characteristic:qloo:automotive_industry_influence",
+    "name": "Automotive Industry Influence",
+    "type": "urn:tag:characteristic:qloo",
+    "popularity": 0.9614206837205934
+   },
+   {
+    "id": "urn:tag:keyword:media:automobile_manufacturer",
+    "name": "automobile manufacturer",
+    "type": "urn:tag:keyword:media",
+    "popularity": 0.944103093191746
+   }
+  ],
+  "result_count": 5,
+  "provenance": {
+   "source": "Qloo API",
+   "endpoint": "/v2/tags",
+   "documentation": "https://docs.qloo.com/reference/get-tags",
+   "requests": [
+    {
+     "method": "GET",
+     "path": "/v2/tags",
+     "query": {
+      "filter.query": "automotive brand",
+      "feature.semantic_search": true,
+      "take": 5
+     }
+    }
+   ],
+   "transport": "mcp"
+  },
+  "query_intent": {
+   "schema_version": "1.0-preview.1",
+   "source_contract_version": "1.0.0",
+   "operation": "find_tags",
+   "job": "find_tags",
+   "signals": {},
+   "filters": {},
+   "operators": {},
+   "output": {
+    "limit": 5
+   },
+   "assumptions": [
+    "semantic=true"
+   ],
+   "unresolved": [],
+   "target": {
+    "concept": "automotive brand"
+   }
+  },
+  "execution": {
+   "transport": "mcp",
+   "transport_name": "Qloo canonical MCP",
+   "correlation_id": "mcp-10",
+   "duration_ms": 1516
+  }
+ }
+}

@@ -1,0 +1,91 @@
+{
+ "tool": "qloo_find_tags",
+ "args": {
+  "query": "alcoholic beverages",
+  "limit": 5
+ },
+ "envelope": {
+  "schema_version": "1.0-preview.1",
+  "operation": "find_tags",
+  "status": "ok",
+  "interpretation": {
+   "query": "alcoholic beverages",
+   "semantic": true
+  },
+  "results": [
+   {
+    "id": "urn:tag:product_category:qloo:alcoholic_beverages",
+    "name": "Alcoholic Beverages",
+    "type": "urn:tag:product_category:qloo",
+    "popularity": 0.9953117069640525
+   },
+   {
+    "id": "urn:tag:amenity:qloo:beer_and_alcohol",
+    "name": "Beer And Alcohol",
+    "type": "urn:tag:amenity:qloo",
+    "popularity": 0.9768397962727713
+   },
+   {
+    "id": "urn:tag:interests:qloo:alcoholic_beverages",
+    "name": "Alcoholic Beverages",
+    "type": "urn:tag:interests:qloo",
+    "popularity": 0.958542171859937
+   },
+   {
+    "id": "urn:tag:keyword:qloo:alcoholic",
+    "name": "Alcoholic",
+    "type": "urn:tag:keyword:qloo",
+    "popularity": 0.944103093191746
+   },
+   {
+    "id": "urn:tag:product_category:qloo:alcohol",
+    "name": "Alcohol",
+    "type": "urn:tag:product_category:qloo",
+    "popularity": 0.9335182281141126
+   }
+  ],
+  "result_count": 5,
+  "provenance": {
+   "source": "Qloo API",
+   "endpoint": "/v2/tags",
+   "documentation": "https://docs.qloo.com/reference/get-tags",
+   "requests": [
+    {
+     "method": "GET",
+     "path": "/v2/tags",
+     "query": {
+      "filter.query": "alcoholic beverages",
+      "feature.semantic_search": true,
+      "take": 5
+     }
+    }
+   ],
+   "transport": "mcp"
+  },
+  "query_intent": {
+   "schema_version": "1.0-preview.1",
+   "source_contract_version": "1.0.0",
+   "operation": "find_tags",
+   "job": "find_tags",
+   "signals": {},
+   "filters": {},
+   "operators": {},
+   "output": {
+    "limit": 5
+   },
+   "assumptions": [
+    "semantic=true"
+   ],
+   "unresolved": [],
+   "target": {
+    "concept": "alcoholic beverages"
+   }
+  },
+  "execution": {
+   "transport": "mcp",
+   "transport_name": "Qloo canonical MCP",
+   "correlation_id": "mcp-13",
+   "duration_ms": 959
+  }
+ }
+}

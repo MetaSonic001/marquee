@@ -1,0 +1,91 @@
+{
+ "tool": "qloo_find_tags",
+ "args": {
+  "query": "sportswear brand",
+  "limit": 5
+ },
+ "envelope": {
+  "schema_version": "1.0-preview.1",
+  "operation": "find_tags",
+  "status": "ok",
+  "interpretation": {
+   "query": "sportswear brand",
+   "semantic": true
+  },
+  "results": [
+   {
+    "id": "urn:tag:product_service:qloo:sportswear",
+    "name": "Sportswear",
+    "type": "urn:tag:product_service:qloo",
+    "popularity": 0.9962298712700655
+   },
+   {
+    "id": "urn:tag:category:place:sportwear_manufacturer",
+    "name": "Sportwear manufacturer",
+    "type": "urn:tag:category:place",
+    "popularity": 0.9996007673937156
+   },
+   {
+    "id": "urn:tag:industry:qloo:sportswear",
+    "name": "Sportswear",
+    "type": "urn:tag:industry:qloo",
+    "popularity": 0.9936721278461719
+   },
+   {
+    "id": "urn:tag:product_category:qloo:sportswear",
+    "name": "Sportswear",
+    "type": "urn:tag:product_category:qloo",
+    "popularity": 0.99754224144878
+   },
+   {
+    "id": "urn:tag:fashion_segment:qloo:sportswear",
+    "name": "Sportswear",
+    "type": "urn:tag:fashion_segment:qloo",
+    "popularity": 0.9983692176658897
+   }
+  ],
+  "result_count": 5,
+  "provenance": {
+   "source": "Qloo API",
+   "endpoint": "/v2/tags",
+   "documentation": "https://docs.qloo.com/reference/get-tags",
+   "requests": [
+    {
+     "method": "GET",
+     "path": "/v2/tags",
+     "query": {
+      "filter.query": "sportswear brand",
+      "feature.semantic_search": true,
+      "take": 5
+     }
+    }
+   ],
+   "transport": "mcp"
+  },
+  "query_intent": {
+   "schema_version": "1.0-preview.1",
+   "source_contract_version": "1.0.0",
+   "operation": "find_tags",
+   "job": "find_tags",
+   "signals": {},
+   "filters": {},
+   "operators": {},
+   "output": {
+    "limit": 5
+   },
+   "assumptions": [
+    "semantic=true"
+   ],
+   "unresolved": [],
+   "target": {
+    "concept": "sportswear brand"
+   }
+  },
+  "execution": {
+   "transport": "mcp",
+   "transport_name": "Qloo canonical MCP",
+   "correlation_id": "mcp-14",
+   "duration_ms": 1233
+  }
+ }
+}

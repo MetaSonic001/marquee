@@ -1,0 +1,33 @@
+services:
+  - type: web
+    name: marquee-api
+    runtime: python
+    plan: free
+    region: frankfurt   # closest to the Supabase eu-west-1 database
+    rootDir: apps/api
+    buildCommand: bash render-build.sh
+    startCommand: PATH="$PWD/.node/bin:$PATH" uvicorn app.main:app --host 0.0.0.0 --port $PORT --workers 1
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.7
+      - key: QLOO_API_KEY
+        sync: false
+      - key: QLOO_BASE_URL
+        value: https://hackathon.api.qloo.com
+      - key: GROQ_API_KEY
+        sync: false
+      - key: DATABASE_URL
+        sync: false
+      - key: APP_SECRET
+        generateValue: true
+      - key: FRONTEND_ORIGIN
+        sync: false
+      - key: GROQ_VISION_MODEL
+        value: qwen/qwen3.8-27b
+      - key: GROQ_AGENT_MODEL
+        value: openai/gpt-oss-120b
+      - key: GROQ_WRITER_MODEL
+        value: qwen/qwen3.8-27b
+      - key: GROQ_SEARCH_MODEL
+        value: openai/gpt-oss-20b

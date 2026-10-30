@@ -1,0 +1,397 @@
+{
+ "tool": "qloo_recommend",
+ "args": {
+  "target_type": "artist",
+  "signals": [
+   "4F94C666-5FFA-4A42-8453-24C2F779EC36"
+  ],
+  "limit": 20,
+  "explain": false
+ },
+ "envelope": {
+  "schema_version": "1.0-preview.1",
+  "operation": "recommend",
+  "status": "ok",
+  "interpretation": {
+   "target_type": "urn:entity:artist",
+   "signals": [
+    {
+     "input": "4F94C666-5FFA-4A42-8453-24C2F779EC36",
+     "entityId": "4F94C666-5FFA-4A42-8453-24C2F779EC36",
+     "name": "Urban Outfitters",
+     "type": "urn:entity:brand",
+     "match": "identifier"
+    }
+   ],
+   "signal_tags": [],
+   "include_tags": [],
+   "exclude_tags": []
+  },
+  "resolution": {
+   "contract_version": "1.0-preview.1",
+   "provider": {
+    "contract_version": "1.0-preview.1",
+    "provider_id": "qloo_api",
+    "name": "Qloo native resolution",
+    "entity_strategy": "exact_name_context_or_choice",
+    "tag_strategy": "target_scoped_semantic_search_exact_name_or_choice",
+    "remote": true,
+    "uses_model": false,
+    "fallback": "none"
+   },
+   "outcomes": [
+    {
+     "input": "4F94C666-5FFA-4A42-8453-24C2F779EC36",
+     "status": "resolved",
+     "match": "identifier",
+     "selected": {
+      "id": "4F94C666-5FFA-4A42-8453-24C2F779EC36",
+      "name": "Urban Outfitters",
+      "type": "urn:entity:brand",
+      "popularity": 0.9985506263667339,
+      "description": "Urban Outfitters is a lifestyle retailer offering clothing, homeware, and accessories inspired by creativity and cultural trends."
+     },
+     "provenance": {
+      "contract_version": "1.0-preview.1",
+      "provider_id": "qloo_api",
+      "provider_name": "Qloo native resolution",
+      "endpoint": "/entities",
+      "strategy": "identifier_lookup",
+      "remote": true,
+      "uses_model": false
+     }
+    }
+   ]
+  },
+  "results": [
+   {
+    "entity_id": "A5380B09-5504-4BD9-B7B4-85E8337B46D0",
+    "name": "Bastille",
+    "type": "urn:entity",
+    "subtype": "urn:entity:artist",
+    "popularity": 0.9984697455255621,
+    "affinity": 0.9659977342765673,
+    "properties": {
+     "description": "Bastille are a British four-piece indie-pop/alternative band formed in South London in 2010 by singer-songwriter Dan Smith. Initially a solo project, Smith expanded Bastille into a band with Kyle Simmons, Will Farquarson and Chris Wood. They rose to mainstream prominence with a string of singles and their 2013 debut album Bad Blood (featuring the global hit \"Pompeii\"). Known for polished, anthemic production, cinematic arrangements and emotive lyricism, Bastille have released multiple studio albums (including Wild World, Doom Days and Give Me the Future) and a series of mixtape-style EPs titled Other People's Heartache that showcase covers and collaborations.",
+     "image": {
+      "url": "https://images.qloo.com/i/A5380B09-5504-4BD9-B7B4-85E8337B46D0-420x-auto.jpg"
+     }
+    }
+   },
+   {
+    "entity_id": "13532075-D9AB-4F22-A269-B5F2AADB44E9",
+    "name": "Foster the People",
+    "type": "urn:entity",
+    "subtype": "urn:entity:artist",
+    "popularity": 0.9994560551546966,
+    "affinity": 0.9631459894700466,
+    "properties": {
+     "description": "Foster The People is an American indie pop band formed in Los Angeles, California, in 2009. The band gained widespread recognition with their debut single 'Pumped Up Kicks' which became a global hit. Their music blends indie pop, alternative rock, and electronic elements, characterized by catchy hooks and upbeat rhythms. The band consists of lead vocalist Mark Foster, drummer Mark Pontius, guitarist Sean Cimino, and keyboardist Isom Innis. They have released several albums and are known for their energetic live performances and socially conscious lyrics.",
+     "image": {
+      "url": "https://images.qloo.com/i/13532075-D9AB-4F22-A269-B5F2AADB44E9-420x-auto.jpg"
+     }
+    }
+   },
+   {
+    "entity_id": "B58FF9A5-340B-47E0-80B7-394027A8AB41",
+    "name": "fun.",
+    "type": "urn:entity",
+    "subtype": "urn:entity:artist",
+    "popularity": 0.9986008165726232,
+    "affinity": 0.9601370393176809,
+    "properties": {
+     "description": "Fun. is an American indie pop band formed in New York City in 2008, consisting of Nate Ruess, Andrew Dost, and Jack Antonoff. They are known for their theatrical and anthemic style, blending indie pop with alternative and baroque pop elements. Their breakthrough came with the 2011 album 'Some Nights' and the hit single 'We Are Young', which achieved commercial success worldwide. The band is noted for their rich vocal harmonies, dramatic arrangements, and emotionally charged lyrics.",
+     "image": {
+      "url": "https://images.qloo.com/i/B58FF9A5-340B-47E0-80B7-394027A8AB41-420x-auto.jpg"
+     }
+    }
+   },
+   {
+    "entity_id": "D0FB2FA3-01FF-4F46-A501-F53EE746CD66",
+    "name": "Ellie Goulding",
+    "type": "urn:entity",
+    "subtype": "urn:entity:artist",
+    "popularity": 0.9995150371258741,
+    "affinity": 0.9582864770567544,
+    "properties": {
+     "description": "Ellie Goulding is an English singer-songwriter who rose to prominence in the early 2010s with a signature breathy soprano, blending folky songwriting with synth-driven electronic pop. Her debut album 'Lights' (2010) and follow-ups 'Halcyon' (2012) and 'Delirium' (2015) produced international hits including 'Lights', 'Starry Eyed', 'Burn' and 'Love Me Like You Do' (a global smash from the Fifty Shades of Grey soundtrack). She has collaborated with prominent producers and artists across pop and EDM, won critical awards early in her career, and built a global fanbase through chart success, festival appearances and high-profile collaborations. She is also known for charitable and environmental advocacy and was appointed MBE in 2023.",
+     "image": {
+      "url": "https://images.qloo.com/i/D0FB2FA3-01FF-4F46-A501-F53EE746CD66-420x-auto.jpg"
+     }
+    }
+   },
+   {
+    "entity_id": "3B162979-5DDE-4953-922C-E58751CCDB66",
+    "name": "Young the Giant",
+    "type": "urn:entity",
+    "subtype": "urn:entity:artist",
+    "popularity": 0.9971655886073046,
+    "affinity": 0.9555461638481008,
+    "properties": {
+     "description": "Young the Giant is an American alternative rock band formed in Irvine, California, in 2004. The band consists of Sameer Gadhia (lead vocals), Jacob Tilley (guitar), Eric Cannata (guitar), Payam Doostzadeh (bass), and Francis Perez (drums). They gained recognition with their self-titled debut album released in 2010, featuring hit singles like \"Cough Syrup\" and \"My Body.\" Their music blends elements of indie rock, alternative rock, and pop rock, characterized by catchy melodies, dynamic arrangements, and emotive vocals. Over the years, Young the Giant has built a dedicated fanbase and is known for their engaging live performances and thoughtful lyrics.",
+     "image": {
+      "url": "https://images.qloo.com/i/3B162979-5DDE-4953-922C-E58751CCDB66-420x-auto.jpg"
+     }
+    }
+   },
+   {
+    "entity_id": "968D1C61-5F40-473E-912D-722CAD853884",
+    "name": "Two Door Cinema Club",
+    "type": "urn:entity",
+    "subtype": "urn:entity:artist",
+    "popularity": 0.9994920996926384,
+    "affinity": 0.952768885263701,
+    "properties": {
+     "description": "Two Door Cinema Club are a three-piece indie rock band from Bangor, County Down, Northern Ireland, formed in 2007. They blend jangly, guitar-led indie pop with danceable electronic rhythms and bright synth lines. The band built attention with their debut album Tourist History (2010) and singles such as \u201cI Can Talk,\u201d \u201cUndercover Martyn\u201d and \u201cWhat You Know,\u201d and have since released several albums including Beacon (2012), Gameshow (2016) and False Alarm (2019). Known for concise, hook-driven songs and high-energy live shows, they have become fixtures on festival bills across Europe and toured internationally.",
+     "image": {
+      "url": "https://images.qloo.com/i/968D1C61-5F40-473E-912D-722CAD853884-420x-auto.jpg"
+     }
+    }
+   },
+   {
+    "entity_id": "83DB72AE-17EA-4FB3-8C4D-411118DEBC80",
+    "name": "Walk the Moon",
+    "type": "urn:entity",
+    "subtype": "urn:entity:artist",
+    "popularity": 0.9958843691222827,
+    "affinity": 0.952648093089241,
+    "properties": {
+     "description": "Walk The Moon is an American rock band formed in Cincinnati, Ohio, known for their energetic indie rock and alternative rock style with influences from new wave and dance-rock. The band gained mainstream success with their hit single 'Shut Up and Dance' and is characterized by upbeat rhythms, catchy melodies, and synth-driven arrangements. Their music blends rock instrumentation with pop sensibilities and electronic elements, appealing to a wide audience.",
+     "image": {
+      "url": "https://images.qloo.com/i/83DB72AE-17EA-4FB3-8C4D-411118DEBC80-420x-auto.jpg"
+     }
+    }
+   },
+   {
+    "entity_id": "E77EA427-C2C1-487E-AD1C-34BFB434F961",
+    "name": "Neon Trees",
+    "type": "urn:entity",
+    "subtype": "urn:entity:artist",
+    "popularity": 0.9966904560617083,
+    "affinity": 0.9515629578735161,
+    "properties": {
+     "description": "Neon Trees is an American rock band formed in Provo, Utah, in 2005. The band consists of lead vocalist Tyler Glenn, guitarist Chris Allen, bassist Brandon Campbell, and drummer Elaine Bradley. They gained mainstream success with their hit single \"Animal\" and are known for blending alternative rock with new wave and synthpop influences. Their music features energetic rhythms, catchy hooks, and a blend of rock and electronic elements.",
+     "image": {
+      "url": "https://images.qloo.com/i/E77EA427-C2C1-487E-AD1C-34BFB434F961-420x-auto.jpg"
+     }
+    }
+   },
+   {
+    "entity_id": "082A9824-17C2-4E40-B360-C5CC9515B317",
+    "name": "The Naked and Famous",
+    "type": "urn:entity",
+    "subtype": "urn:entity:artist",
+    "popularity": 0.9981060233699677,
+    "affinity": 0.9507972371610037,
+    "properties": {
+     "description": "The Naked and Famous is an indie electronic band from New Zealand, formed in 2007. They are known for their blend of indie rock and synthpop, characterized by energetic electronic beats, catchy melodies, and emotive vocals. The band gained international recognition with their debut album 'Passive Me, Aggressive You' and the hit single 'Young Blood'. Their music often combines electronic production with rock instrumentation, creating a dynamic and vibrant sound.",
+     "image": {
+      "url": "https://images.qloo.com/i/082A9824-17C2-4E40-B360-C5CC9515B317-420x-auto.jpg"
+     }
+    }
+   },
+   {
+    "entity_id": "C977220F-11A7-4F93-8714-AEDC57674191",
+    "name": "The 1975",
+    "type": "urn:entity",
+    "subtype": "urn:entity:artist",
+    "popularity": 0.9979192471279057,
+    "affinity": 0.9496354264717821,
+    "properties": {
+     "description": "The 1975 are an English rock band formed in Wilmslow/Manchester by schoolmates; fronted by Matty Healy with Adam Hann, Ross MacDonald and George Daniel. They blend indie rock, synth-driven pop, electronic textures and art-pop songwriting, and are known for emotionally direct lyrics about modern life, fame, technology and relationships. Since their commercial breakthrough in the early 2010s (debut album The 1975, 2013), they've released a string of successful albums \u2014 including I Like It When You Sleep..., A Brief Inquiry Into Online Relationships, Notes on a Conditional Form and Being Funny in a Foreign Language \u2014 and built a reputation for polished production, visual-heavy live shows and cultural visibility beyond music.",
+     "image": {
+      "url": "https://images.qloo.com/i/C977220F-11A7-4F93-8714-AEDC57674191-420x-auto.jpg"
+     }
+    }
+   },
+   {
+    "entity_id": "CA87A3AF-61F3-420C-8682-55BBCDC7C4F9",
+    "name": "Grouplove",
+    "type": "urn:entity",
+    "subtype": "urn:entity:artist",
+    "popularity": 0.997224570578482,
+    "affinity": 0.9486428889664472,
+    "properties": {
+     "description": "Grouplove is an American indie rock band formed in 2009, known for their energetic, upbeat sound blending indie rock, alternative rock, and indie pop. The band consists of members Hannah Hooper, Christian Zucconi, Andrew Wessen, Sean Gadd, and Ryan Rabin. They gained popularity with their hit single 'Tongue Tied' and have released several albums showcasing a mix of catchy melodies and vibrant instrumentation.",
+     "image": {
+      "url": "https://images.qloo.com/i/CA87A3AF-61F3-420C-8682-55BBCDC7C4F9-420x-auto.jpg"
+     }
+    }
+   },
+   {
+    "entity_id": "EE12E65A-6630-4077-A11C-B9CA7413147C",
+    "name": "Of Monsters and Men",
+    "type": "urn:entity",
+    "subtype": "urn:entity:artist",
+    "popularity": 0.9991152704323378,
+    "affinity": 0.947800829907325,
+    "properties": {
+     "description": "Of Monsters and Men is an Icelandic indie folk/pop band formed in 2010 in Reykjav\u00edk. The band gained international recognition with their debut album 'My Head Is an Animal' which features a blend of indie folk, pop, and rock elements characterized by rich vocal harmonies, storytelling lyrics, and a mix of acoustic and electric instrumentation. Their music often incorporates folk influences with modern indie sensibilities, creating an atmospheric and emotive sound.",
+     "image": {
+      "url": "https://images.qloo.com/i/EE12E65A-6630-4077-A11C-B9CA7413147C-420x-auto.jpg"
+     }
+    }
+   },
+   {
+    "entity_id": "A7D60218-83FC-4898-917A-31581C4E18FA",
+    "name": "Mikky Ekko",
+    "type": "urn:entity",
+    "subtype": "urn:entity:artist",
+    "popularity": 0.9812961615843868,
+    "affinity": 0.9459653694038199,
+    "properties": {
+     "description": "Mikky Ekko is an American singer-songwriter and record producer known for his emotive vocal style and blending of alternative R&B, pop, and electronic music. He gained widespread recognition for his collaboration with Rihanna on the hit single \"Stay.\" His music often features introspective lyrics and atmospheric production.",
+     "image": {
+      "url": "https://images.qloo.com/i/A7D60218-83FC-4898-917A-31581C4E18FA-420x-auto.jpg"
+     }
+    }
+   },
+   {
+    "entity_id": "296A9BFF-AE21-4FC0-9F9D-81EBCFB5BBE6",
+    "name": "HAIM",
+    "type": "urn:entity",
+    "subtype": "urn:entity:artist",
+    "popularity": 0.9978569883805517,
+    "affinity": 0.945471562200254,
+    "properties": {
+     "description": "HAIM is an American pop-rock trio from Los Angeles formed by sisters Este, Danielle and Alana Haim. Known for close three-part sibling harmonies, melodic guitar work and a mix of 1970s soft-rock influences with contemporary indie pop and R&B-tinged production, the group rose from family cover-band beginnings to international success after their 2012 breakout. They signed to Polydor and are managed by Roc Nation, released their debut album Days Are Gone (2013) to wide acclaim, and followed with Something to Tell You (2017) and Women in Music Pt. III (2020). The band has achieved top chart positions (including a UK No. 1), multiple award nominations including Grammys, and a reputation for energetic, more rock-forward live shows.",
+     "image": {
+      "url": "https://images.qloo.com/i/296A9BFF-AE21-4FC0-9F9D-81EBCFB5BBE6-420x-auto.jpg"
+     }
+    }
+   },
+   {
+    "entity_id": "40CDB8B0-64B7-4099-B21C-2FC32DE178CF",
+    "name": "Kodaline",
+    "type": "urn:entity",
+    "subtype": "urn:entity:artist",
+    "popularity": 0.9961301273355222,
+    "affinity": 0.9449620726303287,
+    "properties": {
+     "description": "Kodaline is an Irish alternative rock band formed in Dublin in 2005. The band consists of Steve Garrigan (vocals, guitar, keyboards), Mark Prendergast (guitar, keyboards, backing vocals), Vinny May (drums, percussion), and Jason Boland (bass guitar, backing vocals). They are known for their heartfelt lyrics, melodic sound, and emotional performances. Their music blends elements of alternative rock, indie rock, and pop rock with touches of folk and soft rock. Kodaline gained international recognition with their debut album 'In a Perfect World' and have since released several successful albums and singles.",
+     "image": {
+      "url": "https://images.qloo.com/i/40CDB8B0-64B7-4099-B21C-2FC32DE178CF-420x-auto.jpg"
+     }
+    }
+   },
+   {
+    "entity_id": "67214C5E-264F-4329-8EA3-582B5AEE513D",
+    "name": "Foxes",
+    "type": "urn:entity",
+    "subtype": "urn:entity:artist",
+    "popularity": 0.9919325770533918,
+    "affinity": 0.9434878215379839,
+    "properties": {
+     "description": "Foxes, born Louisa Rose Allen, is a British singer-songwriter and musician who gained prominence with her emotive blend of indie pop, synthpop, and electropop. She is known for her distinctive voice and heartfelt lyrics, often exploring themes of love, self-discovery, and emotional vulnerability. Foxes has released multiple albums and singles, earning critical acclaim and a dedicated fanbase.",
+     "image": {
+      "url": "https://images.qloo.com/i/67214C5E-264F-4329-8EA3-582B5AEE513D-420x-auto.jpg"
+     }
+    }
+   },
+   {
+    "entity_id": "7051ACC6-F85C-4CD3-BB7E-211FCD88EC1B",
+    "name": "Capital Cities",
+    "type": "urn:entity",
+    "subtype": "urn:entity:artist",
+    "popularity": 0.9968739555275937,
+    "affinity": 0.9429521512393967,
+    "properties": {
+     "description": "Capital Cities is an American indie pop duo formed in Los Angeles, California, consisting of Ryan Merchant and Sebu Simonian. They are best known for their hit single \"Safe and Sound,\" which features a blend of synthpop and indie pop elements. Their music combines catchy melodies, electronic production, and upbeat rhythms, often incorporating elements of alternative dance and dance-pop. The duo has gained recognition for their vibrant and energetic sound as well as their creative music videos.",
+     "image": {
+      "url": "https://images.qloo.com/i/7051ACC6-F85C-4CD3-BB7E-211FCD88EC1B-420x-auto.jpg"
+     }
+    }
+   },
+   {
+    "entity_id": "4B4E53AE-D4AF-4D20-B739-6E6DD4AD6B7F",
+    "name": "MisterWives",
+    "type": "urn:entity",
+    "subtype": "urn:entity:artist",
+    "popularity": 0.9873614742871374,
+    "affinity": 0.9423705401631467,
+    "properties": {
+     "description": "MisterWives is an American indie pop band formed in 2012 in New York City. The band is known for their vibrant and energetic sound that blends indie pop, alternative rock, and synthpop elements. Their music features catchy melodies, upbeat rhythms, and the distinctive vocals of lead singer Mandy Lee. MisterWives gained recognition with their debut album 'Our Own House' and have continued to release music that combines emotional lyrics with danceable beats.",
+     "image": {
+      "url": "https://images.qloo.com/i/4B4E53AE-D4AF-4D20-B739-6E6DD4AD6B7F-420x-auto.jpg"
+     }
+    }
+   },
+   {
+    "entity_id": "6DD78901-F7E0-45E7-8B8A-D3B4AC1313C7",
+    "name": "American Authors",
+    "type": "urn:entity",
+    "subtype": "urn:entity:artist",
+    "popularity": 0.9926665749169338,
+    "affinity": 0.9423219042825408,
+    "properties": {
+     "description": "American Authors is an American rock band formed in 2006, originally known as The Blue Pages. The band consists of Zachary Barnett (lead vocals), James Adam Shelley (guitar), Matt Sanchez (drums), and Dave Rublin (bass). They gained widespread recognition with their hit single 'Best Day of My Life' which features an upbeat, catchy indie rock and alternative rock style with folk and pop influences. Their music often blends rock instrumentation with pop melodies and folk-inspired harmonies.",
+     "image": {
+      "url": "https://images.qloo.com/i/6DD78901-F7E0-45E7-8B8A-D3B4AC1313C7-420x-auto.jpg"
+     }
+    }
+   },
+   {
+    "entity_id": "01F2567A-1750-4238-8D2E-38591BE179CE",
+    "name": "Echosmith",
+    "type": "urn:entity",
+    "subtype": "urn:entity:artist",
+    "popularity": 0.9938625982213659,
+    "affinity": 0.9421151979933717,
+    "properties": {
+     "description": "Echosmith is an American indie pop band formed in 2009 in Los Angeles, California. The band originally consisted of four siblings: Sydney, Graham, Noah, and Jamie Sierota. They gained widespread recognition with their hit single \"Cool Kids\" in 2013, which showcased their blend of indie pop and rock with catchy hooks and relatable lyrics. Their music often features bright melodies, synth elements, and a youthful, optimistic tone. Over the years, Echosmith has released several albums and EPs, maintaining a presence in the indie and pop rock scenes.",
+     "image": {
+      "url": "https://images.qloo.com/i/01F2567A-1750-4238-8D2E-38591BE179CE-420x-auto.jpg"
+     }
+    }
+   }
+  ],
+  "result_count": 20,
+  "provenance": {
+   "source": "Qloo API",
+   "endpoint": "/v2/insights",
+   "documentation": "https://docs.qloo.com/reference/insights-api-deep-dive",
+   "requests": [
+    {
+     "method": "GET",
+     "path": "/v2/insights",
+     "query": {
+      "filter.type": "urn:entity:artist",
+      "take": 20,
+      "signal.interests.entities": [
+       "4F94C666-5FFA-4A42-8453-24C2F779EC36"
+      ]
+     }
+    }
+   ],
+   "transport": "mcp"
+  },
+  "query_intent": {
+   "schema_version": "1.0-preview.1",
+   "source_contract_version": "1.0.0",
+   "operation": "recommend",
+   "job": "recommend",
+   "signals": {
+    "entities": [
+     "4F94C666-5FFA-4A42-8453-24C2F779EC36"
+    ]
+   },
+   "filters": {},
+   "operators": {},
+   "output": {
+    "limit": 20,
+    "explain": false
+   },
+   "assumptions": [],
+   "unresolved": [],
+   "target": {
+    "type": "artist"
+   }
+  },
+  "execution": {
+   "transport": "mcp",
+   "transport_name": "Qloo canonical MCP",
+   "correlation_id": "mcp-4",
+   "duration_ms": 512
+  }
+ }
+}

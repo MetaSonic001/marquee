@@ -1,0 +1,91 @@
+{
+ "tool": "qloo_find_tags",
+ "args": {
+  "query": "streaming media brand",
+  "limit": 5
+ },
+ "envelope": {
+  "schema_version": "1.0-preview.1",
+  "operation": "find_tags",
+  "status": "ok",
+  "interpretation": {
+   "query": "streaming media brand",
+   "semantic": true
+  },
+  "results": [
+   {
+    "id": "urn:tag:product_service:qloo:streaming_media",
+    "name": "Streaming Media",
+    "type": "urn:tag:product_service:qloo",
+    "popularity": 0.9824962067797127
+   },
+   {
+    "id": "urn:tag:genre:brand:mobile_app:streaming_service",
+    "name": "Streaming Service App",
+    "type": "urn:tag:genre:brand",
+    "popularity": 0.9755234989584451
+   },
+   {
+    "id": "urn:tag:product_service:qloo:streaming_content",
+    "name": "Streaming Content",
+    "type": "urn:tag:product_service:qloo",
+    "popularity": 0.9931883832815239
+   },
+   {
+    "id": "urn:tag:industry:qloo:streaming_media",
+    "name": "Streaming Media",
+    "type": "urn:tag:industry:qloo",
+    "popularity": 0.9740904871737395
+   },
+   {
+    "id": "urn:tag:keyword:media:streaming",
+    "name": "streaming",
+    "type": "urn:tag:keyword:media",
+    "popularity": 0.97055733960787
+   }
+  ],
+  "result_count": 5,
+  "provenance": {
+   "source": "Qloo API",
+   "endpoint": "/v2/tags",
+   "documentation": "https://docs.qloo.com/reference/get-tags",
+   "requests": [
+    {
+     "method": "GET",
+     "path": "/v2/tags",
+     "query": {
+      "filter.query": "streaming media brand",
+      "feature.semantic_search": true,
+      "take": 5
+     }
+    }
+   ],
+   "transport": "mcp"
+  },
+  "query_intent": {
+   "schema_version": "1.0-preview.1",
+   "source_contract_version": "1.0.0",
+   "operation": "find_tags",
+   "job": "find_tags",
+   "signals": {},
+   "filters": {},
+   "operators": {},
+   "output": {
+    "limit": 5
+   },
+   "assumptions": [
+    "semantic=true"
+   ],
+   "unresolved": [],
+   "target": {
+    "concept": "streaming media brand"
+   }
+  },
+  "execution": {
+   "transport": "mcp",
+   "transport_name": "Qloo canonical MCP",
+   "correlation_id": "mcp-12",
+   "duration_ms": 2128
+  }
+ }
+}

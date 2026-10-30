@@ -1,0 +1,91 @@
+{
+ "tool": "qloo_find_tags",
+ "args": {
+  "query": "beer brand",
+  "limit": 5
+ },
+ "envelope": {
+  "schema_version": "1.0-preview.1",
+  "operation": "find_tags",
+  "status": "ok",
+  "interpretation": {
+   "query": "beer brand",
+   "semantic": true
+  },
+  "results": [
+   {
+    "id": "urn:tag:genre:brand:wine_and_spirits:beer",
+    "name": "Beer",
+    "type": "urn:tag:genre:brand",
+    "popularity": 0.995181247519032
+   },
+   {
+    "id": "urn:tag:signature_product:qloo:craft_beer",
+    "name": "Craft Beer",
+    "type": "urn:tag:signature_product:qloo",
+    "popularity": 0.9541455079145135
+   },
+   {
+    "id": "urn:tag:signature_product:qloo:beer",
+    "name": "Beer",
+    "type": "urn:tag:signature_product:qloo",
+    "popularity": 0.8927779661930174
+   },
+   {
+    "id": "urn:tag:signature_product:qloo:heineken_lager",
+    "name": "Heineken Lager",
+    "type": "urn:tag:signature_product:qloo",
+    "popularity": 0.8955780924268646
+   },
+   {
+    "id": "urn:tag:product_line:qloo:beer",
+    "name": "Beer",
+    "type": "urn:tag:product_line:qloo",
+    "popularity": 0.8552968341160638
+   }
+  ],
+  "result_count": 5,
+  "provenance": {
+   "source": "Qloo API",
+   "endpoint": "/v2/tags",
+   "documentation": "https://docs.qloo.com/reference/get-tags",
+   "requests": [
+    {
+     "method": "GET",
+     "path": "/v2/tags",
+     "query": {
+      "filter.query": "beer brand",
+      "feature.semantic_search": true,
+      "take": 5
+     }
+    }
+   ],
+   "transport": "mcp"
+  },
+  "query_intent": {
+   "schema_version": "1.0-preview.1",
+   "source_contract_version": "1.0.0",
+   "operation": "find_tags",
+   "job": "find_tags",
+   "signals": {},
+   "filters": {},
+   "operators": {},
+   "output": {
+    "limit": 5
+   },
+   "assumptions": [
+    "semantic=true"
+   ],
+   "unresolved": [],
+   "target": {
+    "concept": "beer brand"
+   }
+  },
+  "execution": {
+   "transport": "mcp",
+   "transport_name": "Qloo canonical MCP",
+   "correlation_id": "mcp-4",
+   "duration_ms": 1807
+  }
+ }
+}
